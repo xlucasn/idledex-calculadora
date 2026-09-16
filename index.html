@@ -3,44 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12.1">
-  <title>idleDEX Calculator V12.1</title>
+  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12.2">
+  <title>idleDEX Calculator V12.2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <div><span class="eyebrow">idleDEX</span><h1>Calculator <span>V12.1</span></h1><p>Captura • XP • Silver • Evolução</p></div>
-    <div class="version">V12.1</div>
+    <div>
+      <span class="eyebrow">idleDEX</span>
+      <h1>Calculator <span>V12.2</span></h1>
+      <p>Captura • XP • Silver</p>
+    </div>
+    <div class="version">V12.2</div>
   </header>
+
   <main class="container">
     <nav class="tabs" aria-label="Ferramentas">
       <button class="tab active" data-tab="capture">🔎 Pokémon</button>
       <button class="tab" data-tab="xp">⚔️ XP</button>
       <button class="tab" data-tab="silver">💰 Silver</button>
-      <button class="tab" data-tab="evolve">🧬 Evolução</button>
       <button class="tab" data-tab="about">ℹ️ Dados</button>
     </nav>
 
     <section id="capture" class="panel active">
-      <div class="hero"><h2>Onde encontrar?</h2><p>Escolha um Pokémon para ordenar os mapas pela chance de encontro.</p></div>
-      <label>Pokémon <input id="captureSearch" list="pokemonList" placeholder="Ex.: Spheal, Lileep..."></label>
+      <div class="hero">
+        <h2>Onde encontrar?</h2>
+        <p>Selecione qualquer Pokémon do banco oficial para ver os mapas e a maior chance de encontro.</p>
+      </div>
+      <label>Pokémon
+        <input id="captureSearch" list="pokemonList" placeholder="Digite o nome ou selecione..." autocomplete="off">
+      </label>
       <datalist id="pokemonList"></datalist>
       <div id="captureResult" class="results empty">Digite ou selecione um Pokémon.</div>
     </section>
 
     <section id="xp" class="panel">
-      <div class="hero"><h2>Farm de XP</h2><p>Filtra mapas cuja faixa de nível comporta o seu Pokémon. O cálculo real de XP ainda depende de dados de combate verificados.</p></div>
-      <div class="grid2">
-        <label>Nível do Pokémon <input id="xpLevel" type="number" min="1" max="100" value="54"></label>
-        <label>Nível do treinador <input id="trainerLevel" type="number" min="1" max="100" value="50"></label>
+      <div class="hero">
+        <h2>Onde upar meu Pokémon?</h2>
+        <p>Informe o Pokémon e o nível atual. O sistema procura o mapa de maior nível que o seu Pokémon consegue enfrentar pelo critério conservador de faixa de nível.</p>
       </div>
-      <label>Mapa que você já desbloqueou <select id="xpMap"></select></label>
-      <button id="xpCalc" class="primary">Calcular mapas</button>
+
+      <div class="grid2">
+        <label>Pokémon
+          <input id="xpPokemon" list="pokemonListXp" placeholder="Ex.: Slaking" autocomplete="off">
+        </label>
+        <label>Nível atual
+          <input id="xpLevel" type="number" min="1" max="100" value="54">
+        </label>
+      </div>
+      <datalist id="pokemonListXp"></datalist>
+
+      <label>Último mapa desbloqueado
+        <select id="xpMap"></select>
+      </label>
+
+      <button id="xpCalc" class="primary">Encontrar melhor mapa</button>
       <div id="xpResult" class="results"></div>
+
+      <div class="card warning-card">
+        <strong>⚠️ Sobre “sem chance de wipe”</strong>
+        <p>Esta versão usa um filtro conservador baseado no nível máximo dos selvagens. Isso evita recomendar um mapa acima do nível informado, mas ainda <strong>não é uma garantia matemática de wipe zero</strong>, porque a Wiki não expõe aqui um simulador completo de batalha do time.</p>
+        <p class="muted">A próxima etapa é alimentar o cálculo com fauna, golpes, stats e regras de combate para transformar isso em uma análise real de risco.</p>
+      </div>
     </section>
 
     <section id="silver" class="panel">
-      <div class="hero"><h2>Farm de Silver</h2><p>Agora com duas fontes separadas: vitória e Coletor. Os valores do Coletor são da Wiki oficial.</p></div>
+      <div class="hero">
+        <h2>Farm de Silver</h2>
+        <p>Fontes separadas: batalha e Coletor. Os valores do Coletor vêm da Wiki oficial.</p>
+      </div>
       <div class="card">
         <h3>⚔️ Silver por batalha</h3>
         <div class="grid2">
@@ -49,11 +80,17 @@
         </div>
         <div class="grid2">
           <label>Vitórias por hora <input id="winsHour" type="number" min="0" value="60"></label>
-          <label>Bônus de Silver <select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></label>
+          <label>Bônus de Silver
+            <select id="silverBonus">
+              <option value="0">Nenhum</option>
+              <option value="25">+25% — Bênção da Prata</option>
+            </select>
+          </label>
         </div>
         <button id="silverCalc" class="primary">Calcular batalha</button>
         <div id="silverResult" class="results"></div>
       </div>
+
       <div class="card">
         <h3>📦 Silver dos Coletores</h3>
         <div class="grid2">
@@ -66,20 +103,24 @@
       </div>
     </section>
 
-    <section id="evolve" class="panel">
-      <div class="hero"><h2>Planejar evolução</h2><p>Veja o nível de evolução e os mapas cadastrados para obtenção.</p></div>
-      <label>Pokémon <input id="evolveSearch" list="pokemonList2" placeholder="Ex.: Spheal"></label>
-      <datalist id="pokemonList2"></datalist>
-      <div id="evolveResult" class="results empty">Digite ou selecione um Pokémon.</div>
-    </section>
-
     <section id="about" class="panel">
-      <div class="hero"><h2>Sobre a V12.1</h2><p>Base preparada para crescer sem misturar dados inventados com dados oficiais.</p></div>
-      <div class="card"><strong>Fonte</strong><p>A Wiki oficial informa que seus números são gerados diretamente dos arquivos do jogo a cada versão.</p><p class="muted">Nesta versão, os dados de Coletores e da Fonte foram adicionados com base na documentação oficial. XP de combate, Silver por vitória e risco de derrota continuam sem valores inventados.</p></div>
-      <div class="card"><strong>Importante</strong><p>“Sem risco” só será calculado quando tivermos dados suficientes para simular o motor de batalha. A caçada offline usa o mesmo motor real de combate do AUTO.</p></div>
+      <div class="hero">
+        <h2>Sobre a V12.2</h2>
+        <p>Agora preparada para manter os dados sincronizados com a Wiki oficial.</p>
+      </div>
+      <div class="card">
+        <strong>Banco de Pokémon</strong>
+        <p>O atualizador automático consulta as páginas de espécies da Wiki oficial e reconstrói a lista de Pokémon, mapas, níveis, raridade e chance.</p>
+        <p class="muted">A Wiki informa que seus números são gerados diretamente dos arquivos do jogo a cada versão.</p>
+      </div>
+      <div class="card">
+        <strong>Atualização automática</strong>
+        <p>O repositório possui uma rotina semanal para buscar alterações da Wiki e atualizar o banco sem precisar cadastrar Pokémon manualmente.</p>
+      </div>
     </section>
   </main>
-  <footer>idleDEX Calculator V12.1 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
+
+  <footer>idleDEX Calculator V12.2 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
   <script src="app.js"></script>
 </body>
 </html>
