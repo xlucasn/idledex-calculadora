@@ -1,0 +1,24 @@
+{
+  "version": "V12",
+  "source": "https://wiki.idledex.com/",
+  "updated": "2026-09-15",
+  "pokemon": [
+    {"id":363,"name":"Spheal","types":["Ice","Water"],"evolution":"Sealeo","evolutionLevel":32,"maps":[{"name":"Rota 85 — Gruta de Cristal","min":7,"max":11,"rarity":"Common","chance":19.6},{"name":"Rota 86 — Coração da Geleira","min":8,"max":12,"rarity":"Common","chance":19.6},{"name":"Rota 96 — Tundra Silenciosa","min":22,"max":27,"rarity":"Common","chance":14.9},{"name":"Rota 95 — Campos do Norte","min":21,"max":26,"rarity":"Common","chance":14.7},{"name":"Rota 97 — Maré Baixa","min":24,"max":29,"rarity":"Common","chance":14.5},{"name":"Rota 100 — Aurora Glacial","min":28,"max":34,"rarity":"Common","chance":6.42},{"name":"Rota 112 — Corrente Escura","min":61,"max":69,"rarity":"Common","chance":1.78},{"name":"Rota 114 — Fossa Marinha","min":68,"max":76,"rarity":"Common","chance":1.75},{"name":"Rota 113 — Naufrágio Antigo","min":65,"max":73,"rarity":"Common","chance":1.73},{"name":"Rota 107 — Jardim de Corais","min":3,"max":8,"rarity":"Common","chance":0.99}]},
+    {"id":345,"name":"Lileep","types":["Rock","Grass"],"evolution":"Cradily","evolutionLevel":40,"maps":[{"name":"Rota 91 — Sopé do Vulcão","min":14,"max":19,"rarity":"Rare","chance":3},{"name":"Rota 92 — Campos de Cinza","min":16,"max":21,"rarity":"Rare","chance":3},{"name":"Rota 90 — Trilha das Raízes","min":3,"max":8,"rarity":"Rare","chance":0.27},{"name":"Rota 106 — Planície Árida","min":42,"max":48,"rarity":"Rare","chance":0.25}]}
+  ],
+  "maps": [
+    {"name":"Rota 85 — Gruta de Cristal","minLevel":7,"maxLevel":11,"xp":100,"silver":100},
+    {"name":"Rota 86 — Coração da Geleira","minLevel":8,"maxLevel":12,"xp":105,"silver":105},
+    {"name":"Rota 90 — Trilha das Raízes","minLevel":3,"maxLevel":8,"xp":75,"silver":75},
+    {"name":"Rota 91 — Sopé do Vulcão","minLevel":14,"maxLevel":19,"xp":160,"silver":150},
+    {"name":"Rota 92 — Campos de Cinza","minLevel":16,"maxLevel":21,"xp":175,"silver":160},
+    {"name":"Rota 95 — Campos do Norte","minLevel":21,"maxLevel":26,"xp":220,"silver":200},
+    {"name":"Rota 96 — Tundra Silenciosa","minLevel":22,"maxLevel":27,"xp":230,"silver":210},
+    {"name":"Rota 97 — Maré Baixa","minLevel":24,"maxLevel":29,"xp":245,"silver":220},
+    {"name":"Rota 100 — Aurora Glacial","minLevel":28,"maxLevel":34,"xp":285,"silver":250},
+    {"name":"Rota 106 — Planície Árida","minLevel":42,"maxLevel":48,"xp":390,"silver":340},
+    {"name":"Rota 112 — Corrente Escura","minLevel":61,"maxLevel":69,"xp":520,"silver":460},
+    {"name":"Rota 113 — Naufrágio Antigo","minLevel":65,"maxLevel":73,"xp":550,"silver":480},
+    {"name":"Rota 114 — Fossa Marinha","minLevel":68,"maxLevel":76,"xp":575,"silver":500}
+  ]
+}
