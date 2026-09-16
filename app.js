@@ -4,6 +4,27 @@ const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[c]));
 const money = (n) => Math.round(n).toLocaleString('pt-BR');
 
+// The Wiki dataset currently contains some UTF-8 text that was decoded as
+// Latin-1/Windows-1252 before being saved. Repair that only when needed so
+// names such as "PÃ¢ntano" and "â" render correctly in the UI.
+function fixText(value){
+  let text = String(value ?? '');
+  for(let i = 0; i < 2 && /[ÃÂâ]/.test(text); i++){
+    try{
+      const bytes = new Uint8Array(Array.from(text, ch => ch.charCodeAt(0) & 255));
+      const decoded = new TextDecoder('utf-8', {fatal:true}).decode(bytes);
+      if(decoded === text) break;
+      text = decoded;
+    }catch(e){
+      break;
+    }
+  }
+  return text.replace(/\uFFFD/g, '').trim();
+}
+
+function displayMap(m){ return fixText(m.name); }
+function displayPokemon(p){ return fixText(p.name); }
+
 async function init(){
   // Avoid serving an old GitHub Pages copy of the JSON after a data update.
   const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
@@ -19,15 +40,22 @@ async function init(){
 }
 
 function fillLists(){
-  const names = [...new Set(DATA.pokemon.map(p => p.name))].sort((a,b) => a.localeCompare(b, 'pt-BR'));
+  const names = [...new Set(DATA.pokemon.map(p => displayPokemon(p)))].sort((a,b) => a.localeCompare(b, 'pt-BR'));
   for(const id of ['pokemonList','pokemonListXp']){
     $(id).innerHTML = names.map(n => `<option value="${escapeHtml(n)}">`).join('');
   }
 }
 
+function mapSort(a,b){
+  return (Number(a.maxLevel)-Number(b.maxLevel)) || (Number(a.minLevel)-Number(b.minLevel)) || displayMap(a).localeCompare(displayMap(b),'pt-BR');
+}
+
 function fillMapSelect(){
-  const maps = [...DATA.maps].sort((a,b) => (a.maxLevel-b.maxLevel) || a.name.localeCompare(b.name,'pt-BR'));
-  $('xpMap').innerHTML = `<option value="">Todos os mapas cadastrados</option>` + maps.map(m => `<option>${escapeHtml(m.name)}</option>`).join('');
+  const maps = [...DATA.maps].sort(mapSort);
+  $('xpMap').innerHTML = `<option value="">Todos os mapas cadastrados</option>` + maps.map(m => {
+    const label = `${displayMap(m)} — Lv ${m.minLevel}–${m.maxLevel}`;
+    return `<option value="${escapeHtml(m.name)}">${escapeHtml(label)}</option>`;
+  }).join('');
 }
 
 function bindTabs(){
@@ -39,8 +67,8 @@ function bindTabs(){
 }
 
 function findPokemon(value){
-  const clean = value.trim().toLowerCase();
-  return DATA.pokemon.find(p => p.name.toLowerCase() === clean);
+  const clean = fixText(value).trim().toLowerCase();
+  return DATA.pokemon.find(p => displayPokemon(p).toLowerCase() === clean || p.name.toLowerCase() === clean);
 }
 
 function bindSearches(){
@@ -65,17 +93,18 @@ function renderPokemon(p,target){
   target.className = 'results';
 
   if(!maps.length){
-    target.innerHTML = `<article class="result"><div class="result-head"><strong>#${p.id} ${escapeHtml(p.name)}</strong><span class="badge">Sem mapa específico</span></div><div class="meta">A Wiki informa que esta espécie pode aparecer pela tabela geral de nível de treinador, mas não há mapa específico listado para ela.</div></article>`;
+    target.innerHTML = `<article class="result"><div class="result-head"><strong>#${p.id} ${escapeHtml(displayPokemon(p))}</strong><span class="badge">Sem mapa específico</span></div><div class="meta">A Wiki informa que esta espécie pode aparecer pela tabela geral de nível de treinador, mas não há mapa específico listado para ela.</div></article>`;
     return;
   }
 
-  target.innerHTML = maps.map((m,i) => `<article class="result"><div class="result-head"><strong>#${p.id} ${escapeHtml(m.name)}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(m.rarity)} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
+  target.innerHTML = maps.map((m,i) => `<article class="result"><div class="result-head"><strong>#${p.id} ${escapeHtml(displayMap(m))}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(fixText(m.rarity))} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
 }
 
 function calcXP(){
   const pokemon = findPokemon($('xpPokemon').value || '');
   const level = Number($('xpLevel').value || 1);
-  const selected = $('xpMap').value;
+  const selectedName = $('xpMap').value;
+  const selectedMap = DATA.maps.find(m => m.name === selectedName);
   const target = $('xpResult');
 
   if(!pokemon){
@@ -89,28 +118,39 @@ function calcXP(){
     return;
   }
 
+  // The selected map is the player's progression ceiling. Because the
+  // current dataset does not expose the game's full map-graph order, the
+  // safest available interpretation is to use the selected map's maximum
+  // wild level as the unlock ceiling.
+  const unlockMax = selectedMap ? Number(selectedMap.maxLevel) : Infinity;
+
   let maps = DATA.maps
-    .filter(m => !selected || m.name === selected)
-    .filter(m => m.maxLevel <= level)
-    .sort((a,b) => b.maxLevel-a.maxLevel || b.minLevel-a.minLevel);
+    .filter(m => Number(m.maxLevel) <= unlockMax)
+    .filter(m => Number(m.maxLevel) <= level)
+    .sort((a,b) => Number(b.maxLevel)-Number(a.maxLevel) || Number(b.minLevel)-Number(a.minLevel) || displayMap(a).localeCompare(displayMap(b),'pt-BR'));
 
   target.className = 'results';
 
   if(!maps.length){
-    target.innerHTML = `<article class="result"><div class="result-head"><strong>Nenhum mapa seguro pelo critério atual</strong><span class="warning">⚠️</span></div><div class="meta">Com o Pokémon ${escapeHtml(pokemon.name)} no Lv ${level}, nenhum mapa cadastrado tem nível máximo dos selvagens ≤ seu nível.</div></article>`;
+    target.innerHTML = `<article class="result"><div class="result-head"><strong>Nenhum mapa seguro pelo critério atual</strong><span class="warning">⚠️</span></div><div class="meta">Com o Pokémon ${escapeHtml(displayPokemon(pokemon))} no Lv ${level}, nenhum mapa dentro do seu limite de mapas liberados tem nível máximo dos selvagens ≤ seu nível.</div></article>`;
     return;
   }
 
   const best = maps[0];
   const alternatives = maps.slice(1,4);
+  const unlockText = selectedMap
+    ? `Seu limite: ${escapeHtml(displayMap(selectedMap))} (Lv ${selectedMap.minLevel}–${selectedMap.maxLevel}).`
+    : 'Sem limite de mapa selecionado.';
+
   target.innerHTML = `
     <article class="result featured-result">
       <div class="result-head"><strong>🏆 Melhor mapa para upar</strong><span class="positive">Lv ${best.minLevel}–${best.maxLevel}</span></div>
-      <h3>${escapeHtml(best.name)}</h3>
-      <div class="meta">${escapeHtml(pokemon.name)} Lv ${level} • nível máximo selvagem ${best.maxLevel} • critério conservador atendido.</div>
+      <h3>${escapeHtml(displayMap(best))}</h3>
+      <div class="meta">${escapeHtml(displayPokemon(pokemon))} Lv ${level} • nível máximo selvagem ${best.maxLevel} • critério conservador atendido.</div>
+      <div class="meta muted">${unlockText}</div>
     </article>
-    ${alternatives.length ? `<div class="subheading">Outras opções dentro do critério</div>` : ''}
-    ${alternatives.map(m => `<article class="result"><div class="result-head"><strong>${escapeHtml(m.name)}</strong><span class="badge">Lv ${m.minLevel}–${m.maxLevel}</span></div><div class="meta">Nível máximo selvagem: ${m.maxLevel}</div></article>`).join('')}
+    ${alternatives.length ? `<div class="subheading">Outras opções dentro do seu limite</div>` : ''}
+    ${alternatives.map(m => `<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">Lv ${m.minLevel}–${m.maxLevel}</span></div><div class="meta">Nível máximo selvagem: ${m.maxLevel}</div></article>`).join('')}
   `;
 }
 
