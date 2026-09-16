@@ -40,7 +40,7 @@
     <section id="xp" class="panel">
       <div class="hero">
         <h2>Onde upar meu Pokémon?</h2>
-        <p>Informe o Pokémon e o nível atual. O sistema procura o mapa de maior nível que o seu Pokémon consegue enfrentar pelo critério conservador de faixa de nível.</p>
+        <p>Informe o Pokémon e o nível atual. Depois selecione o último mapa que você já liberou no jogo. O sistema não recomendará mapas além desse limite.</p>
       </div>
 
       <div class="grid2">
@@ -53,9 +53,10 @@
       </div>
       <datalist id="pokemonListXp"></datalist>
 
-      <label>Último mapa desbloqueado
+      <label>Até onde você já liberou?
         <select id="xpMap"></select>
       </label>
+      <p class="muted field-help">Escolha o último mapa que aparece como liberado no seu mapa-múndi. Ex.: se você está na <strong>Rota 124 — Vale Escondido</strong>, selecione essa rota.</p>
 
       <button id="xpCalc" class="primary">Encontrar melhor mapa</button>
       <div id="xpResult" class="results"></div>
@@ -63,7 +64,7 @@
       <div class="card warning-card">
         <strong>⚠️ Sobre “sem chance de wipe”</strong>
         <p>Esta versão usa um filtro conservador baseado no nível máximo dos selvagens. Isso evita recomendar um mapa acima do nível informado, mas ainda <strong>não é uma garantia matemática de wipe zero</strong>, porque a Wiki não expõe aqui um simulador completo de batalha do time.</p>
-        <p class="muted">A próxima etapa é alimentar o cálculo com fauna, golpes, stats e regras de combate para transformar isso em uma análise real de risco.</p>
+        <p class="muted">A análise real de risco poderá ser refinada com fauna, golpes, stats e regras de combate.</p>
       </div>
     </section>
 
