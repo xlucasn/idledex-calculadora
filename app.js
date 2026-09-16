@@ -5,7 +5,8 @@ const escapeHtml = (s) => String(s).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'
 const money = (n) => Math.round(n).toLocaleString('pt-BR');
 
 async function init(){
-  const res = await fetch('data/idledex-data.json');
+  // Avoid serving an old GitHub Pages copy of the JSON after a data update.
+  const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
   if(!res.ok) throw new Error(`Dataset HTTP ${res.status}`);
   DATA = await res.json();
   fillLists();
@@ -18,7 +19,7 @@ async function init(){
 }
 
 function fillLists(){
-  const names = DATA.pokemon.map(p => p.name).sort((a,b) => a.localeCompare(b, 'pt-BR'));
+  const names = [...new Set(DATA.pokemon.map(p => p.name))].sort((a,b) => a.localeCompare(b, 'pt-BR'));
   for(const id of ['pokemonList','pokemonListXp']){
     $(id).innerHTML = names.map(n => `<option value="${escapeHtml(n)}">`).join('');
   }
