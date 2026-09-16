@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 BASE = "https://wiki.idledex.com/"
 OUT = "data/idledex-data.json"
-HEADERS = {"User-Agent": "idleDEX-Calculator-Wiki-Updater/1.0"}
+HEADERS = {"User-Agent": "idleDEX-Calculator-Wiki-Updater/1.1"}
 
 
 def get(url, timeout=30):
@@ -17,21 +17,23 @@ def get(url, timeout=30):
     return r.text
 
 
+def extract_urls(text):
+    """Extract sitemap <loc> URLs without requiring an XML parser."""
+    return [u.strip() for u in re.findall(r"<loc[^>]*>(.*?)</loc>", text, flags=re.I | re.S)]
+
+
 def sitemap_urls():
     candidates = [urljoin(BASE, "sitemap.xml"), urljoin(BASE, "sitemap-0.xml")]
     seen = set()
     species = set()
 
     def walk(url, depth=0):
-        if url in seen or depth > 2:
+        if url in seen or depth > 3:
             return
         seen.add(url)
         text = get(url)
-        soup = BeautifulSoup(text, "xml")
-        locs = [x.get_text(strip=True) for x in soup.find_all("loc")]
-        if not locs:
-            return
-        for loc in locs:
+        for loc in extract_urls(text):
+            loc = loc.replace("&amp;", "&")
             if "/species/" in loc:
                 species.add(loc.rstrip("/"))
             elif "sitemap" in loc:
@@ -46,8 +48,24 @@ def sitemap_urls():
         except Exception as exc:
             last_error = exc
 
+    # Fallback: discover species links from the species index if the sitemap
+    # is unavailable or has a different structure.
     if not species:
-        raise RuntimeError(f"Não foi possível localizar o sitemap de espécies: {last_error}")
+        for candidate in (urljoin(BASE, "species/"), BASE):
+            try:
+                html = get(candidate)
+                soup = BeautifulSoup(html, "html.parser")
+                for a in soup.find_all("a", href=True):
+                    href = urljoin(candidate, a["href"])
+                    if re.search(r"/species/\d+-[^/?#]+/?$", href):
+                        species.add(href.rstrip("/"))
+                if species:
+                    break
+            except Exception as exc:
+                last_error = exc
+
+    if not species:
+        raise RuntimeError(f"Não foi possível localizar as páginas de espécies: {last_error}")
     return sorted(species)
 
 
@@ -69,18 +87,26 @@ def parse_species(url):
     html = get(url)
     soup = BeautifulSoup(html, "html.parser")
 
-    h1 = soup.find("h1")
-    if not h1:
+    # The current wiki renders the National Dex number and species name in
+    # separate headings on some pages, so use the URL as the authoritative ID.
+    url_match = re.search(r"/species/(\d+)-([^/?#]+)/?$", url)
+    if not url_match:
         return None
-    title = h1.get_text(" ", strip=True)
-    m = re.search(r"#(\d+)\s*(.*)", title)
-    if not m:
-        return None
-    sid = int(m.group(1))
-    name = m.group(2).strip()
+    sid = int(url_match.group(1))
+    slug_name = url_match.group(2).replace("-", " ").strip()
+
+    headings = [h.get_text(" ", strip=True) for h in soup.find_all(["h1", "h2", "h3"])]
+    name = None
+    for text in headings:
+        cleaned = re.sub(r"^#?\s*\d+\s*", "", text).strip()
+        if cleaned and not re.fullmatch(r"\d+", text) and cleaned.lower() not in {
+            "onde encontrar", "where to find", "stats base", "base stats", "evolução", "evolution"
+        }:
+            name = cleaned
+            break
+    name = name or slug_name.title()
 
     maps = []
-    # The wiki renders a table immediately after the "Where to find" heading.
     heading = None
     for tag in soup.find_all(["h2", "h3"]):
         txt = tag.get_text(" ", strip=True).lower()
@@ -88,9 +114,7 @@ def parse_species(url):
             heading = tag
             break
 
-    table = None
-    if heading:
-        table = heading.find_next("table")
+    table = heading.find_next("table") if heading else None
     if table:
         rows = table.find_all("tr")
         for row in rows[1:]:
@@ -140,7 +164,6 @@ def main():
         for m in p["maps"]:
             maps[m["name"]] = m
 
-    # Preserve the verified mechanics already present in the project.
     mechanics = {
         "collector": {
             "deliveryLimitPerWindow": 4,
@@ -175,7 +198,7 @@ def main():
             for m in maps.values()
         ], key=lambda x: (x["minLevel"], x["name"])),
         "mechanics": mechanics,
-        "crawl": {"speciesPages": len(urls), "errors": len(errors)}
+        "crawl": {"speciesPages": len(urls), "validSpecies": len(species), "errors": len(errors)}
     }
 
     with open(OUT, "w", encoding="utf-8") as f:
