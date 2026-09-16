@@ -3,20 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12">
-  <title>idleDEX Calculator V12</title>
+  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12.1">
+  <title>idleDEX Calculator V12.1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <div>
-      <span class="eyebrow">idleDEX</span>
-      <h1>Calculator <span>V12</span></h1>
-      <p>Captura • XP • Silver • Evolução</p>
-    </div>
-    <div class="version">V12</div>
+    <div><span class="eyebrow">idleDEX</span><h1>Calculator <span>V12.1</span></h1><p>Captura • XP • Silver • Evolução</p></div>
+    <div class="version">V12.1</div>
   </header>
-
   <main class="container">
     <nav class="tabs" aria-label="Ferramentas">
       <button class="tab active" data-tab="capture">🔎 Pokémon</button>
@@ -34,7 +29,7 @@
     </section>
 
     <section id="xp" class="panel">
-      <div class="hero"><h2>Farm de XP</h2><p>A ferramenta prioriza mapas dentro da faixa segura do seu Pokémon.</p></div>
+      <div class="hero"><h2>Farm de XP</h2><p>Filtra mapas cuja faixa de nível comporta o seu Pokémon. O cálculo real de XP ainda depende de dados de combate verificados.</p></div>
       <div class="grid2">
         <label>Nível do Pokémon <input id="xpLevel" type="number" min="1" max="100" value="54"></label>
         <label>Nível do treinador <input id="trainerLevel" type="number" min="1" max="100" value="50"></label>
@@ -45,33 +40,46 @@
     </section>
 
     <section id="silver" class="panel">
-      <div class="hero"><h2>Farm de Silver</h2><p>Compare rotas considerando nível e bônus ativos.</p></div>
-      <div class="grid2">
-        <label>Nível do Pokémon <input id="silverLevel" type="number" min="1" max="100" value="54"></label>
-        <label>Silver por vitória <input id="silverPerWin" type="number" min="0" value="100"></label>
+      <div class="hero"><h2>Farm de Silver</h2><p>Agora com duas fontes separadas: vitória e Coletor. Os valores do Coletor são da Wiki oficial.</p></div>
+      <div class="card">
+        <h3>⚔️ Silver por batalha</h3>
+        <div class="grid2">
+          <label>Nível do Pokémon <input id="silverLevel" type="number" min="1" max="100" value="54"></label>
+          <label>Silver por vitória <input id="silverPerWin" type="number" min="0" value="0"></label>
+        </div>
+        <div class="grid2">
+          <label>Vitórias por hora <input id="winsHour" type="number" min="0" value="60"></label>
+          <label>Bônus de Silver <select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></label>
+        </div>
+        <button id="silverCalc" class="primary">Calcular batalha</button>
+        <div id="silverResult" class="results"></div>
       </div>
-      <div class="grid2">
-        <label>Vitórias por hora <input id="winsHour" type="number" min="1" value="60"></label>
-        <label>Bônus de Silver <select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></label>
+      <div class="card">
+        <h3>📦 Silver dos Coletores</h3>
+        <div class="grid2">
+          <label>Nível do treinador <input id="collectorTrainerLevel" type="number" min="1" max="100" value="50"></label>
+          <label>Entregas por janela <input id="collectorDeliveries" type="number" min="0" max="4" value="4"></label>
+        </div>
+        <label>Janelas de 6h consideradas <input id="collectorWindows" type="number" min="1" max="28" value="4"></label>
+        <button id="collectorCalc" class="primary">Calcular Coletores</button>
+        <div id="collectorResult" class="results"></div>
       </div>
-      <button id="silverCalc" class="primary">Calcular rendimento</button>
-      <div id="silverResult" class="results"></div>
     </section>
 
     <section id="evolve" class="panel">
-      <div class="hero"><h2>Planejar evolução</h2><p>Veja o nível de evolução e, quando disponível, os melhores mapas de obtenção.</p></div>
+      <div class="hero"><h2>Planejar evolução</h2><p>Veja o nível de evolução e os mapas cadastrados para obtenção.</p></div>
       <label>Pokémon <input id="evolveSearch" list="pokemonList2" placeholder="Ex.: Spheal"></label>
       <datalist id="pokemonList2"></datalist>
       <div id="evolveResult" class="results empty">Digite ou selecione um Pokémon.</div>
     </section>
 
     <section id="about" class="panel">
-      <div class="hero"><h2>Sobre a V12</h2><p>Base preparada para atualização de dados sem reconstruir a interface.</p></div>
-      <div class="card"><strong>Fonte dos dados</strong><p>A Wiki oficial do idleDEX informa que seus dados são gerados a partir dos arquivos do jogo a cada versão. O arquivo <code>data/idledex-data.json</code> concentra os dados usados pela calculadora.</p><p class="muted">Esta primeira base V12 inclui estrutura e exemplos verificáveis. O dataset completo pode ser atualizado sem alterar a aplicação.</p></div>
-      <div class="card"><strong>Nota sobre XP e risco</strong><p>A V12 separa o cálculo da interface dos dados de combate. Assim podemos adicionar posteriormente dano, HP, nível dos inimigos e taxa de derrota sem refazer os componentes.</p></div>
+      <div class="hero"><h2>Sobre a V12.1</h2><p>Base preparada para crescer sem misturar dados inventados com dados oficiais.</p></div>
+      <div class="card"><strong>Fonte</strong><p>A Wiki oficial informa que seus números são gerados diretamente dos arquivos do jogo a cada versão.</p><p class="muted">Nesta versão, os dados de Coletores e da Fonte foram adicionados com base na documentação oficial. XP de combate, Silver por vitória e risco de derrota continuam sem valores inventados.</p></div>
+      <div class="card"><strong>Importante</strong><p>“Sem risco” só será calculado quando tivermos dados suficientes para simular o motor de batalha. A caçada offline usa o mesmo motor real de combate do AUTO.</p></div>
     </section>
   </main>
-  <footer>idleDEX Calculator V12 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
+  <footer>idleDEX Calculator V12.1 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
   <script src="app.js"></script>
 </body>
 </html>
