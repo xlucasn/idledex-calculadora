@@ -1,5 +1,5 @@
 {
-  "version": "V12",
+  "version": "V12.1",
   "source": "https://wiki.idledex.com/",
   "updated": "2026-09-15",
   "pokemon": [
@@ -20,5 +20,28 @@
     {"name":"Rota 112 — Corrente Escura","minLevel":61,"maxLevel":69},
     {"name":"Rota 113 — Naufrágio Antigo","minLevel":65,"maxLevel":73},
     {"name":"Rota 114 — Fossa Marinha","minLevel":68,"maxLevel":76}
-  ]
+  ],
+  "mechanics": {
+    "collector": {
+      "deliveryLimitPerWindow": 4,
+      "windowHours": 6,
+      "standardRequest": "4 espécies × 3 unidades",
+      "rewardsByTrainerLevel": [
+        {"minTrainerLevel":1,"silver":6000,"trainerXp":0},
+        {"minTrainerLevel":5,"silver":9000,"trainerXp":200},
+        {"minTrainerLevel":11,"silver":13000,"trainerXp":600},
+        {"minTrainerLevel":20,"silver":18000,"trainerXp":1800},
+        {"minTrainerLevel":35,"silver":24000,"trainerXp":4000},
+        {"minTrainerLevel":48,"silver":32000,"trainerXp":7000},
+        {"minTrainerLevel":60,"silver":42000,"trainerXp":11000},
+        {"minTrainerLevel":75,"silver":55000,"trainerXp":16000}
+      ],
+      "villageSilver":2500
+    },
+    "wishingFountain": {
+      "silverVictoryBonus":25,
+      "pokemonXpBonus":50,
+      "durationHours":4
+    }
+  }
 }
