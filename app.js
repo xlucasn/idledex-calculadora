@@ -46,12 +46,31 @@ function fillLists(){
   }
 }
 
-function mapSort(a,b){
-  return (Number(a.maxLevel)-Number(b.maxLevel)) || (Number(a.minLevel)-Number(b.minLevel)) || displayMap(a).localeCompare(displayMap(b),'pt-BR');
+// Maps in the "Até onde você já liberou?" selector must follow the game's
+// route numbering, not the Pokémon level range. This keeps Rota 1, Rota 2,
+// Rota 3 ... Rota 124 in natural progression order.
+function mapProgressionSort(a,b){
+  const nameA = displayMap(a);
+  const nameB = displayMap(b);
+  const routeA = nameA.match(/^Rota\s+(\d+)/i);
+  const routeB = nameB.match(/^Rota\s+(\d+)/i);
+
+  if(routeA && routeB){
+    const numA = Number(routeA[1]);
+    const numB = Number(routeB[1]);
+    if(numA !== numB) return numA - numB;
+    return nameA.localeCompare(nameB, 'pt-BR');
+  }
+
+  // Keep route maps before non-route locations. For non-route maps, use the
+  // displayed name as a stable fallback rather than mixing them by level.
+  if(routeA) return -1;
+  if(routeB) return 1;
+  return nameA.localeCompare(nameB, 'pt-BR');
 }
 
 function fillMapSelect(){
-  const maps = [...DATA.maps].sort(mapSort);
+  const maps = [...DATA.maps].sort(mapProgressionSort);
   $('xpMap').innerHTML = `<option value="">Todos os mapas cadastrados</option>` + maps.map(m => {
     const label = `${displayMap(m)} — Lv ${m.minLevel}–${m.maxLevel}`;
     return `<option value="${escapeHtml(m.name)}">${escapeHtml(label)}</option>`;
