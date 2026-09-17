@@ -4,9 +4,6 @@ const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[c]));
 const money = (n) => Math.round(n).toLocaleString('pt-BR');
 
-// The Wiki dataset currently contains some UTF-8 text that was decoded as
-// Latin-1/Windows-1252 before being saved. Repair that only when needed so
-// names such as "PÃ¢ntano" and "â" render correctly in the UI.
 function fixText(value){
   let text = String(value ?? '');
   for(let i = 0; i < 2 && /[ÃÂâ]/.test(text); i++){
@@ -26,7 +23,6 @@ function displayMap(m){ return fixText(m.name); }
 function displayPokemon(p){ return fixText(p.name); }
 
 async function init(){
-  // Avoid serving an old GitHub Pages copy of the JSON after a data update.
   const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
   if(!res.ok) throw new Error(`Dataset HTTP ${res.status}`);
   DATA = await res.json();
@@ -46,9 +42,6 @@ function fillLists(){
   }
 }
 
-// Maps in the "Até onde você já liberou?" selector must follow the game's
-// route numbering, not the Pokémon level range. This keeps Rota 1, Rota 2,
-// Rota 3 ... Rota 124 in natural progression order.
 function mapProgressionSort(a,b){
   const nameA = displayMap(a);
   const nameB = displayMap(b);
@@ -62,8 +55,6 @@ function mapProgressionSort(a,b){
     return nameA.localeCompare(nameB, 'pt-BR');
   }
 
-  // Keep route maps before non-route locations. For non-route maps, use the
-  // displayed name as a stable fallback rather than mixing them by level.
   if(routeA) return -1;
   if(routeB) return 1;
   return nameA.localeCompare(nameB, 'pt-BR');
@@ -116,7 +107,7 @@ function renderPokemon(p,target){
     return;
   }
 
-  target.innerHTML = maps.map((m,i) => `<article class="result"><div class="result-head"><strong>#${p.id} ${escapeHtml(displayMap(m))}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(fixText(m.rarity))} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
+  target.innerHTML = maps.map((m,i) => `<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(fixText(m.rarity))} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
 }
 
 function calcXP(){
@@ -137,10 +128,6 @@ function calcXP(){
     return;
   }
 
-  // The selected map is the player's progression ceiling. Because the
-  // current dataset does not expose the game's full map-graph order, the
-  // safest available interpretation is to use the selected map's maximum
-  // wild level as the unlock ceiling.
   const unlockMax = selectedMap ? Number(selectedMap.maxLevel) : Infinity;
 
   let maps = DATA.maps
