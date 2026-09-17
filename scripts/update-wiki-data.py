@@ -10,6 +10,14 @@ BASE = "https://wiki.idledex.com/"
 OUT = "data/idledex-data.json"
 HEADERS = {"User-Agent": "idleDEX-Calculator-Wiki-Updater/1.1"}
 
+TYPE_NAMES = {
+    "normal": "Normal", "fire": "Fogo", "water": "Água", "electric": "Elétrico",
+    "grass": "Planta", "ice": "Gelo", "fighting": "Lutador", "poison": "Veneno",
+    "ground": "Terra", "flying": "Voador", "psychic": "Psíquico", "bug": "Inseto",
+    "rock": "Pedra", "ghost": "Fantasma", "dragon": "Dragão", "dark": "Sombrio",
+    "steel": "Aço", "fairy": "Fada", "normal": "Normal"
+}
+
 
 def get(url, timeout=30):
     r = requests.get(url, headers=HEADERS, timeout=timeout)
@@ -48,8 +56,6 @@ def sitemap_urls():
         except Exception as exc:
             last_error = exc
 
-    # Fallback: discover species links from the species index if the sitemap
-    # is unavailable or has a different structure.
     if not species:
         for candidate in (urljoin(BASE, "species/"), BASE):
             try:
@@ -83,32 +89,59 @@ def parse_range(text):
     return None, None
 
 
+def parse_types(soup, heading):
+    """Read the species' type icons near the species heading, before the stats section."""
+    if not heading:
+        return []
+    types = []
+    started = False
+    for node in soup.find_all(["h1", "h2", "h3", "img"]):
+        if node is heading:
+            started = True
+            continue
+        if not started:
+            continue
+        if node.name in {"h2", "h3"}:
+            text = node.get_text(" ", strip=True).lower()
+            if "stats base" in text or "base stats" in text or "evolução" in text or "evolution" in text:
+                break
+            continue
+        raw = " ".join(filter(None, [node.get("alt"), node.get("title"), node.get("src")])).lower()
+        for key, label in TYPE_NAMES.items():
+            if re.search(rf"(?<![a-z]){re.escape(key)}(?![a-z])", raw):
+                if label not in types:
+                    types.append(label)
+    return types[:2]
+
+
 def parse_species(url):
     html = get(url)
     soup = BeautifulSoup(html, "html.parser")
 
-    # The current wiki renders the National Dex number and species name in
-    # separate headings on some pages, so use the URL as the authoritative ID.
     url_match = re.search(r"/species/(\d+)-([^/?#]+)/?$", url)
     if not url_match:
         return None
     sid = int(url_match.group(1))
     slug_name = url_match.group(2).replace("-", " ").strip()
 
-    headings = [h.get_text(" ", strip=True) for h in soup.find_all(["h1", "h2", "h3"])]
+    headings = soup.find_all(["h1", "h2", "h3"])
     name = None
-    for text in headings:
+    main_heading = None
+    for tag in headings:
+        text = tag.get_text(" ", strip=True)
         cleaned = re.sub(r"^#?\s*\d+\s*", "", text).strip()
         if cleaned and not re.fullmatch(r"\d+", text) and cleaned.lower() not in {
             "onde encontrar", "where to find", "stats base", "base stats", "evolução", "evolution"
         }:
             name = cleaned
+            main_heading = tag
             break
     name = name or slug_name.title()
+    types = parse_types(soup, main_heading)
 
     maps = []
     heading = None
-    for tag in soup.find_all(["h2", "h3"]):
+    for tag in headings:
         txt = tag.get_text(" ", strip=True).lower()
         if "onde encontrar" in txt or "where to find" in txt:
             heading = tag
@@ -136,7 +169,7 @@ def parse_species(url):
                 "chance": chance,
             })
 
-    return {"id": sid, "name": name, "maps": maps}
+    return {"id": sid, "name": name, "types": types, "maps": maps}
 
 
 def main():
