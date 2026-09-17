@@ -35124,6 +35124,22 @@
           "name": "Rota 140 â Floresta Silenciosa",
           "min": 51,
           "max": 57,
+          "rarity": "Rare",
+          "chance": 0.46
+        }
+      ]
+    },
+    {
+      "id": 446,
+      "name": "Munchlax",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 140 â Floresta Silenciosa",
+          "min": 51,
+          "max": 57,
           "rarity": "Raro",
           "chance": 0.46
         }
@@ -50245,7 +50261,7 @@
   },
   "crawl": {
     "speciesPages": 1246,
-    "validSpecies": 1245,
-    "errors": 1
+    "validSpecies": 1246,
+    "errors": 0
   }
 }
