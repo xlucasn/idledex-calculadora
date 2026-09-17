@@ -96,7 +96,7 @@ function renderFaunaChart(mapName){
     const ratio=Math.max(0,Math.min(1,x.chance/maxChance));
     const width=Math.max(10,Math.round(ratio*100));
     const hue=Math.round(ratio*120);
-    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 72% 48%)"><span>${x.chance.toLocaleString('pt-BR')}%</span></div></div></div>`;
+    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 45% 67%)"><span>${x.chance.toLocaleString('pt-BR')}%</span></div></div></div>`;
   }).join('');
   return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance de aparição por encontro. A barra compara cada espécie com a maior chance do mapa.</div><div class="xp-fauna-chart">${rows}</div></div>`;
 }
