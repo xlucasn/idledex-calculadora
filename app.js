@@ -20,6 +20,7 @@ function fixText(value){
 function displayMap(m){ return fixText(m.name); }
 function displayPokemon(p){ return fixText(p.name); }
 function displayTypes(p){ return (p.types || []).map(fixText).filter(Boolean); }
+function typeClass(type){ return `type-${fixText(type).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-')}`; }
 
 async function init(){
   const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
@@ -85,13 +86,11 @@ function getMapFauna(mapName){
 function renderFaunaChart(mapName){
   const fauna=getMapFauna(mapName);
   if(!fauna.length) return '<div class="xp-fauna-empty">A fauna detalhada deste mapa não foi encontrada na base atual.</div>';
-  const maxChance=Math.max(...fauna.map(x=>x.chance),1);
   const rows=fauna.map(x=>{
-    const width=Math.max(2,(x.chance/maxChance)*100);
-    const types=x.types.length?x.types.join(' / '):'Tipo não identificado';
-    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span>${escapeHtml(types)}</span></div><div class="xp-fauna-bar"><i style="width:${width}%"></i></div><b>${x.chance.toLocaleString('pt-BR')}%</b></div>`;
+    const types=x.types.length?x.types.map(t=>`<span class="type-badge ${typeClass(t)}">${escapeHtml(t)}</span>`).join(''):'<span class="type-badge type-unknown">Tipo não identificado</span>';
+    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><b>${x.chance.toLocaleString('pt-BR')}%</b></div>`;
   }).join('');
-  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance por encontro segundo a Wiki.</div><div class="xp-fauna-chart">${rows}</div></div>`;
+  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Porcentagem de aparição por encontro segundo a Wiki.</div><div class="xp-fauna-chart">${rows}</div></div>`;
 }
 
 function calcXP(){
