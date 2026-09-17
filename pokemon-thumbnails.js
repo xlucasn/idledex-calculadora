@@ -1,7 +1,7 @@
 (function(){
   const SPRITE='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
   function addThumbs(){
-    if(!window.DATA) return;
+    if(typeof DATA==='undefined' || !DATA?.pokemon) return;
     document.querySelectorAll('.xp-fauna-label').forEach(label=>{
       if(label.querySelector('.pokemon-thumb')) return;
       const name=label.querySelector('strong')?.textContent?.trim();
@@ -14,6 +14,8 @@
       label.querySelector('strong')?.before(img);
     });
   }
-  new MutationObserver(addThumbs).observe(document.body,{childList:true,subtree:true});
+  const observer=new MutationObserver(addThumbs);
+  if(document.body) observer.observe(document.body,{childList:true,subtree:true});
   document.addEventListener('DOMContentLoaded',addThumbs);
+  setTimeout(addThumbs,500);
 })();
