@@ -20,7 +20,11 @@ function fixText(value){
 function displayMap(m){ return fixText(m.name); }
 function displayPokemon(p){ return fixText(p.name); }
 function displayTypes(p){ return (p.types || []).map(fixText).filter(Boolean); }
-function typeClass(type){ return `type-${fixText(type).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-')}`; }
+function typeClass(type){
+  const key=fixText(type).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-');
+  const aliases={planta:'grass',grama:'grass',grass:'grass',veneno:'poison',poison:'poison',fogo:'fire',fire:'fire',agua:'water',water:'water',eletrico:'electric',electric:'electric',gelo:'ice',ice:'ice',lutador:'fighting',fighting:'fighting',terrestre:'ground',ground:'ground',voador:'flying',flying:'flying',psiquico:'psychic',psychic:'psychic',inseto:'bug',bug:'bug',pedra:'rock',rock:'rock',fantasma:'ghost',ghost:'ghost',dragao:'dragon',dragon:'dragon',sombrio:'dark',dark:'dark',aco:'steel',steel:'steel',fada:'fairy',fairy:'fairy',normal:'normal'};
+  return `type-${aliases[key]||key||'unknown'}`;
+}
 
 async function init(){
   const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
@@ -86,11 +90,15 @@ function getMapFauna(mapName){
 function renderFaunaChart(mapName){
   const fauna=getMapFauna(mapName);
   if(!fauna.length) return '<div class="xp-fauna-empty">A fauna detalhada deste mapa não foi encontrada na base atual.</div>';
+  const maxChance=Math.max(...fauna.map(x=>x.chance),1);
   const rows=fauna.map(x=>{
     const types=x.types.length?x.types.map(t=>`<span class="type-badge ${typeClass(t)}">${escapeHtml(t)}</span>`).join(''):'<span class="type-badge type-unknown">Tipo não identificado</span>';
-    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><b>${x.chance.toLocaleString('pt-BR')}%</b></div>`;
+    const ratio=Math.max(0,Math.min(1,x.chance/maxChance));
+    const width=Math.max(10,Math.round(ratio*100));
+    const hue=Math.round(ratio*120);
+    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 72% 48%)"><span>${x.chance.toLocaleString('pt-BR')}%</span></div></div></div>`;
   }).join('');
-  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Porcentagem de aparição por encontro segundo a Wiki.</div><div class="xp-fauna-chart">${rows}</div></div>`;
+  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance de aparição por encontro. A barra compara cada espécie com a maior chance do mapa.</div><div class="xp-fauna-chart">${rows}</div></div>`;
 }
 
 function calcXP(){
