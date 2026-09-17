@@ -77,28 +77,29 @@ function renderPokemon(p,target){
 }
 
 function getMapFauna(mapName){
-  const seen=new Set();
-  return DATA.pokemon.flatMap(p=>{
-    const types=displayTypes(p);
-    return (p.maps||[]).filter(m=>fixText(m.name)===fixText(mapName)).map(m=>{
-      if(seen.has(p.id)) return null; seen.add(p.id);
-      return {id:p.id,name:displayPokemon(p),types,chance:Number(m.chance||0),min:Number(m.min||0),max:Number(m.max||0),rarity:fixText(m.rarity)};
-    }).filter(Boolean);
-  }).sort((a,b)=>b.chance-a.chance || a.name.localeCompare(b.name,'pt-BR'));
+  const byId=new Map();
+  DATA.pokemon.forEach(p=>{
+    const match=(p.maps||[]).find(m=>fixText(m.name)===fixText(mapName));
+    if(!match || byId.has(p.id)) return;
+    byId.set(p.id,{id:p.id,name:displayPokemon(p),types:displayTypes(p),chance:Number(match.chance||0),min:Number(match.min||0),max:Number(match.max||0),rarity:fixText(match.rarity)});
+  });
+  const fauna=[...byId.values()].filter(x=>Number.isFinite(x.chance)&&x.chance>0);
+  const total=fauna.reduce((sum,x)=>sum+x.chance,0);
+  return fauna.map(x=>({...x,percentage:total>0?(x.chance/total)*100:0})).sort((a,b)=>b.percentage-a.percentage || a.name.localeCompare(b.name,'pt-BR'));
 }
 
 function renderFaunaChart(mapName){
   const fauna=getMapFauna(mapName);
   if(!fauna.length) return '<div class="xp-fauna-empty">A fauna detalhada deste mapa não foi encontrada na base atual.</div>';
-  const maxChance=Math.max(...fauna.map(x=>x.chance),1);
+  const maxChance=Math.max(...fauna.map(x=>x.percentage),0.01);
   const rows=fauna.map(x=>{
     const types=x.types.length?x.types.map(t=>`<span class="type-badge ${typeClass(t)}">${escapeHtml(t)}</span>`).join(''):'<span class="type-badge type-unknown">Tipo não identificado</span>';
-    const ratio=Math.max(0,Math.min(1,x.chance/maxChance));
-    const width=Math.max(1,Math.round(ratio*100));
+    const ratio=Math.max(0,Math.min(1,x.percentage/maxChance));
+    const width=Math.max(3,Math.round(ratio*100));
     const hue=Math.round(ratio*120);
-    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 45% 67%)"><span>${x.chance.toLocaleString('pt-BR')}%</span></div></div></div>`;
+    return `<div class="xp-fauna-row"><div class="xp-fauna-label"><div class="xp-fauna-name"><img class="pokemon-thumb" alt="" title="${escapeHtml(x.name)}" loading="lazy" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${encodeURIComponent(x.id)}.png" onerror="this.remove()"><strong>${escapeHtml(x.name)}</strong></div><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 45% 67%)"><span>${x.percentage.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}%</span></div></div></div>`;
   }).join('');
-  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance de aparição por encontro. A barra compara cada espécie com a maior chance do mapa.</div><div class="xp-fauna-chart">${rows}</div></div>`;
+  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance real proporcional entre as espécies cadastradas neste mapa. A soma das porcentagens exibidas é 100%.</div><div class="xp-fauna-chart">${rows}</div></div>`;
 }
 
 function calcXP(){
