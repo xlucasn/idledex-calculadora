@@ -94,7 +94,7 @@ function renderFaunaChart(mapName){
   const rows=fauna.map(x=>{
     const types=x.types.length?x.types.map(t=>`<span class="type-badge ${typeClass(t)}">${escapeHtml(t)}</span>`).join(''):'<span class="type-badge type-unknown">Tipo não identificado</span>';
     const ratio=Math.max(0,Math.min(1,x.chance/maxChance));
-    const width=Math.max(10,Math.round(ratio*100));
+    const width=Math.max(1,Math.round(ratio*100));
     const hue=Math.round(ratio*120);
     return `<div class="xp-fauna-row"><div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span class="xp-fauna-types">${types}</span></div><div class="xp-chance-track"><div class="xp-chance-fill" style="width:${width}%;background:hsl(${hue} 45% 67%)"><span>${x.chance.toLocaleString('pt-BR')}%</span></div></div></div>`;
   }).join('');
@@ -107,7 +107,7 @@ function calcXP(){
   if(!pokemon){ target.className='results empty'; target.textContent='Primeiro selecione o Pokémon que você quer upar.'; return; }
   if(level<1||level>100){ target.className='results empty'; target.textContent='Informe um nível entre 1 e 100.'; return; }
   const unlockMax=selectedMap?Number(selectedMap.maxLevel):Infinity;
-  let maps=DATA.maps.filter(m=>Number(m.maxLevel)<=unlockMax).filter(m=>Number(m.maxLevel)<=level).sort((a,b)=>Number(b.maxLevel)-Number(a.maxLevel)||Number(b.minLevel)-Number(a.minLevel)||displayMap(a).localeCompare(displayMap(b),'pt-BR'));
+  let maps=DATA.maps.filter(m=>Number(m.maxLevel)<=unlockMax).filter(m=>Number(m.maxLevel)<=level).sort((a,b)=>Number(b.maxLevel)-Number(a.maxLevel)||Number(b.minLevel)-Number(a.minLevel)||displayMap(a).localeCompare(displayMap(b,'pt-BR')));
   target.className='results';
   if(!maps.length){ target.innerHTML=`<article class="result"><div class="result-head"><strong>Nenhum mapa seguro pelo critério atual</strong><span class="warning">⚠️</span></div><div class="meta">Com o Pokémon ${escapeHtml(displayPokemon(pokemon))} no Lv ${level}, nenhum mapa dentro do seu limite de mapas liberados tem nível máximo dos selvagens ≤ seu nível.</div></article>`; return; }
   const best=maps[0], alternatives=maps.slice(1,4), unlockText=selectedMap?`Seu limite: ${escapeHtml(displayMap(selectedMap))} (Lv ${selectedMap.minLevel}–${selectedMap.maxLevel}).`:'Sem limite de mapa selecionado.';
