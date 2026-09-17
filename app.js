@@ -1,7 +1,7 @@
 let DATA;
 
 const $ = (id) => document.getElementById(id);
-const escapeHtml = (s) => String(s).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[c]));
+const escapeHtml = (s) => String(s).replace(/[&<>'\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[c]));
 const money = (n) => Math.round(n).toLocaleString('pt-BR');
 
 function fixText(value){
@@ -73,7 +73,8 @@ function renderPokemon(p,target){
   if(!p){ target.className='results empty'; target.textContent='Digite ou selecione um Pokémon cadastrado.'; return; }
   const maps=[...(p.maps||[])].sort((a,b)=>b.chance-a.chance); target.className='results';
   if(!maps.length){ target.innerHTML=`<article class="result"><div class="result-head"><strong>${escapeHtml(displayPokemon(p))}</strong><span class="badge">Sem mapa específico</span></div><div class="meta">A Wiki informa que esta espécie pode aparecer pela tabela geral de nível de treinador, mas não há mapa específico listado para ela.</div></article>`; return; }
-  target.innerHTML=maps.map((m,i)=>`<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(fixText(m.rarity))} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
+  const best=maps[0];
+  target.innerHTML=`<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(best))}</strong><span class="badge">${best.chance}%</span></div><div class="meta">Nível ${best.min}–${best.max} • ${escapeHtml(fixText(best.rarity))} • maior chance cadastrada</div></article>`;
 }
 
 function getMapFauna(mapName){
@@ -88,17 +89,17 @@ function getMapFauna(mapName){
   return fauna.map(x=>({...x,percentage:total>0?(x.chance/total)*100:0})).sort((a,b)=>b.percentage-a.percentage || a.name.localeCompare(b.name,'pt-BR'));
 }
 
+function pokemonSprite(id){ return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${encodeURIComponent(id)}.png`; }
+
 function renderFaunaChart(mapName){
   const fauna=getMapFauna(mapName);
   if(!fauna.length) return '<div class="xp-fauna-empty">A fauna detalhada deste mapa não foi encontrada na base atual.</div>';
   const rows=fauna.map(x=>{
     const types=x.types.length?x.types.map(t=>`<span class="type-badge ${typeClass(t)}">${escapeHtml(t)}</span>`).join(''):'<span class="type-badge type-unknown">Tipo não identificado</span>';
-    const ratio=Math.max(0,Math.min(1,x.percentage/Math.max(...fauna.map(f=>f.percentage),0.01)));
-    const hue=Math.round(ratio*120);
     const pct=x.percentage.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
-    return `<div class="xp-fauna-item"><div class="xp-fauna-circle" style="--chance:${x.percentage}%;--ring:hsl(${hue} 45% 67%)"><span>${pct}%</span></div><div class="xp-fauna-info"><strong>${escapeHtml(x.name)}</strong><div class="xp-fauna-types">${types}</div></div></div>`;
+    return `<div class="xp-fauna-item"><div class="xp-fauna-top"><img class="pokemon-thumb" src="${pokemonSprite(x.id)}" alt="${escapeHtml(x.name)}" loading="lazy" onerror="this.style.display='none'"><strong>${escapeHtml(x.name)}</strong></div><div class="xp-fauna-chance">${pct}%</div><div class="xp-fauna-types">${types}</div><div class="xp-fauna-level">Lv ${x.min}–${x.max}</div></div>`;
   }).join('');
-  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Percentual proporcional entre as espécies cadastradas neste mapa. A soma das porcentagens exibidas é 100%.</div><div class="xp-fauna-chart">${rows}</div></div>`;
+  return `<div class="xp-fauna"><div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div><div class="meta">Chance proporcional entre as espécies cadastradas neste mapa. Soma das porcentagens: 100%.</div><div class="xp-fauna-chart">${rows}</div></div>`;
 }
 
 function calcXP(){
@@ -107,12 +108,12 @@ function calcXP(){
   if(!pokemon){ target.className='results empty'; target.textContent='Primeiro selecione o Pokémon que você quer upar.'; return; }
   if(level<1||level>100){ target.className='results empty'; target.textContent='Informe um nível entre 1 e 100.'; return; }
   const unlockMax=selectedMap?Number(selectedMap.maxLevel):Infinity;
-  let maps=DATA.maps.filter(m=>Number(m.maxLevel)<=unlockMax).filter(m=>Number(m.maxLevel)<=level).sort((a,b)=>Number(b.maxLevel)-Number(a.maxLevel)||Number(b.minLevel)-Number(a.minLevel)||displayMap(a).localeCompare(displayMap(b),'pt-BR'));
+  const maps=DATA.maps.filter(m=>Number(m.maxLevel)<=unlockMax).filter(m=>Number(m.maxLevel)<=level).sort((a,b)=>Number(b.maxLevel)-Number(a.maxLevel)||Number(b.minLevel)-Number(a.minLevel)||displayMap(a).localeCompare(displayMap(b),'pt-BR'));
   target.className='results';
   if(!maps.length){ target.innerHTML=`<article class="result"><div class="result-head"><strong>Nenhum mapa seguro pelo critério atual</strong><span class="warning">⚠️</span></div><div class="meta">Com o Pokémon ${escapeHtml(displayPokemon(pokemon))} no Lv ${level}, nenhum mapa dentro do seu limite de mapas liberados tem nível máximo dos selvagens ≤ seu nível.</div></article>`; return; }
-  const best=maps[0], alternatives=maps.slice(1,4), unlockText=selectedMap?`Seu limite: ${escapeHtml(displayMap(selectedMap))} (Lv ${selectedMap.minLevel}–${selectedMap.maxLevel}).`:'Sem limite de mapa selecionado.';
+  const best=maps[0], unlockText=selectedMap?`Seu limite: ${escapeHtml(displayMap(selectedMap))} (Lv ${selectedMap.minLevel}–${selectedMap.maxLevel}).`:'Sem limite de mapa selecionado.';
   const faunaChart=renderFaunaChart(best.name);
-  target.innerHTML=`<article class="result featured-result"><div class="result-head"><strong>🏆 Melhor mapa para upar</strong><span class="positive">Lv ${best.minLevel}–${best.maxLevel}</span></div><h3>${escapeHtml(displayMap(best))}</h3><div class="meta">${escapeHtml(displayPokemon(pokemon))} Lv ${level} • nível máximo selvagem ${best.maxLevel} • critério conservador atendido.</div><div class="meta muted">${unlockText}</div>${faunaChart}</article><article class="result"><div class="result-head"><strong>⏱️ XP por hora</strong><span class="badge">Não estimável com segurança</span></div><div class="meta">A Wiki informa níveis, espécies, chances e dados de experiência, mas não fornece uma taxa confiável de batalhas/XP por hora. Para não inventar um número, não mostraremos uma estimativa de níveis por hora baseada apenas na Wiki.</div></article>${alternatives.length?`<div class="subheading">Outras opções dentro do seu limite</div>`:''}${alternatives.map(m=>`<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">Lv ${m.minLevel}–${m.maxLevel}</span></div><div class="meta">Nível máximo selvagem: ${m.maxLevel}</div></article>`).join('')}`;
+  target.innerHTML=`<article class="result featured-result"><div class="result-head"><strong>🏆 Melhor mapa para upar</strong><span class="positive">Lv ${best.minLevel}–${best.maxLevel}</span></div><h3>${escapeHtml(displayMap(best))}</h3><div class="meta">${escapeHtml(displayPokemon(pokemon))} Lv ${level} • nível máximo selvagem ${best.maxLevel} • critério conservador atendido.</div><div class="meta muted">${unlockText}</div>${faunaChart}</article><article class="result"><div class="result-head"><strong>⏱️ XP por hora</strong><span class="badge">Não estimável com segurança</span></div><div class="meta">A Wiki informa níveis, espécies, chances e dados de experiência, mas não fornece uma taxa confiável de batalhas/XP por hora. Para não inventar um número, não mostraremos uma estimativa baseada apenas na Wiki.</div></article>`;
 }
 
 function calcSilver(){ const per=Number($('silverPerWin').value||0),wins=Number($('winsHour').value||0),bonus=Number($('silverBonus').value||0),hourly=per*wins*(1+bonus/100),daily=hourly*24; $('silverResult').innerHTML=per>0?`<article class="result"><div class="result-head"><strong>Rendimento estimado</strong><span class="badge">${money(hourly)} / hora</span></div><div class="meta">${money(daily)} Silver / 24h • bônus aplicado: ${bonus}%</div></article>`:'<div class="results empty">Silver por vitória ainda não está cadastrado com fonte verificada. Informe um valor do jogo para fazer uma estimativa manual.</div>'; }
