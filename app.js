@@ -21,6 +21,7 @@ function fixText(value){
 
 function displayMap(m){ return fixText(m.name); }
 function displayPokemon(p){ return fixText(p.name); }
+function displayTypes(p){ return (p.types || []).map(fixText).filter(Boolean); }
 
 async function init(){
   const res = await fetch(`data/idledex-data.json?v=${Date.now()}`, {cache:'no-store'});
@@ -110,6 +111,52 @@ function renderPokemon(p,target){
   target.innerHTML = maps.map((m,i) => `<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">${m.chance}%</span></div><div class="meta">Nível ${m.min}–${m.max} • ${escapeHtml(fixText(m.rarity))} • ${i===0?'maior chance cadastrada':''}</div></article>`).join('');
 }
 
+function getMapFauna(mapName){
+  const seen = new Set();
+  return DATA.pokemon.flatMap(p => {
+    const types = displayTypes(p);
+    return (p.maps || [])
+      .filter(m => fixText(m.name) === fixText(mapName))
+      .map(m => {
+        const key = p.id;
+        if(seen.has(key)) return null;
+        seen.add(key);
+        return {
+          id: p.id,
+          name: displayPokemon(p),
+          types,
+          chance: Number(m.chance || 0),
+          min: Number(m.min || 0),
+          max: Number(m.max || 0),
+          rarity: fixText(m.rarity)
+        };
+      })
+      .filter(Boolean);
+  }).sort((a,b) => b.chance-a.chance || a.name.localeCompare(b.name,'pt-BR'));
+}
+
+function renderFaunaChart(mapName){
+  const fauna = getMapFauna(mapName);
+  if(!fauna.length) return '<div class="xp-fauna-empty">A fauna detalhada deste mapa não foi encontrada na base atual.</div>';
+
+  const maxChance = Math.max(...fauna.map(x => x.chance), 1);
+  const rows = fauna.map(x => {
+    const width = Math.max(2, (x.chance / maxChance) * 100);
+    const types = x.types.length ? x.types.join(' / ') : 'Tipo não identificado';
+    return `<div class="xp-fauna-row">
+      <div class="xp-fauna-label"><strong>${escapeHtml(x.name)}</strong><span>${escapeHtml(types)}</span></div>
+      <div class="xp-fauna-bar"><i style="width:${width}%"></i></div>
+      <b>${x.chance.toLocaleString('pt-BR')}%</b>
+    </div>`;
+  }).join('');
+
+  return `<div class="xp-fauna card">
+    <div class="result-head"><strong>Fauna do mapa</strong><span class="badge">${fauna.length} espécies</span></div>
+    <div class="meta">Chance por encontro segundo a Wiki, sem lure e sem bônus de evento.</div>
+    <div class="xp-fauna-chart">${rows}</div>
+  </div>`;
+}
+
 function calcXP(){
   const pokemon = findPokemon($('xpPokemon').value || '');
   const level = Number($('xpLevel').value || 1);
@@ -147,6 +194,9 @@ function calcXP(){
   const unlockText = selectedMap
     ? `Seu limite: ${escapeHtml(displayMap(selectedMap))} (Lv ${selectedMap.minLevel}–${selectedMap.maxLevel}).`
     : 'Sem limite de mapa selecionado.';
+  const fauna = getMapFauna(best.name);
+  const totalChance = fauna.reduce((sum, x) => sum + x.chance, 0);
+  const faunaChart = renderFaunaChart(best.name);
 
   target.innerHTML = `
     <article class="result featured-result">
@@ -154,6 +204,15 @@ function calcXP(){
       <h3>${escapeHtml(displayMap(best))}</h3>
       <div class="meta">${escapeHtml(displayPokemon(pokemon))} Lv ${level} • nível máximo selvagem ${best.maxLevel} • critério conservador atendido.</div>
       <div class="meta muted">${unlockText}</div>
+    </article>
+    <article class="result">
+      <div class="result-head"><strong>Distribuição dos encontros</strong><span class="badge">${totalChance.toLocaleString('pt-BR', {maximumFractionDigits:2})}%</span></div>
+      <div class="meta">As porcentagens abaixo vêm diretamente das chances de encontro da fauna cadastrada para o mapa.</div>
+    </article>
+    ${faunaChart}
+    <article class="result">
+      <div class="result-head"><strong>⏱️ XP por hora</strong><span class="badge">Não estimável com segurança</span></div>
+      <div class="meta">A Wiki informa níveis, espécies, chances e bônus de experiência do mapa, mas não fornece uma taxa confiável de batalhas/XP por hora. Para não inventar um número, o site não mostrará uma estimativa de níveis por hora baseada apenas na Wiki.</div>
     </article>
     ${alternatives.length ? `<div class="subheading">Outras opções dentro do seu limite</div>` : ''}
     ${alternatives.map(m => `<article class="result"><div class="result-head"><strong>${escapeHtml(displayMap(m))}</strong><span class="badge">Lv ${m.minLevel}–${m.maxLevel}</span></div><div class="meta">Nível máximo selvagem: ${m.maxLevel}</div></article>`).join('')}
