@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12.8">
-  <title>idleDEX Calculator V12.8</title>
-  <link rel="stylesheet" href="style.css?v=12.8">
+  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V12.9">
+  <title>idleDEX Calculator V12.9</title>
+  <link rel="stylesheet" href="style.css?v=12.9">
 </head>
 <body>
   <header class="topbar">
     <div>
       <span class="eyebrow">idleDEX</span>
-      <h1>Calculator <span>V12.8</span></h1>
+      <h1>Calculator <span>V12.9</span></h1>
       <p>Captura • XP • Silver</p>
     </div>
-    <div class="version">V12.8</div>
+    <div class="version">V12.9</div>
   </header>
   <main class="container">
     <nav class="tabs" aria-label="Ferramentas">
@@ -39,17 +39,17 @@
     </section>
     <section id="silver" class="panel">
       <div class="hero"><h2>Farm de Silver</h2><p>Fontes separadas: batalha e Coletor. Os valores do Coletor vêm da Wiki oficial.</p></div>
-      <div class="card"><h3>⚔️ Silver por batalha</h3><div class="grid2"><label>Nível do Pokémon<input id="silverLevel" type="number" min="1" max="100" value="54"></label><label>Silver por vitória<input id="silverPerWin" type="number" min="0" value="0"></label></div><div class="grid2"><label>Vitórias por hora<input id="winsHour" type="number" min="0" value="60"></label><label>Bônus de Silver<select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></label></div><button id="silverCalc" class="primary">Calcular batalha</button><div id="silverResult" class="results"></div></div>
+      <div class="card"><h3>⚔️ Silver por batalha</h3><div class="grid2"><label>Nível do Pokémon<input id="silverLevel" type="number" min="1" max="100" value="54"></label><label>Silver por vitória<input id="silverPerWin" type="number" min="0" value="0"></label></div><div class="grid2"><label>Vitórias por hora<input id="winsHour" type="number" min="0" value="60"></label><label>Bônus de Silver<select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></div><button id="silverCalc" class="primary">Calcular batalha</button><div id="silverResult" class="results"></div></div>
       <div class="card"><h3>📦 Silver dos Coletores</h3><div class="grid2"><label>Nível do treinador<input id="collectorTrainerLevel" type="number" min="1" max="100" value="50"></label><label>Entregas por janela<input id="collectorDeliveries" type="number" min="0" max="4" value="4"></label></div><label>Janelas de 6h consideradas<input id="collectorWindows" type="number" min="1" max="28" value="4"></label><button id="collectorCalc" class="primary">Calcular Coletores</button><div id="collectorResult" class="results"></div></div>
     </section>
     <section id="about" class="panel">
-      <div class="hero"><h2>Sobre a V12.8</h2><p>Agora preparada para manter os dados sincronizados com a Wiki oficial.</p></div>
+      <div class="hero"><h2>Sobre a V12.9</h2><p>Agora preparada para manter os dados sincronizados com a Wiki oficial.</p></div>
       <div class="card"><strong>Banco de Pokémon</strong><p>O atualizador automático consulta as páginas de espécies da Wiki oficial e reconstrói a lista de Pokémon, mapas, níveis, raridade e chance.</p><p class="muted">A Wiki informa que seus números são gerados diretamente dos arquivos do jogo a cada versão.</p></div>
       <div class="card"><strong>Atualização automática</strong><p>O repositório possui uma rotina diária para buscar alterações da Wiki e atualizar o banco sem precisar cadastrar Pokémon manualmente.</p></div>
     </section>
   </main>
-  <footer>idleDEX Calculator V12.8 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
-  <script src="app.js?v=12.8"></script>
-  <script src="pokemon-thumbnails.js?v=12.8"></script>
+  <footer>idleDEX Calculator V12.9 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
+  <script src="app.js?v=12.9"></script>
+  <script src="pokemon-thumbnails.js?v=12.9"></script>
 </body>
 </html>
