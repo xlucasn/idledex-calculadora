@@ -3,33 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V13.0">
-  <title>idleDEX Calculator V13.0</title>
-  <link rel="stylesheet" href="style.css?v=13.0">
+  <meta name="description" content="Calculadora e planejador de farm para idleDEX — V13.1">
+  <title>idleDEX Calculator V13.1</title>
+  <link rel="stylesheet" href="style.css?v=13.1">
 </head>
 <body>
   <header class="topbar">
     <div>
       <span class="eyebrow">idleDEX</span>
-      <h1>Calculator <span>V13.0</span></h1>
-      <p>Captura • XP • Silver</p>
+      <h1>Calculator <span>V13.1</span></h1>
+      <p>XP • Captura • Silver</p>
     </div>
-    <div class="version">V13.0</div>
+    <div class="version">V13.1</div>
   </header>
   <main class="container">
     <nav class="tabs" aria-label="Ferramentas">
-      <button class="tab active" data-tab="capture">🔎 Pokémon</button>
-      <button class="tab" data-tab="xp">⚔️ XP</button>
+      <button class="tab active" data-tab="xp">⚔️ XP</button>
+      <button class="tab" data-tab="capture">🔎 Pokémon</button>
       <button class="tab" data-tab="silver">💰 Silver</button>
       <button class="tab" data-tab="about">ℹ️ Dados</button>
     </nav>
-    <section id="capture" class="panel active">
-      <div class="hero"><h2>Onde encontrar?</h2><p>Selecione qualquer Pokémon do banco oficial para ver os mapas e a maior chance de encontro.</p></div>
-      <label>Pokémon<input id="captureSearch" list="pokemonList" placeholder="Digite o nome ou selecione..." autocomplete="off"></label>
-      <datalist id="pokemonList"></datalist><div id="captureResult" class="results empty">Digite ou selecione um Pokémon.</div>
-    </section>
-    <section id="xp" class="panel">
-      <div class="hero"><h2>Onde upar meu Pokémon?</h2><p>Informe o Pokémon e o nível atual. Depois selecione o último mapa que você já liberou no jogo. O sistema não recomendará mapas além desse limite.</p></div>
+    <section id="xp" class="panel active">
+      <div class="hero"><h2>Onde upar meu Pokémon?</h2><p>Informe o Pokémon e o nível atual. Depois selecione o último mapa que você já liberou no jogo. O sistema retornará somente o melhor mapa dentro do limite e mostrará toda a fauna cadastrada.</p></div>
       <div class="grid2"><label>Pokémon<input id="xpPokemon" list="pokemonListXp" placeholder="Ex.: Slaking" autocomplete="off"></label><label>Nível atual<input id="xpLevel" type="number" min="1" max="100" value="54"></label></div>
       <datalist id="pokemonListXp"></datalist>
       <label>Até onde você já liberou?<select id="xpMap"></select></label>
@@ -37,19 +32,24 @@
       <button id="xpCalc" class="primary">Encontrar melhor mapa</button><div id="xpResult" class="results"></div>
       <div class="card warning-card"><strong>⚠️ Sobre “sem chance de wipe”</strong><p>Esta versão usa um filtro conservador baseado no nível máximo dos selvagens. Isso evita recomendar um mapa acima do nível informado, mas ainda <strong>não é uma garantia matemática de wipe zero</strong>, porque a Wiki não expõe aqui um simulador completo de batalha do time.</p><p class="muted">A análise real de risco poderá ser refinada com fauna, golpes, stats e regras de combate.</p></div>
     </section>
+    <section id="capture" class="panel">
+      <div class="hero"><h2>Onde encontrar?</h2><p>Selecione qualquer Pokémon do banco oficial para ver somente o mapa com maior chance de encontro.</p></div>
+      <label>Pokémon<input id="captureSearch" list="pokemonList" placeholder="Digite o nome ou selecione..." autocomplete="off"></label>
+      <datalist id="pokemonList"></datalist><div id="captureResult" class="results empty">Digite ou selecione um Pokémon.</div>
+    </section>
     <section id="silver" class="panel">
       <div class="hero"><h2>Farm de Silver</h2><p>Fontes separadas: batalha e Coletor. Os valores do Coletor vêm da Wiki oficial.</p></div>
       <div class="card"><h3>⚔️ Silver por batalha</h3><div class="grid2"><label>Nível do Pokémon<input id="silverLevel" type="number" min="1" max="100" value="54"></label><label>Silver por vitória<input id="silverPerWin" type="number" min="0" value="0"></label></div><div class="grid2"><label>Vitórias por hora<input id="winsHour" type="number" min="0" value="60"></label><label>Bônus de Silver<select id="silverBonus"><option value="0">Nenhum</option><option value="25">+25% — Bênção da Prata</option></select></div><button id="silverCalc" class="primary">Calcular batalha</button><div id="silverResult" class="results"></div></div>
       <div class="card"><h3>📦 Silver dos Coletores</h3><div class="grid2"><label>Nível do treinador<input id="collectorTrainerLevel" type="number" min="1" max="100" value="50"></label><label>Entregas por janela<input id="collectorDeliveries" type="number" min="0" max="4" value="4"></label></div><label>Janelas de 6h consideradas<input id="collectorWindows" type="number" min="1" max="28" value="4"></label><button id="collectorCalc" class="primary">Calcular Coletores</button><div id="collectorResult" class="results"></div></div>
     </section>
     <section id="about" class="panel">
-      <div class="hero"><h2>Sobre a V13.0</h2><p>Interface compacta para visualizar a fauna do mapa de forma horizontal.</p></div>
+      <div class="hero"><h2>Sobre a V13.1</h2><p>Interface compacta para o planejador de XP, com um único mapa recomendado e fauna organizada em colunas.</p></div>
       <div class="card"><strong>Banco de Pokémon</strong><p>O atualizador automático consulta as páginas de espécies da Wiki oficial e reconstrói a lista de Pokémon, mapas, níveis, raridade e chance.</p><p class="muted">A Wiki informa que seus números são gerados diretamente dos arquivos do jogo a cada versão.</p></div>
       <div class="card"><strong>Atualização automática</strong><p>O repositório possui uma rotina diária para buscar alterações da Wiki e atualizar o banco sem precisar cadastrar Pokémon manualmente.</p></div>
     </section>
   </main>
-  <footer>idleDEX Calculator V13.0 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
-  <script src="app.js?v=13.0"></script>
-  <script src="pokemon-thumbnails.js?v=13.0"></script>
+  <footer>idleDEX Calculator V13.1 • projeto de fã • sem vínculo com Nintendo, Game Freak ou The Pokémon Company</footer>
+  <script src="app.js?v=13.1"></script>
+  <script src="pokemon-thumbnails.js?v=13.1"></script>
 </body>
 </html>
