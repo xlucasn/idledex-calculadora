@@ -492,6 +492,40 @@
       ]
     },
     {
+      "id": 6,
+      "name": "Charizard",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 38 â Caverna de Pedra",
+          "min": 38,
+          "max": 46,
+          "rarity": "Rare",
+          "chance": 0.4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Charizard",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 38 â Caverna de Pedra",
+          "min": 38,
+          "max": 46,
+          "rarity": "Raro",
+          "chance": 0.4
+        }
+      ]
+    },
+    {
       "id": 7,
       "name": "Squirtle",
       "types": [
@@ -1833,6 +1867,43 @@
       ]
     },
     {
+      "id": 24,
+      "name": "Arbok",
+      "types": [
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Caverna Celeste",
+          "min": 73,
+          "max": 81,
+          "rarity": "Comum",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 27 â LamaÃ§al Verde",
+          "min": 22,
+          "max": 27,
+          "rarity": "Comum",
+          "chance": 14.0
+        },
+        {
+          "name": "Rota 26 â Mangue Denso",
+          "min": 22,
+          "max": 25,
+          "rarity": "Comum",
+          "chance": 12.8
+        },
+        {
+          "name": "Rota 30 â Trilha Sufocada",
+          "min": 25,
+          "max": 31,
+          "rarity": "Comum",
+          "chance": 11.6
+        }
+      ]
+    },
+    {
       "id": 25,
       "name": "Pikachu",
       "types": [
@@ -1851,6 +1922,29 @@
           "min": 42,
           "max": 50,
           "rarity": "Rare",
+          "chance": 0.79
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Pikachu",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Usina Abandonada",
+          "min": 60,
+          "max": 68,
+          "rarity": "Comum",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 40 â Sombra das Ãrvores",
+          "min": 42,
+          "max": 50,
+          "rarity": "Raro",
           "chance": 0.79
         }
       ]
@@ -2140,6 +2234,23 @@
           "min": 29,
           "max": 36,
           "rarity": "Common",
+          "chance": 4.91
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Nidoqueen",
+      "types": [
+        "Veneno",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 33 â CoraÃ§Ã£o da Mata",
+          "min": 29,
+          "max": 36,
+          "rarity": "Comum",
           "chance": 4.91
         }
       ]
@@ -4658,6 +4769,43 @@
       ]
     },
     {
+      "id": 67,
+      "name": "Machoke",
+      "types": [
+        "Lutador"
+      ],
+      "maps": [
+        {
+          "name": "Caverna Celeste",
+          "min": 73,
+          "max": 81,
+          "rarity": "Comum",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 39 â TÃºnel Escavado",
+          "min": 40,
+          "max": 48,
+          "rarity": "Comum",
+          "chance": 5.75
+        },
+        {
+          "name": "Rota 38 â Caverna de Pedra",
+          "min": 38,
+          "max": 46,
+          "rarity": "Comum",
+          "chance": 5.31
+        },
+        {
+          "name": "Cume das Brasas",
+          "min": 62,
+          "max": 70,
+          "rarity": "Incomum",
+          "chance": 3.2
+        }
+      ]
+    },
+    {
       "id": 68,
       "name": "Machamp",
       "types": [
@@ -5184,6 +5332,30 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 2.45
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Graveler",
+      "types": [
+        "Pedra",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 38 â Caverna de Pedra",
+          "min": 38,
+          "max": 46,
+          "rarity": "Common",
+          "chance": 5.31
+        },
+        {
+          "name": "Cume das Brasas",
+          "min": 62,
+          "max": 70,
+          "rarity": "Uncommon",
+          "chance": 3.2
         }
       ]
     },
@@ -6497,6 +6669,37 @@
       ]
     },
     {
+      "id": 91,
+      "name": "Cloyster",
+      "types": [
+        "Água",
+        "Gelo"
+      ],
+      "maps": [
+        {
+          "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
+          "min": 35,
+          "max": 43,
+          "rarity": "Comum",
+          "chance": 10.9
+        },
+        {
+          "name": "Rota 36 â VÃ¡rzea Sombria",
+          "min": 33,
+          "max": 41,
+          "rarity": "Comum",
+          "chance": 10.1
+        },
+        {
+          "name": "Ilhas Espuma",
+          "min": 58,
+          "max": 66,
+          "rarity": "Incomum",
+          "chance": 2.67
+        }
+      ]
+    },
+    {
       "id": 92,
       "name": "Gastly",
       "types": [
@@ -6627,6 +6830,51 @@
           "min": 68,
           "max": 76,
           "rarity": "Uncommon",
+          "chance": 3.2
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Haunter",
+      "types": [
+        "Fantasma",
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 29 â Lago das Correntezas",
+          "min": 25,
+          "max": 30,
+          "rarity": "Comum",
+          "chance": 9.39
+        },
+        {
+          "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
+          "min": 35,
+          "max": 43,
+          "rarity": "Comum",
+          "chance": 5.68
+        },
+        {
+          "name": "Rota 35 â Brejo dos Sapos",
+          "min": 32,
+          "max": 39,
+          "rarity": "Comum",
+          "chance": 5.31
+        },
+        {
+          "name": "Rota 36 â VÃ¡rzea Sombria",
+          "min": 33,
+          "max": 41,
+          "rarity": "Comum",
+          "chance": 5.23
+        },
+        {
+          "name": "Torre do Sino",
+          "min": 68,
+          "max": 76,
+          "rarity": "Incomum",
           "chance": 3.2
         }
       ]
@@ -7116,6 +7364,29 @@
           "min": 60,
           "max": 68,
           "rarity": "Uncommon",
+          "chance": 3.2
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Electrode",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 40 â Sombra das Ãrvores",
+          "min": 42,
+          "max": 50,
+          "rarity": "Comum",
+          "chance": 3.96
+        },
+        {
+          "name": "Usina Abandonada",
+          "min": 60,
+          "max": 68,
+          "rarity": "Incomum",
           "chance": 3.2
         }
       ]
@@ -7745,6 +8016,99 @@
           "min": 3,
           "max": 8,
           "rarity": "Common",
+          "chance": 0.87
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Koffing",
+      "types": [
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 11 â Bosque dos Vaga-lumes",
+          "min": 5,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 12 â RefÃºgio Verde",
+          "min": 6,
+          "max": 11,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 16 â BaÃ­a Serena",
+          "min": 9,
+          "max": 14,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 20 â PÃ¢ntano Nebuloso",
+          "min": 13,
+          "max": 18,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 19 â Gruta dos Morcegos",
+          "min": 12,
+          "max": 17,
+          "rarity": "Comum",
+          "chance": 16.1
+        },
+        {
+          "name": "Rota 31 â Mata Fechada",
+          "min": 26,
+          "max": 33,
+          "rarity": "Comum",
+          "chance": 14.7
+        },
+        {
+          "name": "Rota 32 â Selva dos CipÃ³s",
+          "min": 27,
+          "max": 34,
+          "rarity": "Comum",
+          "chance": 14.7
+        },
+        {
+          "name": "Rota 33 â CoraÃ§Ã£o da Mata",
+          "min": 29,
+          "max": 36,
+          "rarity": "Comum",
+          "chance": 6.38
+        },
+        {
+          "name": "Rota 34 â Selva Umbrosa",
+          "min": 30,
+          "max": 37,
+          "rarity": "Comum",
+          "chance": 6.3
+        },
+        {
+          "name": "Rota 35 â Brejo dos Sapos",
+          "min": 32,
+          "max": 39,
+          "rarity": "Comum",
+          "chance": 5.31
+        },
+        {
+          "name": "Rota 40 â Sombra das Ãrvores",
+          "min": 42,
+          "max": 50,
+          "rarity": "Comum",
+          "chance": 5.15
+        },
+        {
+          "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
           "chance": 0.87
         }
       ]
@@ -8584,6 +8948,29 @@
           "max": 8,
           "rarity": "Comum",
           "chance": 0.87
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "Seaking",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Lago do Festival de Pesca",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 36 â VÃ¡rzea Sombria",
+          "min": 33,
+          "max": 41,
+          "rarity": "Common",
+          "chance": 4.02
         }
       ]
     },
@@ -9502,6 +9889,51 @@
       ]
     },
     {
+      "id": 130,
+      "name": "Gyarados",
+      "types": [
+        "Água",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 22 â Ãguas Profundas",
+          "min": 20,
+          "max": 20,
+          "rarity": "Comum",
+          "chance": 15.6
+        },
+        {
+          "name": "Rota 25 â Charco Raso",
+          "min": 20,
+          "max": 24,
+          "rarity": "Comum",
+          "chance": 15.6
+        },
+        {
+          "name": "Rota 23 â Praia dos Caranguejos",
+          "min": 20,
+          "max": 22,
+          "rarity": "Comum",
+          "chance": 14.2
+        },
+        {
+          "name": "Rota 24 â FalÃ©sia Costeira",
+          "min": 20,
+          "max": 23,
+          "rarity": "Comum",
+          "chance": 14.0
+        },
+        {
+          "name": "Caverna Celeste",
+          "min": 73,
+          "max": 81,
+          "rarity": "Ãpico",
+          "chance": 0.33
+        }
+      ]
+    },
+    {
       "id": 131,
       "name": "Lapras",
       "types": [
@@ -9882,6 +10314,71 @@
           "min": 73,
           "max": 79,
           "rarity": "Rare",
+          "chance": 1.0
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Porygon",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 1 â Floresta Nascente",
+          "min": 2,
+          "max": 4,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 2 â Bosque dos Brotos",
+          "min": 2,
+          "max": 5,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 4 â Mata dos CipÃ³s",
+          "min": 2,
+          "max": 6,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 7 â Lago Espelhado",
+          "min": 3,
+          "max": 7,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Ultra EspaÃ§o I",
+          "min": 58,
+          "max": 64,
+          "rarity": "Raro",
+          "chance": 1.0
+        },
+        {
+          "name": "Ultra EspaÃ§o II",
+          "min": 63,
+          "max": 69,
+          "rarity": "Raro",
+          "chance": 1.0
+        },
+        {
+          "name": "Ultra EspaÃ§o III",
+          "min": 68,
+          "max": 74,
+          "rarity": "Raro",
+          "chance": 1.0
+        },
+        {
+          "name": "Ultra EspaÃ§o IV",
+          "min": 73,
+          "max": 79,
+          "rarity": "Raro",
           "chance": 1.0
         }
       ]
@@ -11346,6 +11843,128 @@
           "name": "Rota 41 â Caverna Ãmida",
           "min": 4,
           "max": 7,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 42 â Galeria de Quartzo",
+          "min": 4,
+          "max": 7,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 43 â SopÃ© Verdejante",
+          "min": 4,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 45 â Trilha da Serra",
+          "min": 5,
+          "max": 9,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 52 â Passagem Estreita",
+          "min": 10,
+          "max": 15,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 53 â Encosta Gramada",
+          "min": 11,
+          "max": 16,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 51 â Caverna dos Ecos",
+          "min": 9,
+          "max": 14,
+          "rarity": "Common",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 50 â Costa dos NenÃºfares",
+          "min": 9,
+          "max": 13,
+          "rarity": "Common",
+          "chance": 16.7
+        },
+        {
+          "name": "Torre do Sino",
+          "min": 68,
+          "max": 76,
+          "rarity": "Common",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 57 â PlanÃ­cie Branca",
+          "min": 15,
+          "max": 20,
+          "rarity": "Common",
+          "chance": 9.2
+        },
+        {
+          "name": "Rota 61 â Nevasca Suave",
+          "min": 19,
+          "max": 25,
+          "rarity": "Common",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 62 â Campo dos Flocos",
+          "min": 21,
+          "max": 27,
+          "rarity": "Common",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 71 â Planalto Polar",
+          "min": 37,
+          "max": 44,
+          "rarity": "Common",
+          "chance": 6.84
+        },
+        {
+          "name": "Rota 63 â Colina Congelada",
+          "min": 22,
+          "max": 28,
+          "rarity": "Common",
+          "chance": 6.75
+        },
+        {
+          "name": "Rota 65 â Despenhadeiro Gelado",
+          "min": 25,
+          "max": 31,
+          "rarity": "Common",
+          "chance": 6.75
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "name": "Hoothoot",
+      "types": [
+        "Normal",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 41 â Caverna Ãmida",
+          "min": 4,
+          "max": 7,
           "rarity": "Comum",
           "chance": 20.0
         },
@@ -12275,6 +12894,100 @@
       ]
     },
     {
+      "id": 168,
+      "name": "Ariados",
+      "types": [
+        "Inseto",
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 80 â RuÃ­nas Cobertas",
+          "min": 57,
+          "max": 65,
+          "rarity": "Comum",
+          "chance": 18.5
+        },
+        {
+          "name": "Rota 79 â SalÃ£o das Estalactites",
+          "min": 55,
+          "max": 63,
+          "rarity": "Comum",
+          "chance": 15.5
+        },
+        {
+          "name": "Rota 60 â Charco Profundo",
+          "min": 22,
+          "max": 24,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 74 â Espelho de Gelo",
+          "min": 44,
+          "max": 51,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 75 â Caverna Funda",
+          "min": 46,
+          "max": 53,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 68 â Geleira Azul",
+          "min": 32,
+          "max": 38,
+          "rarity": "Comum",
+          "chance": 14.2
+        },
+        {
+          "name": "Rota 77 â Cume Silencioso",
+          "min": 50,
+          "max": 58,
+          "rarity": "Comum",
+          "chance": 13.8
+        },
+        {
+          "name": "Rota 64 â Vale do Inverno",
+          "min": 24,
+          "max": 30,
+          "rarity": "Comum",
+          "chance": 13.6
+        },
+        {
+          "name": "Rota 71 â Planalto Polar",
+          "min": 37,
+          "max": 44,
+          "rarity": "Comum",
+          "chance": 13.2
+        },
+        {
+          "name": "Rota 63 â Colina Congelada",
+          "min": 22,
+          "max": 28,
+          "rarity": "Comum",
+          "chance": 13.0
+        },
+        {
+          "name": "Rota 66 â Colinas Ventosas",
+          "min": 27,
+          "max": 33,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 67 â Serra dos FalcÃµes",
+          "min": 29,
+          "max": 35,
+          "rarity": "Comum",
+          "chance": 12.7
+        }
+      ]
+    },
+    {
       "id": 169,
       "name": "Crobat",
       "types": [
@@ -12305,6 +13018,37 @@
           "max": 65,
           "rarity": "Comum",
           "chance": 18.5
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "name": "Chinchou",
+      "types": [
+        "Água",
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 44 â Recife Submerso",
+          "min": 4,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 50 â Costa dos NenÃºfares",
+          "min": 9,
+          "max": 13,
+          "rarity": "Common",
+          "chance": 16.7
+        },
+        {
+          "name": "Rota 78 â Canal Azul",
+          "min": 52,
+          "max": 60,
+          "rarity": "Common",
+          "chance": 4.54
         }
       ]
     },
@@ -12728,6 +13472,71 @@
           "min": 3,
           "max": 8,
           "rarity": "Uncommon",
+          "chance": 0.59
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "name": "Togepi",
+      "types": [
+        "Fada"
+      ],
+      "maps": [
+        {
+          "name": "Rota 43 â SopÃ© Verdejante",
+          "min": 4,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 48 â Selva Profunda",
+          "min": 7,
+          "max": 11,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 47 â Mata dos Espinhos",
+          "min": 7,
+          "max": 11,
+          "rarity": "Incomum",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 46 â Emaranhado Verde",
+          "min": 6,
+          "max": 10,
+          "rarity": "Incomum",
+          "chance": 6.67
+        },
+        {
+          "name": "Rota 75 â Caverna Funda",
+          "min": 46,
+          "max": 53,
+          "rarity": "Incomum",
+          "chance": 3.08
+        },
+        {
+          "name": "Rota 52 â Passagem Estreita",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.73
+        },
+        {
+          "name": "Rota 79 â SalÃ£o das Estalactites",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.65
+        },
+        {
+          "name": "Rota 77 â Cume Silencioso",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
           "chance": 0.59
         }
       ]
@@ -13260,6 +14069,23 @@
           "name": "Rota 60 â Charco Profundo",
           "min": 20,
           "max": 24,
+          "rarity": "Common",
+          "chance": 14.4
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "name": "Azumarill",
+      "types": [
+        "Água",
+        "Fada"
+      ],
+      "maps": [
+        {
+          "name": "Rota 60 â Charco Profundo",
+          "min": 20,
+          "max": 24,
           "rarity": "Comum",
           "chance": 14.4
         }
@@ -13489,6 +14315,142 @@
           "min": 3,
           "max": 8,
           "rarity": "Common",
+          "chance": 1.04
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "name": "Hoppip",
+      "types": [
+        "Planta",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 46 â Emaranhado Verde",
+          "min": 6,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 47 â Mata dos Espinhos",
+          "min": 7,
+          "max": 11,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 52 â Passagem Estreita",
+          "min": 10,
+          "max": 15,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 53 â Encosta Gramada",
+          "min": 11,
+          "max": 16,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 48 â Selva Profunda",
+          "min": 7,
+          "max": 11,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 51 â Caverna dos Ecos",
+          "min": 9,
+          "max": 14,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 55 â Trilha Gelada",
+          "min": 13,
+          "max": 18,
+          "rarity": "Comum",
+          "chance": 8.25
+        },
+        {
+          "name": "Rota 61 â Nevasca Suave",
+          "min": 19,
+          "max": 25,
+          "rarity": "Comum",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 58 â Bosque ImpenetrÃ¡vel",
+          "min": 17,
+          "max": 22,
+          "rarity": "Comum",
+          "chance": 7.38
+        },
+        {
+          "name": "Rota 59 â Mata das Sombras",
+          "min": 18,
+          "max": 23,
+          "rarity": "Comum",
+          "chance": 7.38
+        },
+        {
+          "name": "Rota 69 â Campo de Gelo",
+          "min": 34,
+          "max": 40,
+          "rarity": "Comum",
+          "chance": 3.64
+        },
+        {
+          "name": "Rota 77 â Cume Silencioso",
+          "min": 50,
+          "max": 58,
+          "rarity": "Comum",
+          "chance": 3.31
+        },
+        {
+          "name": "Rota 64 â Vale do Inverno",
+          "min": 24,
+          "max": 30,
+          "rarity": "Comum",
+          "chance": 3.27
+        },
+        {
+          "name": "Rota 66 â Colinas Ventosas",
+          "min": 27,
+          "max": 33,
+          "rarity": "Comum",
+          "chance": 3.04
+        },
+        {
+          "name": "Rota 67 â Serra dos FalcÃµes",
+          "min": 29,
+          "max": 35,
+          "rarity": "Comum",
+          "chance": 3.04
+        },
+        {
+          "name": "Rota 76 â Neve Profunda",
+          "min": 47,
+          "max": 55,
+          "rarity": "Comum",
+          "chance": 2.93
+        },
+        {
+          "name": "Rota 79 â SalÃ£o das Estalactites",
+          "min": 55,
+          "max": 63,
+          "rarity": "Comum",
+          "chance": 1.86
+        },
+        {
+          "name": "Rota 65 â Despenhadeiro Gelado",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
           "chance": 1.04
         }
       ]
@@ -14255,6 +15217,37 @@
       ]
     },
     {
+      "id": 194,
+      "name": "Wooper",
+      "types": [
+        "Água",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 44 â Recife Submerso",
+          "min": 4,
+          "max": 8,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 78 â Canal Azul",
+          "min": 52,
+          "max": 60,
+          "rarity": "Comum",
+          "chance": 4.54
+        }
+      ]
+    },
+    {
       "id": 195,
       "name": "Quagsire",
       "types": [
@@ -14433,6 +15426,65 @@
           "max": 76,
           "rarity": "Ãpico",
           "chance": 0.5
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "name": "Murkrow",
+      "types": [
+        "Sombrio",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 42 â Galeria de Quartzo",
+          "min": 4,
+          "max": 7,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 45 â Trilha da Serra",
+          "min": 5,
+          "max": 9,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 75 â Caverna Funda",
+          "min": 46,
+          "max": 53,
+          "rarity": "Uncommon",
+          "chance": 6.15
+        },
+        {
+          "name": "Rota 55 â Trilha Gelada",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.76
+        },
+        {
+          "name": "Rota 74 â Espelho de Gelo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.76
+        },
+        {
+          "name": "Torre do Sino",
+          "min": 68,
+          "max": 76,
+          "rarity": "Rare",
+          "chance": 0.75
+        },
+        {
+          "name": "Rota 62 â Campo dos Flocos",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.73
         }
       ]
     },
@@ -14678,6 +15730,85 @@
           "min": 57,
           "max": 65,
           "rarity": "Rare",
+          "chance": 3.0
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "name": "Unown",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 51 â Caverna dos Ecos",
+          "min": 9,
+          "max": 14,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 53 â Encosta Gramada",
+          "min": 11,
+          "max": 16,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 56 â Bosque de Inverno",
+          "min": 14,
+          "max": 19,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 64 â Vale do Inverno",
+          "min": 24,
+          "max": 30,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 65 â Despenhadeiro Gelado",
+          "min": 25,
+          "max": 31,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 70 â Lago Congelado",
+          "min": 36,
+          "max": 42,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 73 â Banquisa Eterna",
+          "min": 42,
+          "max": 49,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 75 â Caverna Funda",
+          "min": 46,
+          "max": 53,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 80 â RuÃ­nas Cobertas",
+          "min": 57,
+          "max": 65,
+          "rarity": "Raro",
           "chance": 3.0
         }
       ]
@@ -16618,6 +17749,37 @@
           "name": "Rota 44 â Recife Submerso",
           "min": 4,
           "max": 8,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 78 â Canal Azul",
+          "min": 52,
+          "max": 60,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Uncommon",
+          "chance": 4.85
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "Corsola",
+      "types": [
+        "Água",
+        "Pedra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 44 â Recife Submerso",
+          "min": 4,
+          "max": 8,
           "rarity": "Incomum",
           "chance": 8.0
         },
@@ -16824,6 +17986,86 @@
       ]
     },
     {
+      "id": 225,
+      "name": "Delibird",
+      "types": [
+        "Gelo",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 55 â Trilha Gelada",
+          "min": 13,
+          "max": 18,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 57 â PlanÃ­cie Branca",
+          "min": 15,
+          "max": 20,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 61 â Nevasca Suave",
+          "min": 19,
+          "max": 25,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 63 â Colina Congelada",
+          "min": 22,
+          "max": 28,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 64 â Vale do Inverno",
+          "min": 24,
+          "max": 30,
+          "rarity": "Incomum",
+          "chance": 7.62
+        },
+        {
+          "name": "Rota 54 â Campos Nevados",
+          "min": 12,
+          "max": 17,
+          "rarity": "Incomum",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 56 â Bosque de Inverno",
+          "min": 14,
+          "max": 19,
+          "rarity": "Incomum",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 62 â Campo dos Flocos",
+          "min": 21,
+          "max": 27,
+          "rarity": "Incomum",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 76 â Neve Profunda",
+          "min": 47,
+          "max": 55,
+          "rarity": "Incomum",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 69 â Campo de Gelo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.76
+        }
+      ]
+    },
+    {
       "id": 226,
       "name": "Mantine",
       "types": [
@@ -17636,6 +18878,38 @@
           "max": 13,
           "rarity": "Incomum",
           "chance": 2.56
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "name": "Smeargle",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Uncommon",
+          "chance": 1.94
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "name": "Smeargle",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Incomum",
+          "chance": 1.94
         }
       ]
     },
@@ -17889,6 +19163,22 @@
           "min": 8,
           "max": 12,
           "rarity": "Uncommon",
+          "chance": 1.94
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "name": "Elekid",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 49 â Represa Antiga",
+          "min": 8,
+          "max": 12,
+          "rarity": "Incomum",
           "chance": 1.94
         }
       ]
@@ -18751,6 +20041,44 @@
           "name": "Rota 97 â MarÃ© Baixa",
           "min": 24,
           "max": 29,
+          "rarity": "Rare",
+          "chance": 1.76
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 65,
+          "max": 73,
+          "rarity": "Rare",
+          "chance": 0.64
+        },
+        {
+          "name": "Rota 112 â Corrente Escura",
+          "min": 61,
+          "max": 69,
+          "rarity": "Rare",
+          "chance": 0.56
+        },
+        {
+          "name": "Rota 114 â Fossa Marinha",
+          "min": 68,
+          "max": 76,
+          "rarity": "Rare",
+          "chance": 0.56
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "name": "Marshtomp",
+      "types": [
+        "Água",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 97 â MarÃ© Baixa",
+          "min": 24,
+          "max": 29,
           "rarity": "Raro",
           "chance": 1.76
         },
@@ -19315,6 +20643,51 @@
       ]
     },
     {
+      "id": 267,
+      "name": "Beautifly",
+      "types": [
+        "Inseto",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 84 â Encosta Rochosa",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 91 â SopÃ© do VulcÃ£o",
+          "min": 14,
+          "max": 19,
+          "rarity": "Comum",
+          "chance": 11.8
+        },
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Comum",
+          "chance": 10.7
+        },
+        {
+          "name": "Rota 108 â Veio de MinÃ©rio",
+          "min": 48,
+          "max": 55,
+          "rarity": "Comum",
+          "chance": 9.22
+        },
+        {
+          "name": "Rota 109 â Serra Alta",
+          "min": 52,
+          "max": 59,
+          "rarity": "Comum",
+          "chance": 9.13
+        }
+      ]
+    },
+    {
       "id": 268,
       "name": "Cascoon",
       "types": [
@@ -19683,6 +21056,51 @@
           "max": 62,
           "rarity": "Comum",
           "chance": 3.42
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "name": "Ludicolo",
+      "types": [
+        "Água",
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 97 â MarÃ© Baixa",
+          "min": 24,
+          "max": 29,
+          "rarity": "Common",
+          "chance": 14.5
+        },
+        {
+          "name": "Rota 107 â Jardim de Corais",
+          "min": 45,
+          "max": 52,
+          "rarity": "Common",
+          "chance": 12.3
+        },
+        {
+          "name": "Rota 98 â Costa dos Ventos",
+          "min": 25,
+          "max": 31,
+          "rarity": "Common",
+          "chance": 11.8
+        },
+        {
+          "name": "Rota 99 â Lago Cristalino",
+          "min": 26,
+          "max": 32,
+          "rarity": "Common",
+          "chance": 11.3
+        },
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 10.7
         }
       ]
     },
@@ -20173,6 +21591,79 @@
           "name": "Rota 94 â Muralha CaÃ­da",
           "min": 24,
           "max": 24,
+          "rarity": "Common",
+          "chance": 16.8
+        },
+        {
+          "name": "Rota 96 â Tundra Silenciosa",
+          "min": 24,
+          "max": 27,
+          "rarity": "Common",
+          "chance": 14.9
+        },
+        {
+          "name": "Rota 95 â Campos do Norte",
+          "min": 24,
+          "max": 26,
+          "rarity": "Common",
+          "chance": 14.7
+        },
+        {
+          "name": "Rota 101 â Cripta Aberta",
+          "min": 29,
+          "max": 35,
+          "rarity": "Common",
+          "chance": 13.8
+        },
+        {
+          "name": "Rota 100 â Aurora Glacial",
+          "min": 28,
+          "max": 34,
+          "rarity": "Common",
+          "chance": 12.3
+        },
+        {
+          "name": "Rota 102 â Cidade Perdida",
+          "min": 31,
+          "max": 37,
+          "rarity": "Common",
+          "chance": 12.2
+        },
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 10.7
+        },
+        {
+          "name": "Rota 108 â Veio de MinÃ©rio",
+          "min": 48,
+          "max": 55,
+          "rarity": "Common",
+          "chance": 9.22
+        },
+        {
+          "name": "Rota 109 â Serra Alta",
+          "min": 52,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 9.13
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "name": "Shiftry",
+      "types": [
+        "Planta",
+        "Sombrio"
+      ],
+      "maps": [
+        {
+          "name": "Rota 94 â Muralha CaÃ­da",
+          "min": 24,
+          "max": 24,
           "rarity": "Comum",
           "chance": 16.8
         },
@@ -20324,6 +21815,68 @@
           "max": 80,
           "rarity": "Common",
           "chance": 16.1
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "name": "Swellow",
+      "types": [
+        "Normal",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 115 â CÃ¢nion Vermelho",
+          "min": 72,
+          "max": 80,
+          "rarity": "Comum",
+          "chance": 16.1
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "name": "Wingull",
+      "types": [
+        "Água",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 107 â Jardim de Corais",
+          "min": 45,
+          "max": 52,
+          "rarity": "Common",
+          "chance": 6.42
+        },
+        {
+          "name": "Rota 98 â Costa dos Ventos",
+          "min": 25,
+          "max": 31,
+          "rarity": "Common",
+          "chance": 6.12
+        },
+        {
+          "name": "Rota 112 â Corrente Escura",
+          "min": 61,
+          "max": 69,
+          "rarity": "Common",
+          "chance": 4.74
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 65,
+          "max": 73,
+          "rarity": "Common",
+          "chance": 4.6
+        },
+        {
+          "name": "Rota 97 â MarÃ© Baixa",
+          "min": 24,
+          "max": 29,
+          "rarity": "Common",
+          "chance": 2.9
         }
       ]
     },
@@ -20732,6 +22285,44 @@
           "min": 37,
           "max": 43,
           "rarity": "Uncommon",
+          "chance": 3.68
+        }
+      ]
+    },
+    {
+      "id": 282,
+      "name": "Gardevoir",
+      "types": [
+        "Psíquico",
+        "Fada"
+      ],
+      "maps": [
+        {
+          "name": "Rota 102 â Cidade Perdida",
+          "min": 31,
+          "max": 37,
+          "rarity": "Incomum",
+          "chance": 5.82
+        },
+        {
+          "name": "Rota 101 â Cripta Aberta",
+          "min": 30,
+          "max": 35,
+          "rarity": "Incomum",
+          "chance": 5.61
+        },
+        {
+          "name": "Rota 103 â Altar Partido",
+          "min": 34,
+          "max": 40,
+          "rarity": "Incomum",
+          "chance": 3.76
+        },
+        {
+          "name": "Rota 104 â Torre Tombada",
+          "min": 37,
+          "max": 43,
+          "rarity": "Incomum",
           "chance": 3.68
         }
       ]
@@ -21332,6 +22923,51 @@
       ]
     },
     {
+      "id": 292,
+      "name": "Shedinja",
+      "types": [
+        "Inseto",
+        "Fantasma"
+      ],
+      "maps": [
+        {
+          "name": "Rota 93 â SalÃ£o dos Ecos",
+          "min": 20,
+          "max": 22,
+          "rarity": "Incomum",
+          "chance": 4.0
+        },
+        {
+          "name": "Rota 103 â Altar Partido",
+          "min": 34,
+          "max": 40,
+          "rarity": "Incomum",
+          "chance": 3.76
+        },
+        {
+          "name": "Rota 104 â Torre Tombada",
+          "min": 37,
+          "max": 43,
+          "rarity": "Incomum",
+          "chance": 3.68
+        },
+        {
+          "name": "Rota 106 â PlanÃ­cie Ãrida",
+          "min": 42,
+          "max": 48,
+          "rarity": "Incomum",
+          "chance": 3.6
+        },
+        {
+          "name": "Rota 105 â Terra Rachada",
+          "min": 39,
+          "max": 45,
+          "rarity": "Incomum",
+          "chance": 3.11
+        }
+      ]
+    },
+    {
       "id": 293,
       "name": "Whismur",
       "types": [
@@ -21620,6 +23256,71 @@
           "max": 8,
           "rarity": "Comum",
           "chance": 0.99
+        }
+      ]
+    },
+    {
+      "id": 299,
+      "name": "Nosepass",
+      "types": [
+        "Pedra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 81 â Caverna Silenciosa",
+          "min": 6,
+          "max": 9,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 83 â Passo da Serra",
+          "min": 6,
+          "max": 10,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 85 â Gruta de Cristal",
+          "min": 7,
+          "max": 11,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 95 â Campos do Norte",
+          "min": 21,
+          "max": 26,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 96 â Tundra Silenciosa",
+          "min": 22,
+          "max": 27,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 100 â Aurora Glacial",
+          "min": 28,
+          "max": 34,
+          "rarity": "Uncommon",
+          "chance": 6.4
+        },
+        {
+          "name": "Rota 92 â Campos de Cinza",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.73
+        },
+        {
+          "name": "Rota 105 â Terra Rachada",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.31
         }
       ]
     },
@@ -22186,6 +23887,124 @@
       ]
     },
     {
+      "id": 306,
+      "name": "Aggron",
+      "types": [
+        "Aço",
+        "Pedra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 105 â Terra Rachada",
+          "min": 42,
+          "max": 45,
+          "rarity": "Incomum",
+          "chance": 1.24
+        }
+      ]
+    },
+    {
+      "id": 307,
+      "name": "Meditite",
+      "types": [
+        "Lutador",
+        "Psíquico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 81 â Caverna Silenciosa",
+          "min": 6,
+          "max": 9,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 82 â Mirante Verde",
+          "min": 6,
+          "max": 9,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 83 â Passo da Serra",
+          "min": 6,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 92 â Campos de Cinza",
+          "min": 16,
+          "max": 21,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 89 â Templo em RuÃ­nas",
+          "min": 12,
+          "max": 16,
+          "rarity": "Common",
+          "chance": 19.2
+        },
+        {
+          "name": "Rota 88 â PÃ¡tio Esquecido",
+          "min": 11,
+          "max": 15,
+          "rarity": "Common",
+          "chance": 17.7
+        },
+        {
+          "name": "Rota 94 â Muralha CaÃ­da",
+          "min": 19,
+          "max": 24,
+          "rarity": "Common",
+          "chance": 16.8
+        },
+        {
+          "name": "Rota 103 â Altar Partido",
+          "min": 34,
+          "max": 40,
+          "rarity": "Common",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 104 â Torre Tombada",
+          "min": 37,
+          "max": 43,
+          "rarity": "Common",
+          "chance": 7.38
+        },
+        {
+          "name": "Rota 105 â Terra Rachada",
+          "min": 39,
+          "max": 45,
+          "rarity": "Common",
+          "chance": 7.17
+        },
+        {
+          "name": "Rota 108 â Veio de MinÃ©rio",
+          "min": 48,
+          "max": 55,
+          "rarity": "Common",
+          "chance": 4.79
+        },
+        {
+          "name": "Rota 109 â Serra Alta",
+          "min": 52,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 4.75
+        },
+        {
+          "name": "Rota 111 â Vale da Poeira",
+          "min": 58,
+          "max": 66,
+          "rarity": "Common",
+          "chance": 4.35
+        }
+      ]
+    },
+    {
       "id": 307,
       "name": "Meditite",
       "types": [
@@ -22447,6 +24266,22 @@
           "name": "Rota 99 â Lago Cristalino",
           "min": 26,
           "max": 32,
+          "rarity": "Common",
+          "chance": 4.52
+        }
+      ]
+    },
+    {
+      "id": 310,
+      "name": "Manectric",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 99 â Lago Cristalino",
+          "min": 26,
+          "max": 32,
           "rarity": "Comum",
           "chance": 4.52
         }
@@ -22561,6 +24396,46 @@
           "max": 32,
           "rarity": "Uncommon",
           "chance": 1.73
+        }
+      ]
+    },
+    {
+      "id": 314,
+      "name": "Illumise",
+      "types": [
+        "Inseto"
+      ],
+      "maps": [
+        {
+          "name": "Rota 99 â Lago Cristalino",
+          "min": 26,
+          "max": 32,
+          "rarity": "Incomum",
+          "chance": 1.73
+        }
+      ]
+    },
+    {
+      "id": 315,
+      "name": "Roselia",
+      "types": [
+        "Planta",
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 105 â Terra Rachada",
+          "min": 39,
+          "max": 45,
+          "rarity": "Common",
+          "chance": 13.8
+        },
+        {
+          "name": "Rota 99 â Lago Cristalino",
+          "min": 26,
+          "max": 32,
+          "rarity": "Common",
+          "chance": 11.3
         }
       ]
     },
@@ -22721,6 +24596,37 @@
           "min": 3,
           "max": 8,
           "rarity": "Common",
+          "chance": 1.15
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "name": "Carvanha",
+      "types": [
+        "Água",
+        "Sombrio"
+      ],
+      "maps": [
+        {
+          "name": "Rota 97 â MarÃ© Baixa",
+          "min": 24,
+          "max": 29,
+          "rarity": "Comum",
+          "chance": 14.5
+        },
+        {
+          "name": "Rota 99 â Lago Cristalino",
+          "min": 26,
+          "max": 32,
+          "rarity": "Comum",
+          "chance": 5.88
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
           "chance": 1.15
         }
       ]
@@ -23620,6 +25526,120 @@
           "name": "Rota 90 â Trilha das RaÃ­zes",
           "min": 13,
           "max": 18,
+          "rarity": "Common",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 89 â Templo em RuÃ­nas",
+          "min": 12,
+          "max": 16,
+          "rarity": "Common",
+          "chance": 19.2
+        },
+        {
+          "name": "Rota 88 â PÃ¡tio Esquecido",
+          "min": 11,
+          "max": 15,
+          "rarity": "Common",
+          "chance": 17.7
+        },
+        {
+          "name": "Rota 93 â SalÃ£o dos Ecos",
+          "min": 17,
+          "max": 22,
+          "rarity": "Common",
+          "chance": 17.1
+        },
+        {
+          "name": "Rota 106 â PlanÃ­cie Ãrida",
+          "min": 42,
+          "max": 48,
+          "rarity": "Common",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 101 â Cripta Aberta",
+          "min": 29,
+          "max": 35,
+          "rarity": "Common",
+          "chance": 7.17
+        },
+        {
+          "name": "Rota 100 â Aurora Glacial",
+          "min": 28,
+          "max": 34,
+          "rarity": "Common",
+          "chance": 6.42
+        },
+        {
+          "name": "Rota 102 â Cidade Perdida",
+          "min": 31,
+          "max": 37,
+          "rarity": "Common",
+          "chance": 6.34
+        },
+        {
+          "name": "Rota 108 â Veio de MinÃ©rio",
+          "min": 48,
+          "max": 55,
+          "rarity": "Common",
+          "chance": 4.79
+        },
+        {
+          "name": "Rota 109 â Serra Alta",
+          "min": 52,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 4.75
+        },
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 3.42
+        },
+        {
+          "name": "Rota 85 â Gruta de Cristal",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.57
+        },
+        {
+          "name": "Rota 87 â Colunas Antigas",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.57
+        },
+        {
+          "name": "Rota 96 â Tundra Silenciosa",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.19
+        },
+        {
+          "name": "Rota 95 â Campos do Norte",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.18
+        }
+      ]
+    },
+    {
+      "id": 331,
+      "name": "Cacnea",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 90 â Trilha das RaÃ­zes",
+          "min": 13,
+          "max": 18,
           "rarity": "Comum",
           "chance": 20.0
         },
@@ -24042,6 +26062,36 @@
       ]
     },
     {
+      "id": 336,
+      "name": "Seviper",
+      "types": [
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 109 â Serra Alta",
+          "min": 52,
+          "max": 59,
+          "rarity": "Incomum",
+          "chance": 6.4
+        },
+        {
+          "name": "Rota 108 â Veio de MinÃ©rio",
+          "min": 48,
+          "max": 55,
+          "rarity": "Incomum",
+          "chance": 6.15
+        }
+      ]
+    },
+    {
       "id": 337,
       "name": "Lunatone",
       "types": [
@@ -24448,6 +26498,44 @@
           "max": 73,
           "rarity": "Comum",
           "chance": 4.6
+        }
+      ]
+    },
+    {
+      "id": 340,
+      "name": "Whiscash",
+      "types": [
+        "Água",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 112 â Corrente Escura",
+          "min": 61,
+          "max": 69,
+          "rarity": "Common",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 114 â Fossa Marinha",
+          "min": 68,
+          "max": 76,
+          "rarity": "Common",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 65,
+          "max": 73,
+          "rarity": "Common",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 98 â Costa dos Ventos",
+          "min": 30,
+          "max": 31,
+          "rarity": "Common",
+          "chance": 11.8
         }
       ]
     },
@@ -24938,6 +27026,65 @@
           "min": 58,
           "max": 66,
           "rarity": "Common",
+          "chance": 13.6
+        }
+      ]
+    },
+    {
+      "id": 344,
+      "name": "Claydol",
+      "types": [
+        "Terra",
+        "Psíquico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 115 â CÃ¢nion Vermelho",
+          "min": 72,
+          "max": 80,
+          "rarity": "Comum",
+          "chance": 16.1
+        },
+        {
+          "name": "Ultra EspaÃ§o I",
+          "min": 58,
+          "max": 64,
+          "rarity": "Incomum",
+          "chance": 16.0
+        },
+        {
+          "name": "Ultra EspaÃ§o II",
+          "min": 63,
+          "max": 69,
+          "rarity": "Incomum",
+          "chance": 16.0
+        },
+        {
+          "name": "Ultra EspaÃ§o III",
+          "min": 68,
+          "max": 74,
+          "rarity": "Incomum",
+          "chance": 16.0
+        },
+        {
+          "name": "Ultra EspaÃ§o IV",
+          "min": 73,
+          "max": 79,
+          "rarity": "Incomum",
+          "chance": 16.0
+        },
+        {
+          "name": "Rota 106 â PlanÃ­cie Ãrida",
+          "min": 42,
+          "max": 48,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 111 â Vale da Poeira",
+          "min": 58,
+          "max": 66,
+          "rarity": "Comum",
           "chance": 13.6
         }
       ]
@@ -25483,6 +27630,50 @@
       ]
     },
     {
+      "id": 355,
+      "name": "Duskull",
+      "types": [
+        "Fantasma"
+      ],
+      "maps": [
+        {
+          "name": "Rota 87 â Colunas Antigas",
+          "min": 10,
+          "max": 14,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 93 â SalÃ£o dos Ecos",
+          "min": 17,
+          "max": 22,
+          "rarity": "Comum",
+          "chance": 17.1
+        },
+        {
+          "name": "Rota 103 â Altar Partido",
+          "min": 34,
+          "max": 40,
+          "rarity": "Comum",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 106 â PlanÃ­cie Ãrida",
+          "min": 42,
+          "max": 48,
+          "rarity": "Comum",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 104 â Torre Tombada",
+          "min": 37,
+          "max": 43,
+          "rarity": "Comum",
+          "chance": 7.38
+        }
+      ]
+    },
+    {
       "id": 356,
       "name": "Dusclops",
       "types": [
@@ -25805,6 +27996,50 @@
           "max": 8,
           "rarity": "Raro",
           "chance": 0.5
+        }
+      ]
+    },
+    {
+      "id": 360,
+      "name": "Wynaut",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 94 â Muralha CaÃ­da",
+          "min": 19,
+          "max": 24,
+          "rarity": "Uncommon",
+          "chance": 6.15
+        },
+        {
+          "name": "Rota 102 â Cidade Perdida",
+          "min": 31,
+          "max": 37,
+          "rarity": "Uncommon",
+          "chance": 5.82
+        },
+        {
+          "name": "Rota 101 â Cripta Aberta",
+          "min": 29,
+          "max": 35,
+          "rarity": "Uncommon",
+          "chance": 5.61
+        },
+        {
+          "name": "Rota 88 â PÃ¡tio Esquecido",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.76
+        },
+        {
+          "name": "Rota 104 â Torre Tombada",
+          "min": 3,
+          "max": 8,
+          "rarity": "Uncommon",
+          "chance": 0.37
         }
       ]
     },
@@ -26234,6 +28469,37 @@
           "name": "Rota 112 â Corrente Escura",
           "min": 61,
           "max": 69,
+          "rarity": "Common",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 114 â Fossa Marinha",
+          "min": 68,
+          "max": 76,
+          "rarity": "Common",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 65,
+          "max": 73,
+          "rarity": "Common",
+          "chance": 14.4
+        }
+      ]
+    },
+    {
+      "id": 365,
+      "name": "Walrein",
+      "types": [
+        "Gelo",
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 112 â Corrente Escura",
+          "min": 61,
+          "max": 69,
           "rarity": "Comum",
           "chance": 14.8
         },
@@ -26632,6 +28898,64 @@
           "max": 8,
           "rarity": "Raro",
           "chance": 0.38
+        }
+      ]
+    },
+    {
+      "id": 370,
+      "name": "Luvdisc",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 110 â LodaÃ§al Antigo",
+          "min": 55,
+          "max": 62,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 98 â Costa dos Ventos",
+          "min": 25,
+          "max": 31,
+          "rarity": "Uncommon",
+          "chance": 7.27
+        },
+        {
+          "name": "Rota 112 â Corrente Escura",
+          "min": 61,
+          "max": 69,
+          "rarity": "Uncommon",
+          "chance": 4.78
+        },
+        {
+          "name": "Rota 113 â NaufrÃ¡gio Antigo",
+          "min": 65,
+          "max": 73,
+          "rarity": "Uncommon",
+          "chance": 4.78
+        },
+        {
+          "name": "Rota 114 â Fossa Marinha",
+          "min": 68,
+          "max": 76,
+          "rarity": "Uncommon",
+          "chance": 4.78
+        },
+        {
+          "name": "Rota 107 â Jardim de Corais",
+          "min": 45,
+          "max": 52,
+          "rarity": "Uncommon",
+          "chance": 4.57
+        },
+        {
+          "name": "Rota 97 â MarÃ© Baixa",
+          "min": 24,
+          "max": 29,
+          "rarity": "Uncommon",
+          "chance": 4.44
         }
       ]
     },
@@ -27308,6 +29632,29 @@
           "min": 28,
           "max": 33,
           "rarity": "Rare",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "id": 388,
+      "name": "Grotle",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 124 â Vale Escondido",
+          "min": 18,
+          "max": 19,
+          "rarity": "Raro",
+          "chance": 2.0
+        },
+        {
+          "name": "Rota 131 â CÃ¢mara Selada",
+          "min": 28,
+          "max": 33,
+          "rarity": "Raro",
           "chance": 0.25
         }
       ]
@@ -29338,6 +31685,135 @@
       ]
     },
     {
+      "id": 410,
+      "name": "Shieldon",
+      "types": [
+        "Pedra",
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 122 â Caverna Esquecida",
+          "min": 12,
+          "max": 16,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 126 â Deserto dos Ossos",
+          "min": 18,
+          "max": 23,
+          "rarity": "Raro",
+          "chance": 2.5
+        },
+        {
+          "name": "Rota 127 â Dunas Baixas",
+          "min": 19,
+          "max": 24,
+          "rarity": "Raro",
+          "chance": 2.14
+        },
+        {
+          "name": "Rota 128 â Mesa Alta",
+          "min": 21,
+          "max": 26,
+          "rarity": "Raro",
+          "chance": 2.14
+        },
+        {
+          "name": "Rota 134 â Serra do Retorno",
+          "min": 33,
+          "max": 39,
+          "rarity": "Raro",
+          "chance": 0.88
+        },
+        {
+          "name": "Rota 137 â Vale VulcÃ¢nico",
+          "min": 40,
+          "max": 46,
+          "rarity": "Raro",
+          "chance": 0.88
+        },
+        {
+          "name": "Rota 135 â Rio de Magma",
+          "min": 36,
+          "max": 42,
+          "rarity": "Raro",
+          "chance": 0.79
+        },
+        {
+          "name": "Rota 136 â Cratera Menor",
+          "min": 38,
+          "max": 44,
+          "rarity": "Raro",
+          "chance": 0.79
+        },
+        {
+          "name": "Rota 133 â CoraÃ§Ã£o da Pedra",
+          "min": 31,
+          "max": 37,
+          "rarity": "Raro",
+          "chance": 0.63
+        },
+        {
+          "name": "Rota 116 â Caverna Cega",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.5
+        },
+        {
+          "name": "Rota 117 â Abismo Interno",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.5
+        },
+        {
+          "name": "Rota 142 â Fornalha Natural",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.4
+        },
+        {
+          "name": "Rota 148 â Trono de Lava",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.4
+        },
+        {
+          "name": "Rota 143 â Campos de Obsidiana",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.35
+        },
+        {
+          "name": "Rota 144 â Garganta de Fogo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.35
+        },
+        {
+          "name": "Rota 147 â Borda da Caldeira",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.35
+        },
+        {
+          "name": "Rota 139 â Deserto Profundo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.32
+        }
+      ]
+    },
+    {
       "id": 411,
       "name": "Bastiodon",
       "types": [
@@ -29378,6 +31854,51 @@
           "min": 31,
           "max": 37,
           "rarity": "Rare",
+          "chance": 1.25
+        }
+      ]
+    },
+    {
+      "id": 411,
+      "name": "Bastiodon",
+      "types": [
+        "Pedra",
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 134 â Serra do Retorno",
+          "min": 33,
+          "max": 39,
+          "rarity": "Raro",
+          "chance": 1.76
+        },
+        {
+          "name": "Rota 137 â Vale VulcÃ¢nico",
+          "min": 40,
+          "max": 46,
+          "rarity": "Raro",
+          "chance": 1.76
+        },
+        {
+          "name": "Rota 135 â Rio de Magma",
+          "min": 36,
+          "max": 42,
+          "rarity": "Raro",
+          "chance": 1.58
+        },
+        {
+          "name": "Rota 136 â Cratera Menor",
+          "min": 38,
+          "max": 44,
+          "rarity": "Raro",
+          "chance": 1.58
+        },
+        {
+          "name": "Rota 133 â CoraÃ§Ã£o da Pedra",
+          "min": 31,
+          "max": 37,
+          "rarity": "Raro",
           "chance": 1.25
         }
       ]
@@ -30249,6 +32770,36 @@
           "name": "Rota 129 â Selva Seca",
           "min": 25,
           "max": 28,
+          "rarity": "Common",
+          "chance": 15.6
+        },
+        {
+          "name": "Rota 130 â Ãltima Mata",
+          "min": 26,
+          "max": 31,
+          "rarity": "Common",
+          "chance": 15.2
+        },
+        {
+          "name": "Rota 142 â Fornalha Natural",
+          "min": 57,
+          "max": 64,
+          "rarity": "Common",
+          "chance": 13.2
+        }
+      ]
+    },
+    {
+      "id": 421,
+      "name": "Cherrim",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 129 â Selva Seca",
+          "min": 25,
+          "max": 28,
           "rarity": "Comum",
           "chance": 15.6
         },
@@ -30294,6 +32845,36 @@
           "min": 87,
           "max": 95,
           "rarity": "Common",
+          "chance": 5.16
+        }
+      ]
+    },
+    {
+      "id": 422,
+      "name": "Shellos",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 119 â Brejo da NÃ©voa",
+          "min": 8,
+          "max": 12,
+          "rarity": "Comum",
+          "chance": 16.1
+        },
+        {
+          "name": "Rota 149 â PlanÃ­cie Abissal",
+          "min": 83,
+          "max": 91,
+          "rarity": "Comum",
+          "chance": 5.16
+        },
+        {
+          "name": "Rota 150 â Fundo do Mundo",
+          "min": 87,
+          "max": 95,
+          "rarity": "Comum",
           "chance": 5.16
         }
       ]
@@ -31963,6 +34544,22 @@
           "name": "Rota 140 â Floresta Silenciosa",
           "min": 51,
           "max": 57,
+          "rarity": "Rare",
+          "chance": 0.46
+        }
+      ]
+    },
+    {
+      "id": 440,
+      "name": "Happiny",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 140 â Floresta Silenciosa",
+          "min": 51,
+          "max": 57,
           "rarity": "Raro",
           "chance": 0.46
         }
@@ -32929,6 +35526,50 @@
       ]
     },
     {
+      "id": 450,
+      "name": "Hippowdon",
+      "types": [
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 141 â ChaminÃ© de Cinzas",
+          "min": 54,
+          "max": 60,
+          "rarity": "Comum",
+          "chance": 18.5
+        },
+        {
+          "name": "Rota 143 â Campos de Obsidiana",
+          "min": 62,
+          "max": 69,
+          "rarity": "Comum",
+          "chance": 15.7
+        },
+        {
+          "name": "Rota 148 â Trono de Lava",
+          "min": 80,
+          "max": 88,
+          "rarity": "Comum",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 135 â Rio de Magma",
+          "min": 36,
+          "max": 42,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 136 â Cratera Menor",
+          "min": 38,
+          "max": 44,
+          "rarity": "Comum",
+          "chance": 13.2
+        }
+      ]
+    },
+    {
       "id": 451,
       "name": "Skorupi",
       "types": [
@@ -33642,6 +36283,29 @@
       ]
     },
     {
+      "id": 457,
+      "name": "Lumineon",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 149 â PlanÃ­cie Abissal",
+          "min": 83,
+          "max": 91,
+          "rarity": "Comum",
+          "chance": 16.1
+        },
+        {
+          "name": "Rota 150 â Fundo do Mundo",
+          "min": 87,
+          "max": 95,
+          "rarity": "Comum",
+          "chance": 16.1
+        }
+      ]
+    },
+    {
       "id": 458,
       "name": "Mantyke",
       "types": [
@@ -33680,6 +36344,44 @@
       ]
     },
     {
+      "id": 458,
+      "name": "Mantyke",
+      "types": [
+        "Água",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 119 â Brejo da NÃ©voa",
+          "min": 8,
+          "max": 12,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 149 â PlanÃ­cie Abissal",
+          "min": 83,
+          "max": 91,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 150 â Fundo do Mundo",
+          "min": 87,
+          "max": 95,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 120 â PÃ¢ntano Ãrido",
+          "min": 9,
+          "max": 13,
+          "rarity": "Incomum",
+          "chance": 6.67
+        }
+      ]
+    },
+    {
       "id": 459,
       "name": "Snover",
       "types": [
@@ -33886,6 +36588,82 @@
           "max": 57,
           "rarity": "Incomum",
           "chance": 2.29
+        }
+      ]
+    },
+    {
+      "id": 464,
+      "name": "Rhyperior",
+      "types": [
+        "Terra",
+        "Pedra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 142 â Fornalha Natural",
+          "min": 57,
+          "max": 64,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 143 â Campos de Obsidiana",
+          "min": 62,
+          "max": 69,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 144 â Garganta de Fogo",
+          "min": 66,
+          "max": 73,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 145 â Lago de Lava",
+          "min": 70,
+          "max": 77,
+          "rarity": "Uncommon",
+          "chance": 8.0
+        }
+      ]
+    },
+    {
+      "id": 464,
+      "name": "Rhyperior",
+      "types": [
+        "Terra",
+        "Pedra"
+      ],
+      "maps": [
+        {
+          "name": "Rota 142 â Fornalha Natural",
+          "min": 57,
+          "max": 64,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 143 â Campos de Obsidiana",
+          "min": 62,
+          "max": 69,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 144 â Garganta de Fogo",
+          "min": 66,
+          "max": 73,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 145 â Lago de Lava",
+          "min": 70,
+          "max": 77,
+          "rarity": "Incomum",
+          "chance": 8.0
         }
       ]
     },
@@ -33901,6 +36679,22 @@
           "min": 23,
           "max": 28,
           "rarity": "Uncommon",
+          "chance": 2.56
+        }
+      ]
+    },
+    {
+      "id": 465,
+      "name": "Tangrowth",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 129 â Selva Seca",
+          "min": 23,
+          "max": 28,
+          "rarity": "Incomum",
           "chance": 2.56
         }
       ]
@@ -34163,6 +36957,58 @@
           "min": 30,
           "max": 35,
           "rarity": "Uncommon",
+          "chance": 6.4
+        }
+      ]
+    },
+    {
+      "id": 469,
+      "name": "Yanmega",
+      "types": [
+        "Inseto",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 131 â CÃ¢mara Selada",
+          "min": 28,
+          "max": 33,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 133 â CoraÃ§Ã£o da Pedra",
+          "min": 31,
+          "max": 37,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 134 â Serra do Retorno",
+          "min": 33,
+          "max": 39,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 130 â Ãltima Mata",
+          "min": 26,
+          "max": 31,
+          "rarity": "Incomum",
+          "chance": 6.67
+        },
+        {
+          "name": "Rota 129 â Selva Seca",
+          "min": 23,
+          "max": 28,
+          "rarity": "Incomum",
+          "chance": 6.4
+        },
+        {
+          "name": "Rota 132 â Caverna do Fim",
+          "min": 30,
+          "max": 35,
+          "rarity": "Incomum",
           "chance": 6.4
         }
       ]
@@ -34651,6 +37497,23 @@
       ]
     },
     {
+      "id": 479,
+      "name": "Rotom",
+      "types": [
+        "Elétrico",
+        "Fantasma"
+      ],
+      "maps": [
+        {
+          "name": "Rota 140 â Floresta Silenciosa",
+          "min": 51,
+          "max": 57,
+          "rarity": "Raro",
+          "chance": 1.15
+        }
+      ]
+    },
+    {
       "id": 495,
       "name": "Snivy",
       "types": [
@@ -34753,6 +37616,22 @@
           "max": 39,
           "rarity": "Raro",
           "chance": 0.35
+        }
+      ]
+    },
+    {
+      "id": 497,
+      "name": "Serperior",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 169 â Passo Floral",
+          "min": 36,
+          "max": 39,
+          "rarity": "Rare",
+          "chance": 0.71
         }
       ]
     },
@@ -35046,6 +37925,51 @@
           "name": "Rota 187 â Caverna Violeta",
           "min": 83,
           "max": 91,
+          "rarity": "Rare",
+          "chance": 2.14
+        },
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 80,
+          "max": 88,
+          "rarity": "Rare",
+          "chance": 1.88
+        },
+        {
+          "name": "Rota 171 â Acampamento NÃ´made",
+          "min": 37,
+          "max": 43,
+          "rarity": "Rare",
+          "chance": 1.67
+        },
+        {
+          "name": "Rota 172 â OÃ¡sis das Cabanas",
+          "min": 40,
+          "max": 46,
+          "rarity": "Rare",
+          "chance": 1.67
+        },
+        {
+          "name": "Rota 168 â Trilha ArqueolÃ³gica",
+          "min": 36,
+          "max": 37,
+          "rarity": "Rare",
+          "chance": 1.5
+        }
+      ]
+    },
+    {
+      "id": 500,
+      "name": "Emboar",
+      "types": [
+        "Fogo",
+        "Lutador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 83,
+          "max": 91,
           "rarity": "Raro",
           "chance": 2.14
         },
@@ -35106,6 +38030,82 @@
           "max": 85,
           "rarity": "Rare",
           "chance": 0.16
+        }
+      ]
+    },
+    {
+      "id": 501,
+      "name": "Oshawott",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 153 â Fazenda Ã  Beira-Mar",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.5
+        },
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Raro",
+          "chance": 0.21
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Raro",
+          "chance": 0.16
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "name": "Dewott",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Rare",
+          "chance": 0.64
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Rare",
+          "chance": 0.47
+        }
+      ]
+    },
+    {
+      "id": 502,
+      "name": "Dewott",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Raro",
+          "chance": 0.64
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Raro",
+          "chance": 0.47
         }
       ]
     },
@@ -35566,6 +38566,57 @@
           "min": 3,
           "max": 8,
           "rarity": "Uncommon",
+          "chance": 0.52
+        }
+      ]
+    },
+    {
+      "id": 511,
+      "name": "Pansage",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 161 â Floresta dos TentilhÃµes",
+          "min": 20,
+          "max": 25,
+          "rarity": "Incomum",
+          "chance": 3.2
+        },
+        {
+          "name": "Rota 173 â Parque do Retiro",
+          "min": 42,
+          "max": 48,
+          "rarity": "Incomum",
+          "chance": 3.2
+        },
+        {
+          "name": "Rota 163 â Selva das Cachoeiras",
+          "min": 23,
+          "max": 28,
+          "rarity": "Incomum",
+          "chance": 3.08
+        },
+        {
+          "name": "Rota 164 â Encosta da Selva",
+          "min": 24,
+          "max": 29,
+          "rarity": "Incomum",
+          "chance": 3.08
+        },
+        {
+          "name": "Rota 174 â Jardim dos Sonhos",
+          "min": 45,
+          "max": 51,
+          "rarity": "Incomum",
+          "chance": 2.58
+        },
+        {
+          "name": "Rota 179 â Bosque do Outono",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
           "chance": 0.52
         }
       ]
@@ -36498,6 +39549,57 @@
       ]
     },
     {
+      "id": 523,
+      "name": "Zebstrika",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 184 â Trilha do Mato Alto",
+          "min": 75,
+          "max": 82,
+          "rarity": "Comum",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 71,
+          "max": 78,
+          "rarity": "Comum",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Comum",
+          "chance": 14.1
+        },
+        {
+          "name": "Rota 174 â Jardim dos Sonhos",
+          "min": 45,
+          "max": 51,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 173 â Parque do Retiro",
+          "min": 42,
+          "max": 48,
+          "rarity": "Comum",
+          "chance": 10.9
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Comum",
+          "chance": 10.6
+        }
+      ]
+    },
+    {
       "id": 524,
       "name": "Roggenrola",
       "types": [
@@ -37299,6 +40401,65 @@
       ]
     },
     {
+      "id": 530,
+      "name": "Excadrill",
+      "types": [
+        "Terra",
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 166 â Vale dos Ossos",
+          "min": 31,
+          "max": 33,
+          "rarity": "Comum",
+          "chance": 14.2
+        },
+        {
+          "name": "Rota 167 â Penhascos de Areia",
+          "min": 31,
+          "max": 35,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 168 â Trilha ArqueolÃ³gica",
+          "min": 32,
+          "max": 37,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 171 â Acampamento NÃ´made",
+          "min": 37,
+          "max": 43,
+          "rarity": "Comum",
+          "chance": 12.2
+        },
+        {
+          "name": "Rota 172 â OÃ¡sis das Cabanas",
+          "min": 40,
+          "max": 46,
+          "rarity": "Comum",
+          "chance": 12.2
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Comum",
+          "chance": 10.6
+        },
+        {
+          "name": "Esgoto Profundo",
+          "min": 92,
+          "max": 100,
+          "rarity": "Raro",
+          "chance": 1.0
+        }
+      ]
+    },
+    {
       "id": 531,
       "name": "Audino",
       "types": [
@@ -37531,6 +40692,36 @@
           "name": "Rota 178 â Caverna MÃ­stica",
           "min": 56,
           "max": 62,
+          "rarity": "Common",
+          "chance": 14.3
+        },
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 11.6
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Common",
+          "chance": 10.6
+        }
+      ]
+    },
+    {
+      "id": 534,
+      "name": "Conkeldurr",
+      "types": [
+        "Lutador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 178 â Caverna MÃ­stica",
+          "min": 56,
+          "max": 62,
           "rarity": "Comum",
           "chance": 14.3
         },
@@ -37595,6 +40786,50 @@
       ]
     },
     {
+      "id": 535,
+      "name": "Tympole",
+      "types": [
+        "Água"
+      ],
+      "maps": [
+        {
+          "name": "Rota 151 â Costa da Chegada",
+          "min": 10,
+          "max": 13,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Rota 153 â Fazenda Ã  Beira-Mar",
+          "min": 10,
+          "max": 14,
+          "rarity": "Comum",
+          "chance": 20.0
+        },
+        {
+          "name": "Esgoto de Lugano",
+          "min": 16,
+          "max": 24,
+          "rarity": "Comum",
+          "chance": 10.0
+        },
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
+          "chance": 1.17
+        },
+        {
+          "name": "Rota 189 â Vila dos Pescadores",
+          "min": 89,
+          "max": 97,
+          "rarity": "Comum",
+          "chance": 0.53
+        }
+      ]
+    },
+    {
       "id": 536,
       "name": "Palpitoad",
       "types": [
@@ -37648,6 +40883,30 @@
           "min": 89,
           "max": 97,
           "rarity": "Common",
+          "chance": 5.3
+        }
+      ]
+    },
+    {
+      "id": 537,
+      "name": "Seismitoad",
+      "types": [
+        "Água",
+        "Terra"
+      ],
+      "maps": [
+        {
+          "name": "Esgoto Profundo",
+          "min": 92,
+          "max": 100,
+          "rarity": "Comum",
+          "chance": 15.0
+        },
+        {
+          "name": "Rota 189 â Vila dos Pescadores",
+          "min": 89,
+          "max": 97,
+          "rarity": "Comum",
           "chance": 5.3
         }
       ]
@@ -37792,6 +41051,44 @@
           "min": 3,
           "max": 8,
           "rarity": "Common",
+          "chance": 1.17
+        }
+      ]
+    },
+    {
+      "id": 540,
+      "name": "Sewaddle",
+      "types": [
+        "Inseto",
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 154 â Trilha dos Brotos",
+          "min": 11,
+          "max": 15,
+          "rarity": "Comum",
+          "chance": 19.2
+        },
+        {
+          "name": "Rota 159 â Bosque das Cerejeiras",
+          "min": 18,
+          "max": 22,
+          "rarity": "Comum",
+          "chance": 6.67
+        },
+        {
+          "name": "Rota 188 â Rio da Caverna",
+          "min": 86,
+          "max": 94,
+          "rarity": "Comum",
+          "chance": 1.73
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
           "chance": 1.17
         }
       ]
@@ -38367,6 +41664,50 @@
           "name": "Rota 155 â Vereda das Samambaias",
           "min": 12,
           "max": 16,
+          "rarity": "Common",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 160 â Bosque do Tempo",
+          "min": 19,
+          "max": 23,
+          "rarity": "Common",
+          "chance": 8.13
+        },
+        {
+          "name": "Rota 184 â Trilha do Mato Alto",
+          "min": 75,
+          "max": 82,
+          "rarity": "Common",
+          "chance": 4.74
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 71,
+          "max": 78,
+          "rarity": "Common",
+          "chance": 4.67
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Common",
+          "chance": 4.51
+        }
+      ]
+    },
+    {
+      "id": 548,
+      "name": "Petilil",
+      "types": [
+        "Planta"
+      ],
+      "maps": [
+        {
+          "name": "Rota 155 â Vereda das Samambaias",
+          "min": 12,
+          "max": 16,
           "rarity": "Comum",
           "chance": 19.6
         },
@@ -38603,6 +41944,93 @@
           "min": 3,
           "max": 8,
           "rarity": "Common",
+          "chance": 1.57
+        }
+      ]
+    },
+    {
+      "id": 551,
+      "name": "Sandile",
+      "types": [
+        "Terra",
+        "Sombrio"
+      ],
+      "maps": [
+        {
+          "name": "Rota 165 â Praia das Dunas",
+          "min": 26,
+          "max": 31,
+          "rarity": "Comum",
+          "chance": 8.25
+        },
+        {
+          "name": "Rota 166 â Vale dos Ossos",
+          "min": 28,
+          "max": 33,
+          "rarity": "Comum",
+          "chance": 7.38
+        },
+        {
+          "name": "Rota 167 â Penhascos de Areia",
+          "min": 30,
+          "max": 35,
+          "rarity": "Comum",
+          "chance": 6.58
+        },
+        {
+          "name": "Rota 168 â Trilha ArqueolÃ³gica",
+          "min": 32,
+          "max": 37,
+          "rarity": "Comum",
+          "chance": 6.58
+        },
+        {
+          "name": "Rota 171 â Acampamento NÃ´made",
+          "min": 37,
+          "max": 43,
+          "rarity": "Comum",
+          "chance": 2.93
+        },
+        {
+          "name": "Rota 172 â OÃ¡sis das Cabanas",
+          "min": 40,
+          "max": 46,
+          "rarity": "Comum",
+          "chance": 2.93
+        },
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Comum",
+          "chance": 2.79
+        },
+        {
+          "name": "Rota 176 â Trilha de Cristal",
+          "min": 50,
+          "max": 56,
+          "rarity": "Comum",
+          "chance": 2.57
+        },
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Comum",
+          "chance": 1.75
+        },
+        {
+          "name": "Rota 189 â Vila dos Pescadores",
+          "min": 89,
+          "max": 97,
+          "rarity": "Comum",
+          "chance": 1.59
+        },
+        {
+          "name": "Rota 152 â Enseada do Farol",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
           "chance": 1.57
         }
       ]
@@ -39813,6 +43241,65 @@
           "name": "Rota 151 â Costa da Chegada",
           "min": 10,
           "max": 13,
+          "rarity": "Rare",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 152 â Enseada do Farol",
+          "min": 10,
+          "max": 14,
+          "rarity": "Rare",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 158 â Ponte Vermelha",
+          "min": 16,
+          "max": 20,
+          "rarity": "Rare",
+          "chance": 1.88
+        },
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 3,
+          "max": 8,
+          "rarity": "Rare",
+          "chance": 0.38
+        },
+        {
+          "name": "Rota 160 â Bosque do Tempo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Rare",
+          "chance": 0.35
+        },
+        {
+          "name": "Rota 166 â Vale dos Ossos",
+          "min": 3,
+          "max": 8,
+          "rarity": "Rare",
+          "chance": 0.35
+        },
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Rare",
+          "chance": 0.29
+        }
+      ]
+    },
+    {
+      "id": 566,
+      "name": "Archen",
+      "types": [
+        "Pedra",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 151 â Costa da Chegada",
+          "min": 10,
+          "max": 13,
           "rarity": "Raro",
           "chance": 3.0
         },
@@ -39861,6 +43348,40 @@
       ]
     },
     {
+      "id": 567,
+      "name": "Archeops",
+      "types": [
+        "Pedra",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Rare",
+          "chance": 0.57
+        }
+      ]
+    },
+    {
+      "id": 567,
+      "name": "Archeops",
+      "types": [
+        "Pedra",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Raro",
+          "chance": 0.57
+        }
+      ]
+    },
+    {
       "id": 568,
       "name": "Trubbish",
       "types": [
@@ -40325,6 +43846,71 @@
           "max": 53,
           "rarity": "Comum",
           "chance": 5.53
+        }
+      ]
+    },
+    {
+      "id": 573,
+      "name": "Cinccino",
+      "types": [
+        "Normal"
+      ],
+      "maps": [
+        {
+          "name": "Rota 164 â Encosta da Selva",
+          "min": 24,
+          "max": 29,
+          "rarity": "Common",
+          "chance": 17.7
+        },
+        {
+          "name": "Rota 163 â Selva das Cachoeiras",
+          "min": 23,
+          "max": 28,
+          "rarity": "Common",
+          "chance": 15.9
+        },
+        {
+          "name": "Rota 161 â Floresta dos TentilhÃµes",
+          "min": 20,
+          "max": 25,
+          "rarity": "Common",
+          "chance": 15.4
+        },
+        {
+          "name": "Rota 169 â Passo Floral",
+          "min": 34,
+          "max": 39,
+          "rarity": "Common",
+          "chance": 14.2
+        },
+        {
+          "name": "Rota 174 â Jardim dos Sonhos",
+          "min": 45,
+          "max": 51,
+          "rarity": "Common",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 170 â Jardim de Pedra",
+          "min": 36,
+          "max": 41,
+          "rarity": "Common",
+          "chance": 11.7
+        },
+        {
+          "name": "Rota 173 â Parque do Retiro",
+          "min": 42,
+          "max": 48,
+          "rarity": "Common",
+          "chance": 10.9
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Common",
+          "chance": 10.6
         }
       ]
     },
@@ -40938,6 +44524,22 @@
           "name": "Rota 185 â Ponte do Rio Largo",
           "min": 78,
           "max": 85,
+          "rarity": "Common",
+          "chance": 14.1
+        }
+      ]
+    },
+    {
+      "id": 584,
+      "name": "Vanilluxe",
+      "types": [
+        "Gelo"
+      ],
+      "maps": [
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
           "rarity": "Comum",
           "chance": 14.1
         }
@@ -41141,6 +44743,65 @@
       ]
     },
     {
+      "id": 587,
+      "name": "Emolga",
+      "types": [
+        "Elétrico",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 159 â Bosque das Cerejeiras",
+          "min": 18,
+          "max": 22,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 71,
+          "max": 78,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 184 â Trilha do Mato Alto",
+          "min": 75,
+          "max": 82,
+          "rarity": "Raro",
+          "chance": 3.0
+        },
+        {
+          "name": "Rota 153 â Fazenda Ã  Beira-Mar",
+          "min": 10,
+          "max": 14,
+          "rarity": "Raro",
+          "chance": 2.5
+        },
+        {
+          "name": "Rota 156 â Bairro Norte",
+          "min": 13,
+          "max": 17,
+          "rarity": "Raro",
+          "chance": 1.88
+        },
+        {
+          "name": "Rota 155 â Vereda das Samambaias",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.5
+        },
+        {
+          "name": "Rota 174 â Jardim dos Sonhos",
+          "min": 3,
+          "max": 8,
+          "rarity": "Raro",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
       "id": 588,
       "name": "Karrablast",
       "types": [
@@ -41311,6 +44972,65 @@
           "min": 20,
           "max": 22,
           "rarity": "Common",
+          "chance": 12.8
+        }
+      ]
+    },
+    {
+      "id": 589,
+      "name": "Escavalier",
+      "types": [
+        "Inseto",
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 162 â Selva Escondida",
+          "min": 21,
+          "max": 26,
+          "rarity": "Comum",
+          "chance": 17.4
+        },
+        {
+          "name": "Rota 163 â Selva das Cachoeiras",
+          "min": 23,
+          "max": 28,
+          "rarity": "Comum",
+          "chance": 15.9
+        },
+        {
+          "name": "Rota 161 â Floresta dos TentilhÃµes",
+          "min": 20,
+          "max": 25,
+          "rarity": "Comum",
+          "chance": 15.4
+        },
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 80,
+          "max": 88,
+          "rarity": "Comum",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 83,
+          "max": 91,
+          "rarity": "Comum",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 188 â Rio da Caverna",
+          "min": 86,
+          "max": 94,
+          "rarity": "Comum",
+          "chance": 14.4
+        },
+        {
+          "name": "Rota 159 â Bosque das Cerejeiras",
+          "min": 20,
+          "max": 22,
+          "rarity": "Comum",
           "chance": 12.8
         }
       ]
@@ -41495,6 +45215,44 @@
           "min": 64,
           "max": 71,
           "rarity": "Common",
+          "chance": 14.1
+        }
+      ]
+    },
+    {
+      "id": 591,
+      "name": "Amoonguss",
+      "types": [
+        "Planta",
+        "Veneno"
+      ],
+      "maps": [
+        {
+          "name": "Rota 184 â Trilha do Mato Alto",
+          "min": 75,
+          "max": 82,
+          "rarity": "Comum",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 71,
+          "max": 78,
+          "rarity": "Comum",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 182 â Gruta dos TentilhÃµes",
+          "min": 68,
+          "max": 75,
+          "rarity": "Comum",
+          "chance": 14.3
+        },
+        {
+          "name": "Rota 181 â Caverna MagnÃ©tica",
+          "min": 64,
+          "max": 71,
+          "rarity": "Comum",
           "chance": 14.1
         }
       ]
@@ -41695,6 +45453,58 @@
           "name": "Rota 164 â Encosta da Selva",
           "min": 24,
           "max": 29,
+          "rarity": "Common",
+          "chance": 17.7
+        },
+        {
+          "name": "Rota 162 â Selva Escondida",
+          "min": 21,
+          "max": 26,
+          "rarity": "Common",
+          "chance": 17.4
+        },
+        {
+          "name": "Rota 169 â Passo Floral",
+          "min": 34,
+          "max": 39,
+          "rarity": "Common",
+          "chance": 7.38
+        },
+        {
+          "name": "Rota 170 â Jardim de Pedra",
+          "min": 36,
+          "max": 41,
+          "rarity": "Common",
+          "chance": 6.08
+        },
+        {
+          "name": "Rota 179 â Bosque do Outono",
+          "min": 59,
+          "max": 65,
+          "rarity": "Common",
+          "chance": 4.67
+        },
+        {
+          "name": "Rota 180 â Bosque das MemÃ³rias",
+          "min": 62,
+          "max": 68,
+          "rarity": "Common",
+          "chance": 4.67
+        }
+      ]
+    },
+    {
+      "id": 595,
+      "name": "Joltik",
+      "types": [
+        "Inseto",
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 164 â Encosta da Selva",
+          "min": 24,
+          "max": 29,
           "rarity": "Comum",
           "chance": 17.7
         },
@@ -41732,6 +45542,44 @@
           "max": 68,
           "rarity": "Comum",
           "chance": 4.67
+        }
+      ]
+    },
+    {
+      "id": 596,
+      "name": "Galvantula",
+      "types": [
+        "Inseto",
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 179 â Bosque do Outono",
+          "min": 59,
+          "max": 65,
+          "rarity": "Common",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 180 â Bosque das MemÃ³rias",
+          "min": 62,
+          "max": 68,
+          "rarity": "Common",
+          "chance": 14.6
+        },
+        {
+          "name": "Rota 169 â Passo Floral",
+          "min": 36,
+          "max": 39,
+          "rarity": "Common",
+          "chance": 14.2
+        },
+        {
+          "name": "Rota 170 â Jardim de Pedra",
+          "min": 36,
+          "max": 41,
+          "rarity": "Common",
+          "chance": 11.7
         }
       ]
     },
@@ -41894,6 +45742,64 @@
           "name": "Rota 177 â Caverna Sagrada",
           "min": 53,
           "max": 59,
+          "rarity": "Common",
+          "chance": 2.79
+        },
+        {
+          "name": "Rota 176 â Trilha de Cristal",
+          "min": 50,
+          "max": 56,
+          "rarity": "Common",
+          "chance": 2.57
+        },
+        {
+          "name": "Rota 178 â Caverna MÃ­stica",
+          "min": 56,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 1.71
+        },
+        {
+          "name": "Rota 182 â Gruta dos TentilhÃµes",
+          "min": 68,
+          "max": 75,
+          "rarity": "Common",
+          "chance": 1.71
+        },
+        {
+          "name": "Rota 181 â Caverna MagnÃ©tica",
+          "min": 64,
+          "max": 71,
+          "rarity": "Common",
+          "chance": 1.69
+        },
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.17
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 3,
+          "max": 8,
+          "rarity": "Common",
+          "chance": 1.13
+        }
+      ]
+    },
+    {
+      "id": 599,
+      "name": "Klink",
+      "types": [
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
           "rarity": "Comum",
           "chance": 2.79
         },
@@ -41938,6 +45844,50 @@
           "max": 8,
           "rarity": "Comum",
           "chance": 1.13
+        }
+      ]
+    },
+    {
+      "id": 600,
+      "name": "Klang",
+      "types": [
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 6.05
+        },
+        {
+          "name": "Rota 176 â Trilha de Cristal",
+          "min": 50,
+          "max": 56,
+          "rarity": "Common",
+          "chance": 5.56
+        },
+        {
+          "name": "Rota 178 â Caverna MÃ­stica",
+          "min": 56,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 4.57
+        },
+        {
+          "name": "Rota 182 â Gruta dos TentilhÃµes",
+          "min": 68,
+          "max": 75,
+          "rarity": "Common",
+          "chance": 4.57
+        },
+        {
+          "name": "Rota 181 â Caverna MagnÃ©tica",
+          "min": 64,
+          "max": 71,
+          "rarity": "Common",
+          "chance": 4.51
         }
       ]
     },
@@ -42246,6 +46196,43 @@
           "max": 65,
           "rarity": "Incomum",
           "chance": 1.81
+        }
+      ]
+    },
+    {
+      "id": 604,
+      "name": "Eelektross",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": [
+        {
+          "name": "Rota 188 â Rio da Caverna",
+          "min": 86,
+          "max": 94,
+          "rarity": "Uncommon",
+          "chance": 6.53
+        },
+        {
+          "name": "Rota 180 â Bosque das MemÃ³rias",
+          "min": 62,
+          "max": 68,
+          "rarity": "Uncommon",
+          "chance": 6.27
+        },
+        {
+          "name": "Rota 179 â Bosque do Outono",
+          "min": 59,
+          "max": 65,
+          "rarity": "Uncommon",
+          "chance": 5.16
+        },
+        {
+          "name": "Esgoto Profundo",
+          "min": 92,
+          "max": 100,
+          "rarity": "Epic",
+          "chance": 0.4
         }
       ]
     },
@@ -42782,6 +46769,29 @@
       ]
     },
     {
+      "id": 613,
+      "name": "Cubchoo",
+      "types": [
+        "Gelo"
+      ],
+      "maps": [
+        {
+          "name": "Rota 157 â Cidade dos Canais",
+          "min": 15,
+          "max": 19,
+          "rarity": "Comum",
+          "chance": 7.14
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Comum",
+          "chance": 2.13
+        }
+      ]
+    },
+    {
       "id": 614,
       "name": "Beartic",
       "types": [
@@ -43084,6 +47094,52 @@
           "max": 8,
           "rarity": "Comum",
           "chance": 1.13
+        }
+      ]
+    },
+    {
+      "id": 620,
+      "name": "Mienshao",
+      "types": [
+        "Lutador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 80,
+          "max": 88,
+          "rarity": "Common",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 83,
+          "max": 91,
+          "rarity": "Common",
+          "chance": 14.6
+        }
+      ]
+    },
+    {
+      "id": 620,
+      "name": "Mienshao",
+      "types": [
+        "Lutador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 80,
+          "max": 88,
+          "rarity": "Comum",
+          "chance": 14.8
+        },
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 83,
+          "max": 91,
+          "rarity": "Comum",
+          "chance": 14.6
         }
       ]
     },
@@ -43342,6 +47398,103 @@
           "max": 43,
           "rarity": "Uncommon",
           "chance": 5.0
+        }
+      ]
+    },
+    {
+      "id": 623,
+      "name": "Golurk",
+      "types": [
+        "Terra",
+        "Fantasma"
+      ],
+      "maps": [
+        {
+          "name": "Rota 172 â OÃ¡sis das Cabanas",
+          "min": 43,
+          "max": 46,
+          "rarity": "Incomum",
+          "chance": 6.15
+        },
+        {
+          "name": "Rota 189 â Vila dos Pescadores",
+          "min": 89,
+          "max": 97,
+          "rarity": "Incomum",
+          "chance": 5.71
+        },
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Incomum",
+          "chance": 5.71
+        },
+        {
+          "name": "Rota 171 â Acampamento NÃ´made",
+          "min": 43,
+          "max": 43,
+          "rarity": "Incomum",
+          "chance": 5.0
+        }
+      ]
+    },
+    {
+      "id": 624,
+      "name": "Pawniard",
+      "types": [
+        "Sombrio",
+        "Aço"
+      ],
+      "maps": [
+        {
+          "name": "Rota 177 â Caverna Sagrada",
+          "min": 53,
+          "max": 59,
+          "rarity": "Common",
+          "chance": 6.05
+        },
+        {
+          "name": "Rota 186 â Passo da Cacatua",
+          "min": 80,
+          "max": 88,
+          "rarity": "Common",
+          "chance": 4.74
+        },
+        {
+          "name": "Rota 187 â Caverna Violeta",
+          "min": 83,
+          "max": 91,
+          "rarity": "Common",
+          "chance": 4.67
+        },
+        {
+          "name": "Rota 178 â Caverna MÃ­stica",
+          "min": 56,
+          "max": 62,
+          "rarity": "Common",
+          "chance": 4.57
+        },
+        {
+          "name": "Rota 182 â Gruta dos TentilhÃµes",
+          "min": 68,
+          "max": 75,
+          "rarity": "Common",
+          "chance": 4.57
+        },
+        {
+          "name": "Rota 181 â Caverna MagnÃ©tica",
+          "min": 64,
+          "max": 71,
+          "rarity": "Common",
+          "chance": 4.51
+        },
+        {
+          "name": "Rota 175 â Ponte de Pedra",
+          "min": 47,
+          "max": 53,
+          "rarity": "Common",
+          "chance": 2.13
         }
       ]
     },
@@ -43651,6 +47804,93 @@
           "min": 3,
           "max": 8,
           "rarity": "Uncommon",
+          "chance": 0.62
+        }
+      ]
+    },
+    {
+      "id": 627,
+      "name": "Rufflet",
+      "types": [
+        "Normal",
+        "Voador"
+      ],
+      "maps": [
+        {
+          "name": "Rota 154 â Trilha dos Brotos",
+          "min": 11,
+          "max": 15,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 160 â Bosque do Tempo",
+          "min": 19,
+          "max": 23,
+          "rarity": "Incomum",
+          "chance": 8.0
+        },
+        {
+          "name": "Rota 183 â Jardim Tropical",
+          "min": 71,
+          "max": 78,
+          "rarity": "Incomum",
+          "chance": 2.38
+        },
+        {
+          "name": "Rota 184 â Trilha do Mato Alto",
+          "min": 75,
+          "max": 82,
+          "rarity": "Incomum",
+          "chance": 2.29
+        },
+        {
+          "name": "Rota 185 â Ponte do Rio Largo",
+          "min": 78,
+          "max": 85,
+          "rarity": "Incomum",
+          "chance": 2.07
+        },
+        {
+          "name": "Rota 189 â Vila dos Pescadores",
+          "min": 89,
+          "max": 97,
+          "rarity": "Incomum",
+          "chance": 2.0
+        },
+        {
+          "name": "Rota 190 â Ilha do VulcÃ£o",
+          "min": 92,
+          "max": 100,
+          "rarity": "Incomum",
+          "chance": 2.0
+        },
+        {
+          "name": "Rota 152 â Enseada do Farol",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.76
+        },
+        {
+          "name": "Rota 159 â Bosque das Cerejeiras",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.76
+        },
+        {
+          "name": "Rota 178 â Caverna MÃ­stica",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
+          "chance": 0.76
+        },
+        {
+          "name": "Rota 164 â Encosta da Selva",
+          "min": 3,
+          "max": 8,
+          "rarity": "Incomum",
           "chance": 0.62
         }
       ]
@@ -44595,6 +48835,24 @@
       "maps": []
     },
     {
+      "id": 668,
+      "name": "Pyroar Male",
+      "types": [
+        "Fogo",
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
+      "id": 695,
+      "name": "Heliolisk",
+      "types": [
+        "Elétrico",
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
       "id": 695,
       "name": "Heliolisk",
       "types": [
@@ -44749,6 +49007,15 @@
       "maps": []
     },
     {
+      "id": 779,
+      "name": "Bruxish",
+      "types": [
+        "Água",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
       "id": 816,
       "name": "Sobble",
       "types": [
@@ -44785,6 +49052,24 @@
     {
       "id": 838,
       "name": "Carkol",
+      "types": [
+        "Pedra",
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 838,
+      "name": "Carkol",
+      "types": [
+        "Pedra",
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 839,
+      "name": "Coalossal",
       "types": [
         "Pedra",
         "Fogo"
@@ -44833,6 +49118,15 @@
       "types": [
         "Fogo",
         "Inseto"
+      ],
+      "maps": []
+    },
+    {
+      "id": 859,
+      "name": "Impidimp",
+      "types": [
+        "Sombrio",
+        "Fada"
       ],
       "maps": []
     },
@@ -45967,7 +50261,7 @@
   },
   "crawl": {
     "speciesPages": 1246,
-    "validSpecies": 1142,
-    "errors": 104
+    "validSpecies": 1246,
+    "errors": 0
   }
 }
