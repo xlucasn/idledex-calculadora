@@ -1,7 +1,7 @@
 {
   "version": "V12.2",
   "source": "https://wiki.idledex.com/",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "pokemon": [
     {
       "id": 1,
@@ -10468,6 +10468,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -10492,6 +10499,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -27208,6 +27222,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 83 â Passo da Serra",
           "min": 6,
           "max": 10,
@@ -27246,6 +27267,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 83 â Passo da Serra",
           "min": 6,
           "max": 10,
@@ -27284,6 +27312,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 111 â Vale da Poeira",
           "min": 58,
           "max": 66,
@@ -27308,6 +27343,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 111 â Vale da Poeira",
           "min": 58,
           "max": 66,
@@ -31149,6 +31191,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 118 â Cordilheira Seca",
           "min": 8,
           "max": 12,
@@ -31277,6 +31326,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 118 â Cordilheira Seca",
           "min": 8,
           "max": 12,
@@ -31564,6 +31620,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 122 â Caverna Esquecida",
           "min": 12,
           "max": 16,
@@ -31693,6 +31756,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 122 â Caverna Esquecida",
           "min": 12,
           "max": 16,
@@ -31822,6 +31892,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 134 â Serra do Retorno",
           "min": 33,
           "max": 39,
@@ -31866,6 +31943,13 @@
         "Aço"
       ],
       "maps": [
+        {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
         {
           "name": "Rota 134 â Serra do Retorno",
           "min": 33,
@@ -43204,6 +43288,13 @@
       ],
       "maps": [
         {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Common",
+          "chance": 11.4
+        },
+        {
           "name": "Rota 185 â Ponte do Rio Largo",
           "min": 78,
           "max": 85,
@@ -43220,6 +43311,13 @@
         "Pedra"
       ],
       "maps": [
+        {
+          "name": "Mina de FÃ³sseis",
+          "min": 10,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 11.4
+        },
         {
           "name": "Rota 185 â Ponte do Rio Largo",
           "min": 78,
@@ -49485,6 +49583,11 @@
     },
     {
       "name": "Lago do Festival de Pesca",
+      "minLevel": 10,
+      "maxLevel": 10
+    },
+    {
+      "name": "Mina de FÃ³sseis",
       "minLevel": 10,
       "maxLevel": 10
     },
