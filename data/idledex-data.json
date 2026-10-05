@@ -1,7 +1,7 @@
 {
   "version": "V12.2",
   "source": "https://wiki.idledex.com/",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "pokemon": [
     {
       "id": 1,
@@ -26899,6 +26899,93 @@
       ]
     },
     {
+      "id": 343,
+      "name": "Baltoy",
+      "types": [
+        "Terra",
+        "Psíquico"
+      ],
+      "maps": [
+        {
+          "name": "Ultra EspaÃ§o I",
+          "min": 58,
+          "max": 64,
+          "rarity": "Comum",
+          "chance": 26.7
+        },
+        {
+          "name": "Ultra EspaÃ§o II",
+          "min": 63,
+          "max": 69,
+          "rarity": "Comum",
+          "chance": 26.7
+        },
+        {
+          "name": "Ultra EspaÃ§o III",
+          "min": 68,
+          "max": 74,
+          "rarity": "Comum",
+          "chance": 26.7
+        },
+        {
+          "name": "Ultra EspaÃ§o IV",
+          "min": 73,
+          "max": 79,
+          "rarity": "Comum",
+          "chance": 26.7
+        },
+        {
+          "name": "Rota 87 â Colunas Antigas",
+          "min": 10,
+          "max": 14,
+          "rarity": "Comum",
+          "chance": 19.6
+        },
+        {
+          "name": "Rota 88 â PÃ¡tio Esquecido",
+          "min": 11,
+          "max": 15,
+          "rarity": "Comum",
+          "chance": 17.7
+        },
+        {
+          "name": "Rota 84 â Encosta Rochosa",
+          "min": 6,
+          "max": 10,
+          "rarity": "Comum",
+          "chance": 12.7
+        },
+        {
+          "name": "Rota 106 â PlanÃ­cie Ãrida",
+          "min": 42,
+          "max": 48,
+          "rarity": "Comum",
+          "chance": 7.48
+        },
+        {
+          "name": "Rota 115 â CÃ¢nion Vermelho",
+          "min": 72,
+          "max": 80,
+          "rarity": "Comum",
+          "chance": 5.16
+        },
+        {
+          "name": "Rota 111 â Vale da Poeira",
+          "min": 58,
+          "max": 66,
+          "rarity": "Comum",
+          "chance": 4.35
+        },
+        {
+          "name": "Rota 102 â Cidade Perdida",
+          "min": 3,
+          "max": 8,
+          "rarity": "Comum",
+          "chance": 0.98
+        }
+      ]
+    },
+    {
       "id": 344,
       "name": "Claydol",
       "types": [
@@ -50277,7 +50364,7 @@
   },
   "crawl": {
     "speciesPages": 1246,
-    "validSpecies": 1245,
-    "errors": 1
+    "validSpecies": 1246,
+    "errors": 0
   }
 }
