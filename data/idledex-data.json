@@ -1,7 +1,7 @@
 {
   "version": "V12.2",
   "source": "https://wiki.idledex.com/",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "pokemon": [
     {
       "id": 1,
@@ -1229,13 +1229,6 @@
           "chance": 16.7
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 24 â FalÃ©sia Costeira",
           "min": 17,
           "max": 23,
@@ -1288,13 +1281,6 @@
           "chance": 16.7
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 24 â FalÃ©sia Costeira",
           "min": 17,
           "max": 23,
@@ -1333,13 +1319,6 @@
           "chance": 5.59
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Uncommon",
-          "chance": 3.2
-        },
-        {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
           "max": 50,
@@ -1364,13 +1343,6 @@
           "chance": 5.59
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Incomum",
-          "chance": 3.2
-        },
-        {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
           "max": 50,
@@ -1393,13 +1365,6 @@
           "max": 50,
           "rarity": "Common",
           "chance": 3.96
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -1417,13 +1382,6 @@
           "max": 50,
           "rarity": "Comum",
           "chance": 3.96
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -1440,20 +1398,6 @@
           "max": 5,
           "rarity": "Common",
           "chance": 20.0
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Common",
-          "chance": 16.0
         },
         {
           "name": "Rota 29 â Lago das Correntezas",
@@ -1486,20 +1430,6 @@
           "chance": 20.0
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
           "max": 30,
@@ -1528,20 +1458,6 @@
           "max": 30,
           "rarity": "Common",
           "chance": 3.76
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Uncommon",
-          "chance": 3.2
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -1558,20 +1474,6 @@
           "max": 30,
           "rarity": "Comum",
           "chance": 3.76
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Incomum",
-          "chance": 3.2
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -1836,13 +1738,6 @@
         "Veneno"
       ],
       "maps": [
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 27 â LamaÃ§al Verde",
           "min": 22,
@@ -1873,13 +1768,6 @@
         "Veneno"
       ],
       "maps": [
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
         {
           "name": "Rota 27 â LamaÃ§al Verde",
           "min": 22,
@@ -1910,13 +1798,6 @@
         "Elétrico"
       ],
       "maps": [
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
@@ -1934,13 +1815,6 @@
       ],
       "maps": [
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
           "max": 50,
@@ -1956,13 +1830,6 @@
         "Elétrico"
       ],
       "maps": [
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Uncommon",
-          "chance": 3.2
-        },
         {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
@@ -1979,13 +1846,6 @@
         "Elétrico"
       ],
       "maps": [
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Incomum",
-          "chance": 3.2
-        },
         {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
@@ -3111,13 +2971,6 @@
           "chance": 16.7
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -3142,13 +2995,6 @@
           "chance": 16.7
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -3166,25 +3012,11 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
           "rarity": "Common",
           "chance": 4.42
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -3197,25 +3029,11 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
           "rarity": "Comum",
           "chance": 4.42
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -3560,13 +3378,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 30 â Trilha Sufocada",
           "min": 25,
           "max": 31,
@@ -3584,13 +3395,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 30 â Trilha Sufocada",
           "min": 25,
           "max": 31,
@@ -3703,13 +3507,6 @@
           "max": 39,
           "rarity": "Common",
           "chance": 4.08
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -3727,13 +3524,6 @@
           "max": 39,
           "rarity": "Comum",
           "chance": 4.08
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -3950,13 +3740,6 @@
           "chance": 15.6
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
           "min": 35,
           "max": 43,
@@ -4001,13 +3784,6 @@
           "chance": 15.6
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
           "min": 35,
           "max": 43,
@@ -4043,20 +3819,6 @@
           "max": 41,
           "rarity": "Common",
           "chance": 10.1
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -4080,20 +3842,6 @@
           "max": 41,
           "rarity": "Comum",
           "chance": 10.1
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -4269,13 +4017,6 @@
           "max": 48,
           "rarity": "Uncommon",
           "chance": 3.33
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -4299,13 +4040,6 @@
           "max": 48,
           "rarity": "Incomum",
           "chance": 3.33
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -4573,13 +4307,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 28 â Lagoa Funda",
           "min": 22,
           "max": 28,
@@ -4596,13 +4323,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 28 â Lagoa Funda",
           "min": 22,
           "max": 28,
@@ -4624,13 +4344,6 @@
           "max": 28,
           "rarity": "Uncommon",
           "chance": 1.88
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Epic",
-          "chance": 0.33
         }
       ]
     },
@@ -4647,13 +4360,6 @@
           "max": 28,
           "rarity": "Incomum",
           "chance": 1.88
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Ãpico",
-          "chance": 0.33
         }
       ]
     },
@@ -4664,13 +4370,6 @@
         "Lutador"
       ],
       "maps": [
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 5 â Caverna Rasa",
           "min": 2,
@@ -4702,13 +4401,6 @@
       ],
       "maps": [
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 5 â Caverna Rasa",
           "min": 2,
           "max": 6,
@@ -4739,13 +4431,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -4758,13 +4443,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 5.31
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -4776,13 +4454,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -4795,13 +4466,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 5.31
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -4825,13 +4489,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 10.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Epic",
-          "chance": 0.33
         }
       ]
     },
@@ -4855,13 +4512,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 10.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Ãpico",
-          "chance": 0.33
         }
       ]
     },
@@ -5137,13 +4787,6 @@
           "chance": 14.0
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
           "max": 30,
@@ -5210,13 +4853,6 @@
           "chance": 14.0
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
           "max": 30,
@@ -5239,13 +4875,6 @@
           "max": 30,
           "rarity": "Common",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -5263,13 +4892,6 @@
           "max": 30,
           "rarity": "Comum",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -5281,13 +4903,6 @@
         "Terra"
       ],
       "maps": [
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 19 â Gruta dos Morcegos",
           "min": 12,
@@ -5312,13 +4927,6 @@
         "Terra"
       ],
       "maps": [
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
         {
           "name": "Rota 19 â Gruta dos Morcegos",
           "min": 12,
@@ -5349,13 +4957,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 5.31
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -5373,13 +4974,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 5.31
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -5397,13 +4991,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 10.2
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -5421,13 +5008,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 10.2
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -5438,13 +5018,6 @@
         "Fogo"
       ],
       "maps": [
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 28 â Lagoa Funda",
           "min": 22,
@@ -5489,13 +5062,6 @@
         "Fogo"
       ],
       "maps": [
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
         {
           "name": "Rota 28 â Lagoa Funda",
           "min": 22,
@@ -5546,13 +5112,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 4.08
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -5569,13 +5128,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 4.08
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -5614,13 +5166,6 @@
           "max": 8,
           "rarity": "Common",
           "chance": 1.57
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -5659,13 +5204,6 @@
           "max": 8,
           "rarity": "Comum",
           "chance": 1.57
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -5683,13 +5221,6 @@
           "max": 43,
           "rarity": "Common",
           "chance": 4.37
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -5707,13 +5238,6 @@
           "max": 43,
           "rarity": "Comum",
           "chance": 4.37
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -5731,13 +5255,6 @@
           "max": 6,
           "rarity": "Common",
           "chance": 20.0
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Common",
-          "chance": 16.0
         },
         {
           "name": "Rota 40 â Sombra das Ãrvores",
@@ -5764,13 +5281,6 @@
           "chance": 20.0
         },
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
           "max": 50,
@@ -5793,20 +5303,6 @@
           "max": 50,
           "rarity": "Common",
           "chance": 3.96
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Uncommon",
-          "chance": 3.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -5824,20 +5320,6 @@
           "max": 50,
           "rarity": "Comum",
           "chance": 3.96
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Incomum",
-          "chance": 3.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -6105,13 +5587,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 4.08
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -6129,13 +5604,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 4.08
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -6159,13 +5627,6 @@
           "max": 9,
           "rarity": "Common",
           "chance": 20.0
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
         },
         {
           "name": "Rota 29 â Lago das Correntezas",
@@ -6198,13 +5659,6 @@
           "chance": 20.0
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
           "max": 30,
@@ -6227,13 +5681,6 @@
           "max": 34,
           "rarity": "Common",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -6251,13 +5698,6 @@
           "max": 34,
           "rarity": "Comum",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -6302,13 +5742,6 @@
           "max": 17,
           "rarity": "Common",
           "chance": 16.1
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Common",
-          "chance": 16.0
         },
         {
           "name": "Rota 31 â Mata Fechada",
@@ -6397,13 +5830,6 @@
           "chance": 16.1
         },
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 31 â Mata Fechada",
           "min": 26,
           "max": 33,
@@ -6467,13 +5893,6 @@
           "max": 50,
           "rarity": "Common",
           "chance": 9.9
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -6497,13 +5916,6 @@
           "max": 50,
           "rarity": "Comum",
           "chance": 9.9
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -6534,13 +5946,6 @@
           "max": 13,
           "rarity": "Common",
           "chance": 19.6
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
         },
         {
           "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
@@ -6601,13 +6006,6 @@
           "chance": 19.6
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 37 â PÃ¢ntano das RaÃ­zes",
           "min": 35,
           "max": 43,
@@ -6658,13 +6056,6 @@
           "max": 41,
           "rarity": "Common",
           "chance": 10.1
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -6689,13 +6080,6 @@
           "max": 41,
           "rarity": "Comum",
           "chance": 10.1
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -6707,13 +6091,6 @@
         "Veneno"
       ],
       "maps": [
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Common",
-          "chance": 16.0
-        },
         {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
@@ -6752,13 +6129,6 @@
         "Veneno"
       ],
       "maps": [
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
         {
           "name": "Rota 29 â Lago das Correntezas",
           "min": 24,
@@ -6824,13 +6194,6 @@
           "max": 41,
           "rarity": "Common",
           "chance": 5.23
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -6869,13 +6232,6 @@
           "max": 41,
           "rarity": "Comum",
           "chance": 5.23
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -6907,13 +6263,6 @@
           "max": 41,
           "rarity": "Common",
           "chance": 10.1
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -6945,13 +6294,6 @@
           "max": 41,
           "rarity": "Comum",
           "chance": 10.1
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -6969,13 +6311,6 @@
           "max": 6,
           "rarity": "Uncommon",
           "chance": 8.0
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Rare",
-          "chance": 0.75
         },
         {
           "name": "Rota 39 â TÃºnel Escavado",
@@ -7000,13 +6335,6 @@
           "max": 6,
           "rarity": "Incomum",
           "chance": 8.0
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Raro",
-          "chance": 0.75
         },
         {
           "name": "Rota 39 â TÃºnel Escavado",
@@ -7062,13 +6390,6 @@
           "max": 28,
           "rarity": "Common",
           "chance": 14.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -7085,13 +6406,6 @@
           "max": 28,
           "rarity": "Comum",
           "chance": 14.2
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -7136,13 +6450,6 @@
           "max": 16,
           "rarity": "Common",
           "chance": 14.7
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Common",
-          "chance": 13.3
         },
         {
           "name": "Rota 35 â Brejo dos Sapos",
@@ -7196,13 +6503,6 @@
           "chance": 14.7
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Comum",
-          "chance": 13.3
-        },
-        {
           "name": "Rota 35 â Brejo dos Sapos",
           "min": 32,
           "max": 39,
@@ -7224,13 +6524,6 @@
           "max": 39,
           "rarity": "Common",
           "chance": 4.08
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
         }
       ]
     },
@@ -7247,13 +6540,6 @@
           "max": 39,
           "rarity": "Comum",
           "chance": 4.08
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
         }
       ]
     },
@@ -7277,13 +6563,6 @@
           "max": 13,
           "rarity": "Common",
           "chance": 19.6
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Common",
-          "chance": 16.0
         },
         {
           "name": "Rota 40 â Sombra das Ãrvores",
@@ -7323,13 +6602,6 @@
           "chance": 19.6
         },
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 40 â Sombra das Ãrvores",
           "min": 42,
           "max": 50,
@@ -7358,13 +6630,6 @@
           "max": 50,
           "rarity": "Common",
           "chance": 3.96
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -7381,13 +6646,6 @@
           "max": 50,
           "rarity": "Comum",
           "chance": 3.96
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -7681,13 +6939,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Uncommon",
-          "chance": 2.67
-        },
-        {
           "name": "Rota 28 â Lagoa Funda",
           "min": 28,
           "max": 28,
@@ -7704,13 +6955,6 @@
       ],
       "maps": [
         {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Incomum",
-          "chance": 2.67
-        },
-        {
           "name": "Rota 28 â Lagoa Funda",
           "min": 28,
           "max": 28,
@@ -7859,13 +7103,6 @@
           "max": 11,
           "rarity": "Uncommon",
           "chance": 7.62
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Rare",
-          "chance": 0.6
         }
       ]
     },
@@ -7917,13 +7154,6 @@
           "max": 11,
           "rarity": "Incomum",
           "chance": 7.62
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Raro",
-          "chance": 0.6
         }
       ]
     },
@@ -8217,13 +7447,6 @@
           "chance": 8.0
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Rare",
-          "chance": 0.75
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -8262,13 +7485,6 @@
           "chance": 8.0
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Raro",
-          "chance": 0.75
-        },
-        {
           "name": "Rota 39 â TÃºnel Escavado",
           "min": 40,
           "max": 48,
@@ -8291,20 +7507,6 @@
           "max": 48,
           "rarity": "Uncommon",
           "chance": 1.33
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Rare",
-          "chance": 0.6
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -8322,20 +7524,6 @@
           "max": 48,
           "rarity": "Incomum",
           "chance": 1.33
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Raro",
-          "chance": 0.6
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -8352,13 +7540,6 @@
           "max": 50,
           "rarity": "Rare",
           "chance": 0.63
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Rare",
-          "chance": 0.6
         }
       ]
     },
@@ -8375,13 +7556,6 @@
           "max": 50,
           "rarity": "Raro",
           "chance": 0.63
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Raro",
-          "chance": 0.6
         }
       ]
     },
@@ -8674,13 +7848,6 @@
           "chance": 3.76
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Uncommon",
-          "chance": 2.67
-        },
-        {
           "name": "Rota 17 â Costa das Conchas",
           "min": 3,
           "max": 8,
@@ -8718,13 +7885,6 @@
           "chance": 3.76
         },
         {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Incomum",
-          "chance": 2.67
-        },
-        {
           "name": "Rota 17 â Costa das Conchas",
           "min": 3,
           "max": 8,
@@ -8746,13 +7906,6 @@
           "max": 32,
           "rarity": "Common",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -8769,13 +7922,6 @@
           "max": 32,
           "rarity": "Comum",
           "chance": 3.76
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -9113,34 +8259,6 @@
           "max": 23,
           "rarity": "Common",
           "chance": 14.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Rare",
-          "chance": 1.0
         }
       ]
     },
@@ -9172,34 +8290,6 @@
           "max": 23,
           "rarity": "Comum",
           "chance": 14.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Raro",
-          "chance": 1.0
         }
       ]
     },
@@ -9411,13 +8501,6 @@
           "max": 43,
           "rarity": "Uncommon",
           "chance": 8.0
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -9449,13 +8532,6 @@
           "max": 43,
           "rarity": "Incomum",
           "chance": 8.0
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -9472,13 +8548,6 @@
           "max": 50,
           "rarity": "Uncommon",
           "chance": 6.4
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Rare",
-          "chance": 3.0
         }
       ]
     },
@@ -9495,13 +8564,6 @@
           "max": 50,
           "rarity": "Incomum",
           "chance": 6.4
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Raro",
-          "chance": 3.0
         }
       ]
     },
@@ -9518,13 +8580,6 @@
           "max": 33,
           "rarity": "Uncommon",
           "chance": 2.21
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Rare",
-          "chance": 0.75
         }
       ]
     },
@@ -9541,13 +8596,6 @@
           "max": 33,
           "rarity": "Incomum",
           "chance": 2.21
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Raro",
-          "chance": 0.75
         }
       ]
     },
@@ -9878,13 +8926,6 @@
           "max": 23,
           "rarity": "Common",
           "chance": 14.0
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Epic",
-          "chance": 0.33
         }
       ]
     },
@@ -9923,13 +8964,6 @@
           "max": 23,
           "rarity": "Comum",
           "chance": 14.0
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Ãpico",
-          "chance": 0.33
         }
       ]
     },
@@ -9974,13 +9008,6 @@
           "min": 3,
           "max": 8,
           "rarity": "Rare",
-          "chance": 0.5
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Epic",
           "chance": 0.5
         }
       ]
@@ -10027,13 +9054,6 @@
           "max": 8,
           "rarity": "Raro",
           "chance": 0.5
-        },
-        {
-          "name": "Ilhas Espuma",
-          "min": 58,
-          "max": 66,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -10050,13 +9070,6 @@
           "max": 11,
           "rarity": "Rare",
           "chance": 3.0
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Rare",
-          "chance": 0.6
         }
       ]
     },
@@ -10073,13 +9086,6 @@
           "max": 11,
           "rarity": "Raro",
           "chance": 3.0
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Raro",
-          "chance": 0.6
         }
       ]
     },
@@ -10183,13 +9189,6 @@
       ],
       "maps": [
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Epic",
-          "chance": 0.5
-        },
-        {
           "name": "Rota 32 â Selva dos CipÃ³s",
           "min": 27,
           "max": 34,
@@ -10206,13 +9205,6 @@
       ],
       "maps": [
         {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Ãpico",
-          "chance": 0.5
-        },
-        {
           "name": "Rota 32 â Selva dos CipÃ³s",
           "min": 27,
           "max": 34,
@@ -10287,34 +9279,6 @@
           "max": 7,
           "rarity": "Rare",
           "chance": 3.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Rare",
-          "chance": 1.0
         }
       ]
     },
@@ -10352,34 +9316,6 @@
           "max": 7,
           "rarity": "Raro",
           "chance": 3.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Raro",
-          "chance": 1.0
         }
       ]
     },
@@ -10780,6 +9716,60 @@
           "chance": 2.5
         }
       ]
+    },
+    {
+      "id": 144,
+      "name": "Articuno",
+      "types": [
+        "Gelo",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 144,
+      "name": "Articuno",
+      "types": [
+        "Gelo",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 145,
+      "name": "Zapdos",
+      "types": [
+        "Elétrico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 145,
+      "name": "Zapdos",
+      "types": [
+        "Elétrico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 146,
+      "name": "Moltres",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 146,
+      "name": "Moltres",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": []
     },
     {
       "id": 147,
@@ -11056,6 +10046,38 @@
       "types": [
         "Dragão",
         "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 150,
+      "name": "Mewtwo",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 150,
+      "name": "Mewtwo",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 151,
+      "name": "Mew",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 151,
+      "name": "Mew",
+      "types": [
+        "Psíquico"
       ],
       "maps": []
     },
@@ -11649,13 +10671,6 @@
       ],
       "maps": [
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 55 â Trilha Gelada",
           "min": 13,
           "max": 18,
@@ -11700,13 +10715,6 @@
       ],
       "maps": [
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 55 â Trilha Gelada",
           "min": 13,
           "max": 18,
@@ -11784,13 +10792,6 @@
           "max": 44,
           "rarity": "Common",
           "chance": 13.2
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -11835,13 +10836,6 @@
           "max": 44,
           "rarity": "Comum",
           "chance": 13.2
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -11915,13 +10909,6 @@
           "max": 13,
           "rarity": "Common",
           "chance": 16.7
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Common",
-          "chance": 16.0
         },
         {
           "name": "Rota 57 â PlanÃ­cie Branca",
@@ -12039,13 +11026,6 @@
           "chance": 16.7
         },
         {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 57 â PlanÃ­cie Branca",
           "min": 15,
           "max": 20,
@@ -12138,13 +11118,6 @@
           "max": 31,
           "rarity": "Common",
           "chance": 13.0
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -12197,13 +11170,6 @@
           "max": 31,
           "rarity": "Comum",
           "chance": 13.0
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -13909,13 +12875,6 @@
           "max": 55,
           "rarity": "Common",
           "chance": 12.2
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -13939,13 +12898,6 @@
           "max": 55,
           "rarity": "Comum",
           "chance": 12.2
-        },
-        {
-          "name": "Usina Abandonada",
-          "min": 60,
-          "max": 68,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -15322,13 +14274,6 @@
           "max": 44,
           "rarity": "Rare",
           "chance": 1.5
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -15359,13 +14304,6 @@
           "max": 44,
           "rarity": "Raro",
           "chance": 1.5
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -15396,13 +14334,6 @@
           "max": 44,
           "rarity": "Rare",
           "chance": 1.5
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Epic",
-          "chance": 0.5
         }
       ]
     },
@@ -15433,13 +14364,6 @@
           "max": 44,
           "rarity": "Raro",
           "chance": 1.5
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Ãpico",
-          "chance": 0.5
         }
       ]
     },
@@ -15485,13 +14409,6 @@
           "max": 8,
           "rarity": "Uncommon",
           "chance": 0.76
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Rare",
-          "chance": 0.75
         },
         {
           "name": "Rota 62 â Campo dos Flocos",
@@ -15544,13 +14461,6 @@
           "max": 8,
           "rarity": "Incomum",
           "chance": 0.76
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Raro",
-          "chance": 0.75
         },
         {
           "name": "Rota 62 â Campo dos Flocos",
@@ -15622,13 +14532,6 @@
           "max": 24,
           "rarity": "Uncommon",
           "chance": 7.62
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Rare",
-          "chance": 0.75
         },
         {
           "name": "Rota 80 â RuÃ­nas Cobertas",
@@ -15652,13 +14555,6 @@
           "max": 24,
           "rarity": "Incomum",
           "chance": 7.62
-        },
-        {
-          "name": "Torre do Sino",
-          "min": 68,
-          "max": 76,
-          "rarity": "Raro",
-          "chance": 0.75
         },
         {
           "name": "Rota 80 â RuÃ­nas Cobertas",
@@ -15840,13 +14736,6 @@
           "max": 65,
           "rarity": "Uncommon",
           "chance": 7.27
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Rare",
-          "chance": 0.6
         }
       ]
     },
@@ -15863,13 +14752,6 @@
           "max": 65,
           "rarity": "Incomum",
           "chance": 7.27
-        },
-        {
-          "name": "Caverna Celeste",
-          "min": 73,
-          "max": 81,
-          "rarity": "Raro",
-          "chance": 0.6
         }
       ]
     },
@@ -17394,13 +16276,6 @@
           "chance": 19.6
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 70 â Lago Congelado",
           "min": 36,
           "max": 42,
@@ -17466,13 +16341,6 @@
           "chance": 19.6
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 70 â Lago Congelado",
           "min": 36,
           "max": 42,
@@ -17516,13 +16384,6 @@
           "max": 46,
           "rarity": "Common",
           "chance": 13.8
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -17547,13 +16408,6 @@
           "max": 46,
           "rarity": "Comum",
           "chance": 13.8
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -18781,34 +17635,6 @@
           "max": 58,
           "rarity": "Rare",
           "chance": 3.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Rare",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Rare",
-          "chance": 1.0
         }
       ]
     },
@@ -18832,34 +17658,6 @@
           "max": 58,
           "rarity": "Raro",
           "chance": 3.0
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Raro",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Raro",
-          "chance": 1.0
         }
       ]
     },
@@ -19294,6 +18092,54 @@
       ]
     },
     {
+      "id": 243,
+      "name": "Raikou",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 243,
+      "name": "Raikou",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 244,
+      "name": "Entei",
+      "types": [
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 244,
+      "name": "Entei",
+      "types": [
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 245,
+      "name": "Suicune",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 245,
+      "name": "Suicune",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
       "id": 246,
       "name": "Larvitar",
       "types": [
@@ -19632,6 +18478,60 @@
           "chance": 0.56
         }
       ]
+    },
+    {
+      "id": 249,
+      "name": "Lugia",
+      "types": [
+        "Psíquico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 249,
+      "name": "Lugia",
+      "types": [
+        "Psíquico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 250,
+      "name": "Ho Oh",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 250,
+      "name": "Ho Oh",
+      "types": [
+        "Fogo",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 251,
+      "name": "Celebi",
+      "types": [
+        "Psíquico",
+        "Planta"
+      ],
+      "maps": []
+    },
+    {
+      "id": 251,
+      "name": "Celebi",
+      "types": [
+        "Psíquico",
+        "Planta"
+      ],
+      "maps": []
     },
     {
       "id": 252,
@@ -24801,13 +23701,6 @@
           "chance": 20.0
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Common",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 91 â SopÃ© do VulcÃ£o",
           "min": 14,
           "max": 19,
@@ -24846,13 +23739,6 @@
           "chance": 20.0
         },
         {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Comum",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 91 â SopÃ© do VulcÃ£o",
           "min": 14,
           "max": 19,
@@ -24889,13 +23775,6 @@
           "max": 66,
           "rarity": "Common",
           "chance": 5.44
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Uncommon",
-          "chance": 3.2
         }
       ]
     },
@@ -24913,13 +23792,6 @@
           "max": 66,
           "rarity": "Comum",
           "chance": 5.44
-        },
-        {
-          "name": "Cume das Brasas",
-          "min": 62,
-          "max": 70,
-          "rarity": "Incomum",
-          "chance": 3.2
         }
       ]
     },
@@ -26114,34 +24986,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 82 â Mirante Verde",
           "min": 6,
           "max": 9,
@@ -26201,34 +25045,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 82 â Mirante Verde",
           "min": 6,
           "max": 9,
@@ -26288,34 +25104,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 81 â Caverna Silenciosa",
           "min": 6,
           "max": 9,
@@ -26361,34 +25149,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 81 â Caverna Silenciosa",
           "min": 6,
           "max": 9,
@@ -26820,34 +25580,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Common",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 87 â Colunas Antigas",
           "min": 10,
           "max": 14,
@@ -26907,34 +25639,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Comum",
-          "chance": 26.7
-        },
-        {
           "name": "Rota 87 â Colunas Antigas",
           "min": 10,
           "max": 14,
@@ -27001,34 +25705,6 @@
           "chance": 16.1
         },
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Uncommon",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Uncommon",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Uncommon",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Uncommon",
-          "chance": 16.0
-        },
-        {
           "name": "Rota 106 â PlanÃ­cie Ãrida",
           "min": 42,
           "max": 48,
@@ -27058,34 +25734,6 @@
           "max": 80,
           "rarity": "Comum",
           "chance": 16.1
-        },
-        {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Incomum",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Incomum",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Incomum",
-          "chance": 16.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Incomum",
-          "chance": 16.0
         },
         {
           "name": "Rota 106 â PlanÃ­cie Ãrida",
@@ -29444,34 +28092,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Epic",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Epic",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Epic",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Epic",
-          "chance": 1.0
-        },
-        {
           "name": "Rota 108 â Veio de MinÃ©rio",
           "min": 48,
           "max": 55,
@@ -29489,34 +28109,6 @@
       ],
       "maps": [
         {
-          "name": "Ultra EspaÃ§o I",
-          "min": 58,
-          "max": 64,
-          "rarity": "Ãpico",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o II",
-          "min": 63,
-          "max": 69,
-          "rarity": "Ãpico",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o III",
-          "min": 68,
-          "max": 74,
-          "rarity": "Ãpico",
-          "chance": 1.0
-        },
-        {
-          "name": "Ultra EspaÃ§o IV",
-          "min": 73,
-          "max": 79,
-          "rarity": "Ãpico",
-          "chance": 1.0
-        },
-        {
           "name": "Rota 108 â Veio de MinÃ©rio",
           "min": 48,
           "max": 55,
@@ -29524,6 +28116,174 @@
           "chance": 0.5
         }
       ]
+    },
+    {
+      "id": 377,
+      "name": "Regirock",
+      "types": [
+        "Pedra"
+      ],
+      "maps": []
+    },
+    {
+      "id": 377,
+      "name": "Regirock",
+      "types": [
+        "Pedra"
+      ],
+      "maps": []
+    },
+    {
+      "id": 378,
+      "name": "Regice",
+      "types": [
+        "Gelo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 378,
+      "name": "Regice",
+      "types": [
+        "Gelo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 379,
+      "name": "Registeel",
+      "types": [
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 379,
+      "name": "Registeel",
+      "types": [
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 380,
+      "name": "Latias",
+      "types": [
+        "Dragão",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 380,
+      "name": "Latias",
+      "types": [
+        "Dragão",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 381,
+      "name": "Latios",
+      "types": [
+        "Dragão",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 381,
+      "name": "Latios",
+      "types": [
+        "Dragão",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 382,
+      "name": "Kyogre",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 382,
+      "name": "Kyogre",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 383,
+      "name": "Groudon",
+      "types": [
+        "Terra"
+      ],
+      "maps": []
+    },
+    {
+      "id": 383,
+      "name": "Groudon",
+      "types": [
+        "Terra"
+      ],
+      "maps": []
+    },
+    {
+      "id": 384,
+      "name": "Rayquaza",
+      "types": [
+        "Dragão",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 384,
+      "name": "Rayquaza",
+      "types": [
+        "Dragão",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 385,
+      "name": "Jirachi",
+      "types": [
+        "Aço",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 385,
+      "name": "Jirachi",
+      "types": [
+        "Aço",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 386,
+      "name": "Deoxys Normal",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 386,
+      "name": "Deoxys Normal",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
     },
     {
       "id": 387,
@@ -37596,6 +36356,256 @@
           "chance": 1.15
         }
       ]
+    },
+    {
+      "id": 480,
+      "name": "Uxie",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 480,
+      "name": "Uxie",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 481,
+      "name": "Mesprit",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 481,
+      "name": "Mesprit",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 482,
+      "name": "Azelf",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 482,
+      "name": "Azelf",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 483,
+      "name": "Dialga",
+      "types": [
+        "Aço",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 483,
+      "name": "Dialga",
+      "types": [
+        "Aço",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 484,
+      "name": "Palkia",
+      "types": [
+        "Água",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 484,
+      "name": "Palkia",
+      "types": [
+        "Água",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 485,
+      "name": "Heatran",
+      "types": [
+        "Fogo",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 485,
+      "name": "Heatran",
+      "types": [
+        "Fogo",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 486,
+      "name": "Regigigas",
+      "types": [
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
+      "id": 486,
+      "name": "Regigigas",
+      "types": [
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
+      "id": 487,
+      "name": "Giratina Altered",
+      "types": [
+        "Fantasma",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 487,
+      "name": "Giratina Altered",
+      "types": [
+        "Fantasma",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 488,
+      "name": "Cresselia",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 488,
+      "name": "Cresselia",
+      "types": [
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 489,
+      "name": "Phione",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 489,
+      "name": "Phione",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 490,
+      "name": "Manaphy",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 490,
+      "name": "Manaphy",
+      "types": [
+        "Água"
+      ],
+      "maps": []
+    },
+    {
+      "id": 491,
+      "name": "Darkrai",
+      "types": [
+        "Sombrio"
+      ],
+      "maps": []
+    },
+    {
+      "id": 491,
+      "name": "Darkrai",
+      "types": [
+        "Sombrio"
+      ],
+      "maps": []
+    },
+    {
+      "id": 492,
+      "name": "Shaymin Land",
+      "types": [
+        "Planta"
+      ],
+      "maps": []
+    },
+    {
+      "id": 492,
+      "name": "Shaymin Land",
+      "types": [
+        "Planta"
+      ],
+      "maps": []
+    },
+    {
+      "id": 493,
+      "name": "Arceus",
+      "types": [
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
+      "id": 493,
+      "name": "Arceus",
+      "types": [
+        "Normal"
+      ],
+      "maps": []
+    },
+    {
+      "id": 494,
+      "name": "Victini",
+      "types": [
+        "Psíquico",
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 494,
+      "name": "Victini",
+      "types": [
+        "Psíquico",
+        "Fogo"
+      ],
+      "maps": []
     },
     {
       "id": 495,
@@ -48906,6 +47916,220 @@
       ]
     },
     {
+      "id": 638,
+      "name": "Cobalion",
+      "types": [
+        "Aço",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 638,
+      "name": "Cobalion",
+      "types": [
+        "Aço",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 639,
+      "name": "Terrakion",
+      "types": [
+        "Pedra",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 639,
+      "name": "Terrakion",
+      "types": [
+        "Pedra",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 640,
+      "name": "Virizion",
+      "types": [
+        "Planta",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 640,
+      "name": "Virizion",
+      "types": [
+        "Planta",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 641,
+      "name": "Tornadus Incarnate",
+      "types": [
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 641,
+      "name": "Tornadus Incarnate",
+      "types": [
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 642,
+      "name": "Thundurus Incarnate",
+      "types": [
+        "Elétrico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 642,
+      "name": "Thundurus Incarnate",
+      "types": [
+        "Elétrico",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 643,
+      "name": "Reshiram",
+      "types": [
+        "Dragão",
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 643,
+      "name": "Reshiram",
+      "types": [
+        "Dragão",
+        "Fogo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 644,
+      "name": "Zekrom",
+      "types": [
+        "Dragão",
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 644,
+      "name": "Zekrom",
+      "types": [
+        "Dragão",
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 645,
+      "name": "Landorus Incarnate",
+      "types": [
+        "Terra",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 645,
+      "name": "Landorus Incarnate",
+      "types": [
+        "Terra",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 646,
+      "name": "Kyurem",
+      "types": [
+        "Dragão",
+        "Gelo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 646,
+      "name": "Kyurem",
+      "types": [
+        "Dragão",
+        "Gelo"
+      ],
+      "maps": []
+    },
+    {
+      "id": 647,
+      "name": "Keldeo Ordinary",
+      "types": [
+        "Água",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 647,
+      "name": "Keldeo Ordinary",
+      "types": [
+        "Água",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 648,
+      "name": "Meloetta Aria",
+      "types": [
+        "Normal",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 648,
+      "name": "Meloetta Aria",
+      "types": [
+        "Normal",
+        "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 649,
+      "name": "Genesect",
+      "types": [
+        "Inseto",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 649,
+      "name": "Genesect",
+      "types": [
+        "Inseto",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
       "id": 663,
       "name": "Talonflame",
       "types": [
@@ -49110,6 +48334,200 @@
       "types": [
         "Água",
         "Psíquico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 793,
+      "name": "Nihilego",
+      "types": [
+        "Pedra",
+        "Veneno"
+      ],
+      "maps": []
+    },
+    {
+      "id": 793,
+      "name": "Nihilego",
+      "types": [
+        "Pedra",
+        "Veneno"
+      ],
+      "maps": []
+    },
+    {
+      "id": 794,
+      "name": "Buzzwole",
+      "types": [
+        "Inseto",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 794,
+      "name": "Buzzwole",
+      "types": [
+        "Inseto",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 795,
+      "name": "Pheromosa",
+      "types": [
+        "Inseto",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 795,
+      "name": "Pheromosa",
+      "types": [
+        "Inseto",
+        "Lutador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 796,
+      "name": "Xurkitree",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 796,
+      "name": "Xurkitree",
+      "types": [
+        "Elétrico"
+      ],
+      "maps": []
+    },
+    {
+      "id": 797,
+      "name": "Celesteela",
+      "types": [
+        "Aço",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 797,
+      "name": "Celesteela",
+      "types": [
+        "Aço",
+        "Voador"
+      ],
+      "maps": []
+    },
+    {
+      "id": 798,
+      "name": "Kartana",
+      "types": [
+        "Planta",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 798,
+      "name": "Kartana",
+      "types": [
+        "Planta",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 799,
+      "name": "Guzzlord",
+      "types": [
+        "Sombrio",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 799,
+      "name": "Guzzlord",
+      "types": [
+        "Sombrio",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 803,
+      "name": "Poipole",
+      "types": [
+        "Veneno"
+      ],
+      "maps": []
+    },
+    {
+      "id": 803,
+      "name": "Poipole",
+      "types": [
+        "Veneno"
+      ],
+      "maps": []
+    },
+    {
+      "id": 804,
+      "name": "Naganadel",
+      "types": [
+        "Veneno",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 804,
+      "name": "Naganadel",
+      "types": [
+        "Veneno",
+        "Dragão"
+      ],
+      "maps": []
+    },
+    {
+      "id": 805,
+      "name": "Stakataka",
+      "types": [
+        "Pedra",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 805,
+      "name": "Stakataka",
+      "types": [
+        "Pedra",
+        "Aço"
+      ],
+      "maps": []
+    },
+    {
+      "id": 806,
+      "name": "Blacephalon",
+      "types": [
+        "Fogo",
+        "Fantasma"
+      ],
+      "maps": []
+    },
+    {
+      "id": 806,
+      "name": "Blacephalon",
+      "types": [
+        "Fogo",
+        "Fantasma"
       ],
       "maps": []
     },
@@ -50137,19 +49555,9 @@
       "maxLevel": 64
     },
     {
-      "name": "Ilhas Espuma",
-      "minLevel": 58,
-      "maxLevel": 66
-    },
-    {
       "name": "Rota 111 â Vale da Poeira",
       "minLevel": 58,
       "maxLevel": 66
-    },
-    {
-      "name": "Ultra EspaÃ§o I",
-      "minLevel": 58,
-      "maxLevel": 64
     },
     {
       "name": "Rota 179 â Bosque do Outono",
@@ -50157,19 +49565,9 @@
       "maxLevel": 65
     },
     {
-      "name": "Usina Abandonada",
-      "minLevel": 60,
-      "maxLevel": 68
-    },
-    {
       "name": "Rota 112 â Corrente Escura",
       "minLevel": 61,
       "maxLevel": 69
-    },
-    {
-      "name": "Cume das Brasas",
-      "minLevel": 62,
-      "maxLevel": 70
     },
     {
       "name": "Rota 143 â Campos de Obsidiana",
@@ -50180,11 +49578,6 @@
       "name": "Rota 180 â Bosque das MemÃ³rias",
       "minLevel": 62,
       "maxLevel": 68
-    },
-    {
-      "name": "Ultra EspaÃ§o II",
-      "minLevel": 63,
-      "maxLevel": 69
     },
     {
       "name": "Rota 181 â Caverna MagnÃ©tica",
@@ -50212,16 +49605,6 @@
       "maxLevel": 75
     },
     {
-      "name": "Torre do Sino",
-      "minLevel": 68,
-      "maxLevel": 76
-    },
-    {
-      "name": "Ultra EspaÃ§o III",
-      "minLevel": 68,
-      "maxLevel": 74
-    },
-    {
       "name": "Rota 145 â Lago de Lava",
       "minLevel": 70,
       "maxLevel": 77
@@ -50237,19 +49620,9 @@
       "maxLevel": 80
     },
     {
-      "name": "Caverna Celeste",
-      "minLevel": 73,
-      "maxLevel": 81
-    },
-    {
       "name": "Rota 146 â CoraÃ§Ã£o do VulcÃ£o",
       "minLevel": 73,
       "maxLevel": 81
-    },
-    {
-      "name": "Ultra EspaÃ§o IV",
-      "minLevel": 73,
-      "maxLevel": 79
     },
     {
       "name": "Rota 184 â Trilha do Mato Alto",
@@ -50363,8 +49736,8 @@
     }
   },
   "crawl": {
-    "speciesPages": 1246,
-    "validSpecies": 1246,
+    "speciesPages": 1364,
+    "validSpecies": 1364,
     "errors": 0
   }
 }
